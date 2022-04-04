@@ -1,28 +1,27 @@
  .u-section-1 {
-  min-height: 985px;
+  min-height: 1000px;
 }
 
 .u-section-1 .u-text-1 {
   font-weight: 700;
-  width: 702px;
-  margin: 6px auto 0;
+  width: 676px;
+  margin: 0 auto;
 }
 
 .u-section-1 .u-text-2 {
   font-size: 1.5rem;
-  margin: 6px auto 0;
+  margin: 0 auto;
 }
 
 .u-section-1 .u-image-1 {
   width: 95px;
   height: 95px;
-  margin: 771px calc(((100% - 1140px) / 2)) 0 auto;
+  margin: 827px auto 0 calc(((100% - 1140px) / 2));
 }
 
 .u-section-1 .u-text-3 {
-  width: 742px;
   font-size: 1.875rem;
-  margin: -65px auto 59px;
+  margin: -66px calc(((100% - 1140px) / 2) + 166px) 30px calc(((100% - 1140px) / 2) + 232px);
 }
 
 @media (max-width: 1199px) {
@@ -30,59 +29,58 @@
     min-height: 956px;
   }
 
-  .u-section-1 .u-text-1 {
-    margin-top: 15px;
-  }
-
   .u-section-1 .u-text-2 {
     width: auto;
-    margin-top: 15px;
   }
 
   .u-section-1 .u-image-1 {
-    margin-top: 682px;
-    margin-right: auto;
     margin-left: calc(((100% - 940px) / 2));
   }
 
   .u-section-1 .u-text-3 {
     width: auto;
-    margin: -57px calc(((100% - 940px) / 2) + 24px) 60px calc(((100% - 940px) / 2) + 174px);
+    margin-right: calc(((100% - 940px) / 2) + 24px);
+    margin-left: calc(((100% - 940px) / 2) + 174px);
   }
 }
 
 @media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 1076px;
+  }
+
   .u-section-1 .u-text-1 {
     width: auto;
-    margin-top: 45px;
+    margin-top: 27px;
     margin-left: 50px;
     margin-right: 50px;
   }
 
   .u-section-1 .u-text-2 {
-    margin-top: 33px;
+    margin-top: 20px;
   }
 
   .u-section-1 .u-image-1 {
-    margin-top: 574px;
+    margin-top: 800px;
     margin-left: auto;
   }
 
   .u-section-1 .u-text-3 {
-    margin-top: 33px;
-    margin-right: calc(((100% - 720px) / 2) + -22px);
-    margin-left: calc(((100% - 720px) / 2) + 22px);
+    margin: 0 64px 20px;
   }
 }
 
 @media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 1079px;
+  }
+
   .u-section-1 .u-text-1 {
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-1 .u-text-2 {
-    margin-top: 37px;
     margin-left: 34px;
     margin-right: 34px;
   }
@@ -90,12 +88,11 @@
   .u-section-1 .u-image-1 {
     width: 149px;
     height: 102px;
-    margin-top: 627px;
   }
 
   .u-section-1 .u-text-3 {
     font-size: 1.5rem;
-    margin-top: -167px;
+    margin-top: 20px;
     margin-left: 39px;
     margin-right: 39px;
   }
@@ -103,12 +100,15 @@
 
 @media (max-width: 575px) {
    .u-section-1 {
-    min-height: 563px;
+    min-height: 1029px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 15px;
   }
 
   .u-section-1 .u-text-2 {
     width: 300px;
-    margin-top: 8px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -116,12 +116,15 @@
   .u-section-1 .u-image-1 {
     width: 92px;
     height: 56px;
-    margin-top: 292px;
+    margin-top: 785px;
   }
 
   .u-section-1 .u-text-3 {
+    width: 340px;
     font-size: 1.25rem;
-    margin: 20px calc(((100% - 340px) / 2)) 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
   }
 } .u-section-2 {
   min-height: 525px;
@@ -563,8 +566,9 @@
   }
 
   .u-section-4 .u-text-1 {
-    margin-left: calc(((100% - 940px) / 2) + 425px);
-    margin-right: 424px;
+    width: 213px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .u-section-4 .u-text-2 {
@@ -585,8 +589,6 @@
 
   .u-section-4 .u-text-1 {
     width: 151px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .u-section-4 .u-text-2 {
@@ -710,18 +712,22 @@
   }
 
   .u-section-5 .u-text-1 {
-    margin-left: calc(((100% - 940px) / 2) + 425px);
-    margin-right: calc(((100% - 940px) / 2) + 153px);
+    width: auto;
+    margin-top: 41px;
+    margin-right: calc(((100% - 940px) / 2) + 264px);
+    margin-left: calc(((100% - 940px) / 2) + 314px);
   }
 
   .u-section-5 .u-text-2 {
     width: 746px;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .u-section-5 .u-gallery-1 {
     height: 505px;
+    margin-top: 10px;
   }
 
   .u-section-5 .u-gallery-inner-1 {
