@@ -91,7 +91,6 @@
 
 .u-section-2 .u-text-1 {
   font-weight: 700;
-  font-size: 3rem;
   margin: -46px auto 0;
 }
 
@@ -191,7 +190,6 @@
   }
 
   .u-section-2 .u-text-1 {
-    font-size: 1.5rem;
     margin-top: -46px;
   }
 
@@ -203,9 +201,14 @@
   min-height: 758px;
 }
 
+.u-section-3 .u-text-1 {
+  font-weight: 700;
+  margin: 20px auto 0;
+}
+
 .u-section-3 .u-gallery-1 {
   height: 720px;
-  margin-top: 38px;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
