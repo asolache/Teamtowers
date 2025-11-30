@@ -35,6 +35,7 @@ Use Cases
 Screenshots
 
 (Add screenshots or demo links here to showcase your platform)
+
 Keywords
 
 team building, human towers, corporate events, teamwork, collaboration, company retreats, group activities, chatbots, teambuilding activity, corporate search
@@ -44,9 +45,11 @@ Visit the TeamTowers project on GitHub: https://github.com/asolache/Teamtowers/
 
 Contributing
 
-Contributions are welcome! Alwais loofing for sales partners around the globe, usualy events agencies or DMC.
+Contributions are welcome! Allwais looking for sales partners around the globe, usualy events agencies or DMC.
 
-License
+Contact
+
+sned email to asolache at mac dot com  datailen the group size, date , location and objectives and we'll send you a taylored proposal 
 
 Feed
 sourcify-monitor@1.3.25
