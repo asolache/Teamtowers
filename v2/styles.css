@@ -339,4 +339,37 @@ a {
     .main-nav {
         display: none; /* Aquí podrías añadir un menú hamburguesa en el futuro */
     }
+    /* ESTILOS PARA LA SECCIÓN FAQ */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.faq-item {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-red);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+    color: var(--dark);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
 }
