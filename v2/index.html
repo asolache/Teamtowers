@@ -1,26 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Team Building Castellers & Consultoría Sistémica | Teamtowers</title>
-    <meta name="description" content="Transforma a tu equipo con el original taller de Castellers (Human Towers). Eventos corporativos MICE de 10 a 1.000 pax y Consultoría Sistémica avanzada.">
+    <title>Teamtowers | Team Development & Systemic Consulting</title>
+    <meta name="description" content="High-performance team development based on the Casteller model. Human Towers workshops for up to 1,000 pax and Systemic Consulting.">
     <link rel="stylesheet" href="styles.css">
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Teamtowers",
+      "url": "https://www.teamtowers.eu",
+      "logo": "https://raw.githubusercontent.com/asolache/Teamtowers/main/images/logoteamtowers.png"
+    }
+    </script>
 </head>
-<body>
-
-    <header class="main-header">
+<body class="lang-en"> <header class="main-header">
         <div class="container nav-container">
             <a href="#" class="logo-link">
                 <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/logoteamtowers.png" alt="Teamtowers Logo" class="logo">
             </a>
             <nav class="main-nav">
-                <a href="#experiencia">Taller Fent Pinya</a>
-                <a href="#consultoria">Consultoría</a>
-                <a href="#clientes">Clientes</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyS3D49o5TpedepcE_LZHX5dzJHO24Rry7NFFHmLRmWfwFcQ/viewform?usp=header" target="_blank" class="btn btn-primary">Pedir Presupuesto</a>
+                <a href="#experiencia" class="en">Fent Pinya Workshop</a>
+                <a href="#experiencia" class="es">Taller Fent Pinya</a>
+                <a href="#consultoria" class="en">The "Colla" Program</a>
+                <a href="#consultoria" class="es">Programa La Colla</a>
+                <a href="#clientes" class="en">Clients</a>
+                <a href="#clientes" class="es">Clientes</a>
+                
+                <div class="lang-switcher">
+                    <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+                    <button onclick="setLanguage('es')" id="btn-es">ES</button>
+                </div>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyS3D49o5TpedepcE_LZHX5dzJHO24Rry7NFFHmLRmWfwFcQ/viewform?usp=header" target="_blank" class="btn btn-primary">
+                    <span class="en">Get a Quote</span>
+                    <span class="es">Pedir Presupuesto</span>
+                </a>
             </nav>
         </div>
     </header>
@@ -33,37 +52,49 @@
             <div class="video-overlay"></div>
         </div>
         <div class="container hero-content">
-            <h1>Elevamos el Potencial de tus Equipos: Team Building y Desarrollo Sistémico</h1>
-            <p>Más de 20 años transformando la tradición de los Castellers (Patrimonio de la Humanidad por la UNESCO) en la herramienta de cohesión corporativa más poderosa.</p>
-            <div class="hero-btns">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyS3D49o5TpedepcE_LZHX5dzJHO24Rry7NFFHmLRmWfwFcQ/viewform?usp=header" target="_blank" class="btn btn-large btn-red">Diseñemos tu Evento</a>
-            </div>
+            <h1 class="en">High-Performance Team Development through UNESCO Heritage</h1>
+            <h1 class="es">Desarrollo de Equipos de Alto Rendimiento a través del Patrimonio UNESCO</h1>
+            <p class="en">More than 20 years applying the "Metanoia" of Human Towers to transform corporate culture and team competencies[cite: 18, 31].</p>
+            <p class="es">Más de 20 años aplicando la "Metanoia" de los Castells para transformar la cultura corporativa y las competencias de equipo[cite: 18, 31].</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyS3D49o5TpedepcE_LZHX5dzJHO24Rry7NFFHmLRmWfwFcQ/viewform?usp=header" target="_blank" class="btn btn-large btn-red">
+                <span class="en">Design Your Event</span>
+                <span class="es">Diseñemos tu Evento</span>
+            </a>
         </div>
     </section>
 
     <section id="experiencia" class="section bg-light">
         <div class="container split-layout">
             <div class="content-text">
-                <span class="badge">Nuestro Bestseller</span>
-                <h2>Taller "Fent Pinya": La Experiencia Estrella</h2>
-                <p><strong>Build Up Towers: The Ultimate Human Towers Workshop.</strong> Un taller de 2 horas donde tu equipo vivirá la experiencia de ser una auténtica Colla Castellera.</p>
+                <span class="badge en">Development & Values</span>
+                <span class="badge es">Desarrollo y Valores</span>
+                
+                <h2 class="en">"Fent Pinya": The Metanoia Program</h2>
+                <h2 class="es">"Fent Pinya": El Programa Metanoia</h2>
+                
+                <p class="en">This is not just a cultural activity. It is a rigorous development workshop where teams experience the <strong>10 core competencies</strong> of a Human Tower: shared leadership, absolute trust, and real-time communication.</p>
+                <p class="es">No es solo una actividad cultural. Es un taller de desarrollo donde los equipos experimentan las <strong>10 competencias clave</strong> de una Colla: liderazgo compartido, confianza absoluta y comunicación en tiempo real.</p>
+                
                 <ul class="feature-list">
-                    <li><strong>Escalable:</strong> De 10 a 1.000 participantes. Todos son bienvenidos.</li>
-                    <li><strong>Inmersión Total:</strong> Músicos en directo, expertos castellers y team coaches.</li>
-                    <li><strong>Seguro y Épico:</strong> Actividad de bajo riesgo, ideal para icebreakers y eventos culturales.</li>
+                    <li class="en"><strong>30-50% Cohesion Increase:</strong> Measurable improvement in post-event team synergy.</li>
+                    <li class="es"><strong>Aumento del 30-50% en Cohesión:</strong> Mejora medible en la sinergia del equipo post-evento.</li>
+                    <li class="en"><strong>UNESCO Value Model:</strong> We use the Casteller model as a vehicle for organizational excellence[cite: 14].</li>
+                    <li class="es"><strong>Modelo de Valor UNESCO:</strong> Usamos el modelo casteller como vehículo para la excelencia organizacional[cite: 14].</li>
+                    <li class="en"><strong>Scalable ROI:</strong> From 10 to 1,000 participants in only 2 hours[cite: 22].</li>
+                    <li class="es"><strong>ROI Escalable:</strong> De 10 a 1.000 participantes en solo 2 horas[cite: 22].</li>
                 </ul>
             </div>
             
             <div class="content-media">
                 <div class="slideshow-container shadow rounded-img">
-                    <img class="slide active" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_0924.jpg" alt="Taller Fent Pinya">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_0931.jpg" alt="Castellers Team Building">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1057.jpg" alt="Human Towers Workshop">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1075.jpg" alt="Evento Corporativo Teamtowers">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1314.jpg" alt="Cohesión de Equipo Castellers">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1362.jpg" alt="Dinámica de grupo">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1374.jpg" alt="Cultura Casteller Empresas">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1415.jpg" alt="Éxito y celebración en equipo">
+                    <img class="slide active" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_0924.jpg" alt="Team Building">
+                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_0931.jpg" alt="Competency Training">
+                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1057.jpg" alt="Values Workshop">
+                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1075.jpg" alt="Human Towers">
+                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1314.jpg" alt="Corporate Event">
+                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1362.jpg" alt="Team Synergy">
+                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1374.jpg" alt="UNESCO Culture">
+                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1415.jpg" alt="Leadership">
                 </div>
             </div>
         </div>
@@ -72,66 +103,82 @@
     <section id="consultoria" class="section">
         <div class="container">
             <div class="center-text mb-4">
-                <span class="badge badge-dark">Consultoría Sistémica Avanzada</span>
-                <h2>Programa "La Colla": Más allá del evento</h2>
-                <p style="max-width: 800px; margin: 0 auto;">Utilizamos el <strong>Value Network Analysis</strong> para replicar el modelo de éxito de los castellers en el ADN de tu organización. Identificamos y optimizamos cómo fluye el valor real (tangible e intangible) entre tus equipos.</p>
+                <span class="badge badge-dark en">Systemic Consulting</span>
+                <span class="badge badge-dark es">Consultoría Sistémica</span>
+                <h2 class="en">"La Colla" Program: Advanced Value Network Analysis</h2>
+                <h2 class="es">Programa "La Colla": Análisis de Red de Valor Avanzado</h2>
+                <p class="en">We help you map and optimize the flow of value in your organization using <strong>Value Network Analysis</strong>. See how tangible and intangible interactions create a high-performance network.</p>
+                <p class="es">Te ayudamos a mapear y optimizar el flujo de valor usando <strong>Value Network Analysis</strong>. Observa cómo las interacciones tangibles e intangibles crean una red de alto rendimiento.</p>
             </div>
 
-            <div class="vna-diagram-container mt-4">
-                <h3 class="vna-title">Ejemplo: Flujo de Valor en una Empresa Tecnológica</h3>
-                
-                <div class="vna-grid">
-                    <div class="vna-node client">
-                        <h4>Cliente Final</h4>
-                        <p>Define la necesidad</p>
-                    </div>
+            <div class="vna-advanced shadow rounded-img bg-light">
+                <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" class="vna-svg">
+                    <g fill="none" stroke="#ddd" stroke-width="1">
+                        <circle cx="500" cy="300" r="280" stroke-dasharray="10,5"/>
+                    </g>
+                    
+                    <circle cx="500" cy="300" r="60" fill="#cc0000"/>
+                    <text x="500" y="305" text-anchor="middle" fill="white" font-weight="bold" font-size="14">CORE TEAM</text>
 
-                    <div class="vna-arrows">
-                        <div class="arrow solid">Requisitos / Pagos (Tangible) &rarr;</div>
-                        <div class="arrow dashed">&larr; Confianza / Satisfacción (Intangible)</div>
-                    </div>
+                    <circle cx="200" cy="150" r="45" fill="#2b5c8f"/>
+                    <text x="200" y="155" text-anchor="middle" fill="white" font-size="12">CLIENTS</text>
 
-                    <div class="vna-node pm">
-                        <h4>Project Manager</h4>
-                        <p>Alineación y Gestión</p>
-                    </div>
+                    <circle cx="800" cy="150" r="45" fill="#2b8f5c"/>
+                    <text x="800" y="155" text-anchor="middle" fill="white" font-size="12">TECH DEV</text>
 
-                    <div class="vna-arrows">
-                        <div class="arrow solid">Especificaciones Técnicas (Tangible) &rarr;</div>
-                        <div class="arrow dashed">&larr; Soporte y Motivación (Intangible)</div>
-                    </div>
+                    <circle cx="200" cy="450" r="45" fill="#c27a1d"/>
+                    <text x="200" y="455" text-anchor="middle" fill="white" font-size="12">SUPPORT</text>
 
-                    <div class="vna-node tech">
-                        <h4>Equipo Tech</h4>
-                        <p>Desarrollo y Entrega</p>
-                    </div>
+                    <circle cx="800" cy="450" r="45" fill="#555"/>
+                    <text x="800" y="455" text-anchor="middle" fill="white" font-size="12">SALES / MGMT</text>
+
+                    <path d="M 245 150 L 440 280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    <text x="320" y="200" font-size="10" fill="#333" transform="rotate(30 320,200)">Requirements / Payments</text>
+
+                    <path d="M 755 150 L 560 280" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    <text x="630" y="200" font-size="10" fill="#333" transform="rotate(-30 630,200)">Software / Code</text>
+
+                    <path d="M 200 195 L 200 405" stroke="#cc0000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+                    <text x="110" y="300" font-size="10" fill="#cc0000">Trust / Loyalty</text>
+
+                    <path d="M 800 195 L 800 405" stroke="#cc0000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+                    <text x="810" y="300" font-size="10" fill="#cc0000">Expertise / Knowledge</text>
+
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+                        </marker>
+                    </defs>
+                </svg>
+                <div class="vna-legend">
+                    <div class="legend-item"><span class="line solid"></span> <span class="en">Tangible Transactions</span><span class="es">Transacciones Tangibles</span></div>
+                    <div class="legend-item"><span class="line dashed"></span> <span class="en">Intangible Transactions</span><span class="es">Transacciones Intangibles</span></div>
                 </div>
-                
-                <div class="center-text mt-4">
-                     <a href="https://teamtowershuma.com/colla.html" target="_blank" class="btn btn-secondary">Explorar nuestros servicios de consultoría &rarr;</a>
-                </div>
-                </div>
+            </div>
+
+            <div class="center-text mt-4">
+                 <a href="https://teamtowershuma.com/colla.html" target="_blank" class="btn btn-secondary">
+                    <span class="en">Explore Systemic Consulting &rarr;</span>
+                    <span class="es">Explora Consultoría Sistémica &rarr;</span>
+                 </a>
+            </div>
         </div>
     </section>
 
     <section id="clientes" class="section bg-light">
         <div class="container center-text">
-            <h2>Marcas y Centros que Confían en Nosotros</h2>
-            <p>Más de 60.000 participantes transformados desde 2005.</p>
+            <h2 class="en">Clients & Success Stories</h2>
+            <h2 class="es">Clientes y Casos de Éxito</h2>
+            <p class="en">Empowering more than 150 leading organizations[cite: 33, 105].</p>
+            <p class="es">Empoderando a más de 150 organizaciones líderes[cite: 33, 105].</p>
             
             <div class="client-container mt-4">
-                <h3>Empresas Finales y Agencias</h3>
                 <div class="logo-grid">
                     <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/LogoIKEA.png" alt="IKEA" class="client-logo">
                     <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/-is-seen-at-the-companys-plant-in-the-northern-swiss-town-of-stein-switzerland-october-23-2017-reutersarnd-wiegmann-2CMWFHY.jpg" alt="Novartis" class="client-logo">
                     <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/la-caixa-bank-logo-company-banking-financial-city-centre-palma-de-C9DJCC.jpg" alt="La Caixa" class="client-logo">
                     <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/vodafone-logo-vodafone-group-is-a-british-telecommunications-company-K4HGGC.jpg" alt="Vodafone" class="client-logo">
                     <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/geles-california-usa-jule-illustrative-editorial-letgo-com-website-homepage-letgo-logo-visible-display-screen-los-157130989.jpg" alt="Letgo" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/newlogo_o.jpg" alt="Partner Logo" class="client-logo">
-                </div>
-
-                <h3 class="mt-4" style="margin-top: 50px;">Centros Educativos y Escuelas de Negocios</h3>
-                <div class="logo-grid">
                     <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IESE_Logo2.png" alt="IESE" class="client-logo">
                     <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/esade-business-school_416x416.jpg" alt="ESADE" class="client-logo">
                     <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/eada-business-school-logo.jpg" alt="EADA" class="client-logo">
@@ -145,15 +192,35 @@
 
     <footer class="main-footer">
         <div class="container center-text">
-            <h2>¿Listo para elevar a tu equipo?</h2>
-            <p>Cuéntanos tu caso y diseñaremos una propuesta a medida.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyS3D49o5TpedepcE_LZHX5dzJHO24Rry7NFFHmLRmWfwFcQ/viewform?usp=header" target="_blank" class="btn btn-large btn-red mt-2">Solicitar Presupuesto</a>
+            <h2 class="en">Ready to build the future?</h2>
+            <h2 class="es">¿Listos para construir el futuro?</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyS3D49o5TpedepcE_LZHX5dzJHO24Rry7NFFHmLRmWfwFcQ/viewform?usp=header" target="_blank" class="btn btn-large btn-red mt-2">
+                <span class="en">Request Quote</span>
+                <span class="es">Pedir Presupuesto</span>
+            </a>
         </div>
     </footer>
 
     <script>
+        // Language Switcher Logic
+        function setLanguage(lang) {
+            document.body.className = 'lang-' + lang;
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+        }
+
+        // Slideshow Logic
         document.addEventListener('DOMContentLoaded', function() {
-            let slides = document.querySelectorAll('.slide');
+            const slides = document.querySelectorAll('.slide');
             let currentSlide = 0;
-            
-            if(
+            if(slides.length > 1) {
+                setInterval(function() {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }, 3500);
+            }
+        });
+    </script>
+</body>
+</html>
