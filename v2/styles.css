@@ -1,0 +1,342 @@
+/* VARIABLES DE COLOR Y FUENTES */
+:root {
+    --primary-red: #cc0000;
+    --primary-red-hover: #a30000;
+    --dark: #1a1a1a;
+    --light: #f4f4f4;
+    --white: #ffffff;
+    --text-color: #333333;
+    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* UTILIDADES */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.bg-light { background-color: var(--light); }
+.bg-dark { background-color: var(--dark); color: var(--white); }
+.text-white { color: var(--white); }
+.center-text { text-align: center; }
+.mt-2 { margin-top: 20px; }
+.mt-4 { margin-top: 40px; }
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--dark);
+    color: var(--white);
+    border: 2px solid var(--dark);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--dark);
+}
+
+.btn-red {
+    background-color: var(--primary-red);
+    color: var(--white);
+    border: 2px solid var(--primary-red);
+}
+
+.btn-red:hover {
+    background-color: transparent;
+    color: var(--primary-red);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-red);
+    border: 2px solid var(--primary-red);
+    margin-top: 15px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-red);
+    color: var(--white);
+}
+
+.btn-large {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+}
+
+/* CABECERA */
+.main-header {
+    background-color: var(--white);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Ajusta según el tamaño de logoteamtowers.png */
+    width: auto;
+}
+
+.main-nav a {
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:not(.btn):hover {
+    color: var(--primary-red);
+}
+
+/* HERO SECTION (VÍDEO DE FONDO) */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Oscurece el vídeo para que el texto sea legible */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* LAYOUT DIVIDIDO (TEXTO / IMAGEN) */
+.split-layout {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.split-layout.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-media {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--primary-red);
+    color: var(--white);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.badge-dark {
+    background-color: var(--dark);
+}
+
+.content-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.content-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.feature-list {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.feature-list li::before {
+    content: '✓';
+    color: var(--primary-red);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.rounded-img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.shadow {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* GRID 3 COLUMNAS (AGENCIAS) */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.card-dark {
+    background-color: #2a2a2a;
+    border-top: 4px solid var(--primary-red);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* LOGOS CLIENTES */
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.client-logo {
+    max-width: 150px;
+    max-height: 80px;
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%) opacity(1);
+}
+
+/* FOOTER */
+.main-footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 60px 0 30px;
+}
+
+.main-footer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.main-footer p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .split-layout, .split-layout.reverse {
+        flex-direction: column;
+    }
+    
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .main-nav {
+        display: none; /* Aquí podrías añadir un menú hamburguesa en el futuro */
+    }
+}
