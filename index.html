@@ -22,29 +22,33 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        .organic-container { filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3)); }
-        .node-organic { transform-origin: center; animation: organicPulse infinite ease-in-out alternate; }
-        .core-node { animation-duration: 4s; animation-delay: 0s; }
-        .client-node { animation-duration: 5.5s; animation-delay: 0.5s; }
-        .tech-node { animation-duration: 4.8s; animation-delay: 1.2s; }
-        .support-node { animation-duration: 6s; animation-delay: 0.8s; }
-        .sales-node { animation-duration: 5.2s; animation-delay: 0.3s; }
-        .tangible-data { filter: drop-shadow(0 0 6px cyan) drop-shadow(0 0 2px white); }
-        .intangible-data { filter: drop-shadow(0 0 8px #ff4444) drop-shadow(0 0 4px #ff0000); }
-        @keyframes organicPulse {
-            0% { transform: scale(0.97); filter: brightness(0.9) drop-shadow(0 0 0px transparent); }
-            100% { transform: scale(1.03); filter: brightness(1.2) drop-shadow(0 0 10px currentColor); }
-        }
-        .vna-legend-dark { display: flex; justify-content: center; gap: 30px; margin-top: 20px; font-size: 0.9rem; color: #fff; }
-        .vna-legend-dark .line.solid { background: cyan; }
-        .vna-legend-dark .line.dashed { border-top: 3px dashed #ff4444; }
-
+        /* Estilos Media Cards */
         .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 40px; }
         .media-card { background: #fff; padding: 25px 20px; border-radius: 8px; border: 1px solid #eaeaea; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 100px; text-decoration: none; }
         .media-card h4 { color: var(--dark); font-size: 1.1rem; margin: 0; font-weight: 700; }
         .media-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); border-color: var(--primary-red); }
         .media-card:hover h4 { color: var(--primary-red); }
+
+        /* Estilos Tooltip VNA Casteller */
+        .vna-tip { position: absolute; pointer-events: none; display: none; background: rgba(8,8,8,0.97); border: 1px solid #c9a84c; border-radius: 8px; padding: 12px 16px; max-width: 250px; font-size: 0.85rem; color: #c8c2b8; line-height: 1.6; z-index: 100; box-shadow: 0 8px 32px rgba(0,0,0,0.6); text-align: left; }
+        .vna-tip-title { font-family: monospace; font-size: 0.75rem; color: #c9a84c; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; font-weight: 700; }
+        .vna-tip-t { color: #4ade80; font-size: 0.8rem; margin-bottom: 4px; }
+        .vna-tip-i { color: #c9a84c; font-size: 0.8rem; }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Teamtowers",
+      "url": "https://www.teamtowers.eu",
+      "logo": "https://raw.githubusercontent.com/asolache/Teamtowers/main/images/logoteamtowers.png",
+      "sameAs": [
+        "http://www.facebook.com/teamtowers",
+        "https://twitter.com/teamtowers"
+      ]
+    }
+    </script>
 </head>
 <body class="lang-en"> 
 
@@ -144,77 +148,73 @@
                 </div>
             </div>
 
-            <div class="vna-advanced shadow rounded-img organic-container" style="background: #121212; padding: 40px; text-align: center; overflow: hidden; position: relative;">
-                <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" class="vna-svg" style="width: 100%; height: auto;">
+            <div class="shadow rounded-img" id="homeMap" style="background: #080808; padding: 40px 20px; text-align: center; position: relative; border: 1px solid #333;">
+                
+                <h3 class="en" style="color: #fff; margin-bottom: 20px; font-family: 'Segoe UI', sans-serif;">The Casteller Network: 200 Years of Wisdom</h3>
+                <h3 class="es" style="color: #fff; margin-bottom: 20px; font-family: 'Segoe UI', sans-serif;">La Red Castellera: 200 años de Sabiduría</h3>
+                <p class="en" style="color: #c8c2b8; font-size: 0.9rem; margin-bottom: 30px;">Hover over each node to see its real-time value flows.</p>
+                <p class="es" style="color: #c8c2b8; font-size: 0.9rem; margin-bottom: 30px;">Pasa el ratón por cada nodo para ver sus flujos de valor en tiempo real.</p>
+
+                <svg viewBox="0 0 360 520" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 450px; margin: 0 auto; display: block; overflow: visible;">
                     <defs>
-                        <marker id="arrow-tangible" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="cyan" /></marker>
-                        <marker id="arrow-intangible" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#ff4444" /></marker>
+                        <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"/>
+                        </marker>
                     </defs>
-
-                    <g fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1">
-                        <circle cx="500" cy="300" r="280" stroke-dasharray="2,4"/>
-                        <circle cx="500" cy="300" r="180" stroke-dasharray="2,4"/>
-                    </g>
-
-                    <g class="organic-paths">
-                        <path id="path-client-core" d="M 245 150 Q 370 180 440 255" stroke="rgba(0,255,255,0.3)" stroke-width="1.5" fill="none" marker-end="url(#arrow-tangible)"/>
-                        <path id="path-core-tech" d="M 545 265 Q 630 180 755 150" stroke="rgba(0,255,255,0.3)" stroke-width="1.5" fill="none" marker-end="url(#arrow-tangible)"/>
-                        <path id="path-tech-core" d="M 755 170 Q 650 240 545 290" stroke="rgba(0,255,255,0.3)" stroke-width="1.5" fill="none" marker-end="url(#arrow-tangible)"/>
-                        <path id="path-support-client" d="M 170 410 Q 120 300 170 190" stroke="rgba(255,68,68,0.4)" stroke-width="2" stroke-dasharray="4,6" fill="none" marker-end="url(#arrow-intangible)"/>
-                        <path id="path-core-client" d="M 455 290 Q 350 280 230 180" stroke="rgba(255,68,68,0.4)" stroke-width="2" stroke-dasharray="4,6" fill="none" marker-end="url(#arrow-intangible)"/>
-                        <path id="path-core-sales" d="M 545 330 Q 660 400 760 440" stroke="rgba(255,68,68,0.4)" stroke-width="2" stroke-dasharray="4,6" fill="none" marker-end="url(#arrow-intangible)"/>
-                    </g>
-
-                    <g font-size="11" font-weight="bold" font-family="sans-serif">
-                        <text x="330" y="195" fill="cyan" transform="rotate(25 330 195)" text-anchor="middle">Requirements / Payments</text>
-                        <text x="650" y="195" fill="cyan" transform="rotate(-25 650 195)" text-anchor="middle">Specifications</text>
-                        <text x="650" y="245" fill="cyan" transform="rotate(25 650 245)" text-anchor="middle">Software / Data</text>
-                        <text x="130" y="300" fill="#ff4444" transform="rotate(-90 130 300)" text-anchor="middle">Trust / Loyalty</text>
-                        <text x="330" y="260" fill="#ff4444" transform="rotate(30 330 260)" text-anchor="middle">Satisfaction</text>
-                        <text x="650" y="380" fill="#ff4444" transform="rotate(20 650 380)" text-anchor="middle">Expertise / Value</text>
-                    </g>
-
-                    <g fill="cyan" class="data-point tangible-data">
-                        <circle r="3.5"><animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#path-client-core"/></animateMotion></circle>
-                        <circle r="3.5"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#path-core-tech"/></animateMotion></circle>
-                        <circle r="3.5"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#path-tech-core"/></animateMotion></circle>
-                    </g>
-                    <g fill="#ff4444" class="data-point intangible-data">
-                        <circle r="4.5"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#path-support-client"/></animateMotion></circle>
-                        <circle r="4.5"><animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#path-core-client"/></animateMotion></circle>
-                        <circle r="4.5"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#path-core-sales"/></animateMotion></circle>
-                    </g>
-
-                    <g class="node-organic core-node">
-                        <circle cx="500" cy="300" r="55" fill="rgba(204,0,0,0.8)" stroke="#ff4444" stroke-width="2"/>
-                        <text x="500" y="305" text-anchor="middle" fill="white" font-weight="bold" font-size="14">CORE TEAM</text>
-                    </g>
-                    <g class="node-organic client-node">
-                        <circle cx="200" cy="150" r="45" fill="rgba(43,92,143,0.8)" stroke="#4da6ff" stroke-width="1"/>
-                        <text x="200" y="155" text-anchor="middle" fill="white" font-size="12">CLIENTS</text>
-                    </g>
-                    <g class="node-organic tech-node">
-                        <circle cx="800" cy="150" r="45" fill="rgba(43,143,92,0.8)" stroke="#4dffb3" stroke-width="1"/>
-                        <text x="800" y="155" text-anchor="middle" fill="white" font-size="12">TECH / AI</text>
-                    </g>
-                    <g class="node-organic support-node">
-                        <circle cx="200" cy="450" r="40" fill="rgba(194,122,29,0.8)" stroke="#ffb347" stroke-width="1"/>
-                        <text x="200" y="455" text-anchor="middle" fill="white" font-size="12">SUPPORT</text>
-                    </g>
-                    <g class="node-organic sales-node">
-                        <circle cx="800" cy="450" r="40" fill="rgba(85,85,85,0.8)" stroke="#aaaaaa" stroke-width="1"/>
-                        <text x="800" y="455" text-anchor="middle" fill="white" font-size="12">SALES</text>
-                    </g>
+                    <text x="18" y="74" font-family="monospace" font-size="7" fill="#e040fb" opacity=".6" letter-spacing="1">POM</text>
+                    <text x="18" y="194" font-family="monospace" font-size="7" fill="#6366f1" opacity=".6" letter-spacing="1">TRONC</text>
+                    <text x="18" y="420" font-family="monospace" font-size="7" fill="#00b0ff" opacity=".6" letter-spacing="1">PINYA</text>
+                    <line x1="55" y1="120" x2="320" y2="120" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                    <line x1="55" y1="290" x2="320" y2="290" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                    
+                    <path d="M180,392 L180,286" fill="none" stroke="#4ade80" stroke-width="1.5" stroke-opacity=".7" marker-end="url(#arr2)"/>
+                    <path d="M174,286 L174,392" fill="none" stroke="#4ade80" stroke-width="1" stroke-opacity=".3" marker-end="url(#arr2)"/>
+                    <path d="M180,234 L180,223" fill="none" stroke="#4ade80" stroke-width="1.5" stroke-opacity=".7" marker-end="url(#arr2)"/>
+                    <path d="M180,177 L180,168" fill="none" stroke="#4ade80" stroke-width="1.5" stroke-opacity=".7" marker-end="url(#arr2)"/>
+                    <path d="M180,128 L180,118" fill="none" stroke="#4ade80" stroke-width="1.5" stroke-opacity=".7" marker-end="url(#arr2)"/>
+                    <path d="M180,82 L180,72" fill="none" stroke="#4ade80" stroke-width="2" stroke-opacity=".9" marker-end="url(#arr2)"/>
+                    <path d="M120,400 L152,415" fill="none" stroke="#4ade80" stroke-width="1" stroke-opacity=".5" marker-end="url(#arr2)"/>
+                    <path d="M240,400 L208,415" fill="none" stroke="#4ade80" stroke-width="1" stroke-opacity=".5" marker-end="url(#arr2)"/>
+                    <path d="M74,290 Q120,260 154,260" fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,4" stroke-opacity=".6" marker-end="url(#arr2)"/>
+                    <path d="M66,280 Q80,200 157,185" fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,4" stroke-opacity=".5" marker-end="url(#arr2)"/>
+                    <path d="M60,278 Q60,100 162,66" fill="none" stroke="#c9a84c" stroke-width=".8" stroke-dasharray="4,5" stroke-opacity=".35" marker-end="url(#arr2)"/>
+                    <path d="M286,300 Q260,360 210,410" fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,4" stroke-opacity=".5" marker-end="url(#arr2)"/>
+                    <path d="M286,295 Q250,250 206,252" fill="none" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,4" stroke-opacity=".5" marker-end="url(#arr2)"/>
+                    <path d="M166,60 Q80,120 76,288" fill="none" stroke="#c9a84c" stroke-width=".8" stroke-dasharray="3,6" stroke-opacity=".3" marker-end="url(#arr2)"/>
+                    
+                    <g class="colla-node" data-id="baixos" style="cursor:pointer"><circle cx="180" cy="420" r="28" fill="#0a0a14" stroke="#00b0ff" stroke-width="2" stroke-opacity=".65"/><text x="180" y="417" text-anchor="middle" font-family="monospace" font-size="8" fill="#00b0ff" opacity=".9">BAIXOS</text><text x="180" y="428" text-anchor="middle" font-family="monospace" font-size="7" fill="#00b0ff" opacity=".45">anchor</text></g>
+                    <g class="colla-node" data-id="crosses" style="cursor:pointer"><circle cx="100" cy="400" r="22" fill="#0a0a14" stroke="#00b0ff" stroke-width="1.5" stroke-opacity=".5"/><text x="100" y="403" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#00b0ff" opacity=".8">CROSSES</text></g>
+                    <g class="colla-node" data-id="contraforts" style="cursor:pointer"><circle cx="260" cy="400" r="22" fill="#0a0a14" stroke="#00b0ff" stroke-width="1.5" stroke-opacity=".5"/><text x="260" y="397" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#00b0ff" opacity=".8">CONTRA-</text><text x="260" y="407" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#00b0ff" opacity=".8">FORTS</text></g>
+                    <g class="colla-node" data-id="mans" style="cursor:pointer"><circle cx="70" cy="460" r="20" fill="#0a0a14" stroke="#00b0ff" stroke-width="1" stroke-opacity=".4"/><text x="70" y="463" text-anchor="middle" font-family="monospace" font-size="7" fill="#00b0ff" opacity=".6">MANS</text></g>
+                    <g class="colla-node" data-id="laterals" style="cursor:pointer"><circle cx="290" cy="460" r="20" fill="#0a0a14" stroke="#00b0ff" stroke-width="1" stroke-opacity=".4"/><text x="290" y="463" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#00b0ff" opacity=".6">LATERALS</text></g>
+                    <g class="colla-node" data-id="segons" style="cursor:pointer"><circle cx="180" cy="260" r="26" fill="#0a0a14" stroke="#6366f1" stroke-width="2" stroke-opacity=".7"/><text x="180" y="257" text-anchor="middle" font-family="monospace" font-size="8" fill="#6366f1" opacity=".9">SEGONS</text><text x="180" y="268" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#6366f1" opacity=".45">2nd floor</text></g>
+                    <g class="colla-node" data-id="tercos" style="cursor:pointer"><circle cx="180" cy="200" r="22" fill="#0a0a14" stroke="#6366f1" stroke-width="1.5" stroke-opacity=".6"/><text x="180" y="197" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#6366f1" opacity=".85">TERCOS</text><text x="180" y="207" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#6366f1" opacity=".45">3rd floor</text></g>
+                    <g class="colla-node" data-id="dosos" style="cursor:pointer"><circle cx="180" cy="148" r="20" fill="#0a0a14" stroke="#e040fb" stroke-width="1.5" stroke-opacity=".6"/><text x="180" y="151" text-anchor="middle" font-family="monospace" font-size="7.5" fill="#e040fb" opacity=".85">DOSOS</text></g>
+                    <g class="colla-node" data-id="acotxador" style="cursor:pointer"><circle cx="180" cy="100" r="18" fill="#0a0a14" stroke="#e040fb" stroke-width="1.5" stroke-opacity=".7"/><text x="180" y="97" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#e040fb" opacity=".9">ACOTXA-</text><text x="180" y="107" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#e040fb" opacity=".9">DOR</text></g>
+                    <g class="colla-node" data-id="enxaneta" style="cursor:pointer"><circle cx="180" cy="56" r="16" fill="rgba(224,64,251,0.12)" stroke="#e040fb" stroke-width="2" stroke-opacity=".95"/><text x="180" y="60" text-anchor="middle" font-family="monospace" font-size="7" fill="#e040fb" opacity="1">ENXANETA</text><line x1="180" y1="42" x2="196" y2="28" stroke="#e040fb" stroke-width="1.5" stroke-opacity=".7"><animate attributeName="stroke-opacity" values=".7;1;.7" dur="2s" repeatCount="indefinite"/></line><circle cx="196" cy="28" r="3" fill="#e040fb"><animate attributeName="opacity" values=".7;1;.7" dur="2s" repeatCount="indefinite"/></circle></g>
+                    <g class="colla-node" data-id="cap" style="cursor:pointer"><circle cx="52" cy="300" r="24" fill="rgba(201,168,76,0.08)" stroke="#c9a84c" stroke-width="2" stroke-opacity=".8"/><text x="52" y="297" text-anchor="middle" font-family="monospace" font-size="7" fill="#c9a84c" opacity=".9">CAP DE</text><text x="52" y="307" text-anchor="middle" font-family="monospace" font-size="7" fill="#c9a84c" opacity=".9">COLLA</text></g>
+                    <g class="colla-node" data-id="musics" style="cursor:pointer"><circle cx="308" cy="300" r="22" fill="rgba(201,168,76,0.06)" stroke="#c9a84c" stroke-width="1.5" stroke-opacity=".6"/><text x="308" y="297" text-anchor="middle" font-family="monospace" font-size="7" fill="#c9a84c" opacity=".85">MUSICS</text><text x="308" y="307" text-anchor="middle" font-family="monospace" font-size="6.5" fill="#c9a84c" opacity=".45">grallers</text></g>
+                    
+                    <circle r="2.5" fill="#4ade80" opacity=".8"><animateMotion dur="2.5s" repeatCount="indefinite" path="M180,392 L180,286"/></circle>
+                    <circle r="2" fill="#4ade80" opacity=".7"><animateMotion dur="2s" repeatCount="indefinite" begin=".5s" path="M180,234 L180,72"/></circle>
+                    <circle r="1.5" fill="#c9a84c" opacity=".6"><animateMotion dur="3s" repeatCount="indefinite" path="M74,290 Q120,260 154,260"/></circle>
+                    <circle r="1.5" fill="#c9a84c" opacity=".5"><animateMotion dur="3.5s" repeatCount="indefinite" begin="1s" path="M286,300 Q260,360 210,410"/></circle>
                 </svg>
+                
+                <div class="vna-tip" id="homeTip">
+                    <div class="vna-tip-title" id="homeTipTitle"></div>
+                    <div class="vna-tip-t" id="homeTipT"></div>
+                    <div class="vna-tip-i" id="homeTipI"></div>
+                </div>
 
-                <div class="vna-legend-dark">
-                    <div class="legend-item"><span class="line solid"></span> <span class="en">Tangible Deliverables</span><span class="es">Entregables Tangibles</span></div>
-                    <div class="legend-item"><span class="line dashed"></span> <span class="en">Intangible Deliverables</span><span class="es">Entregables Intangibles</span></div>
+                <div class="map-cap" style="display: flex; gap: 20px; justify-content: center; margin-top: 30px;">
+                    <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;height:2px;background:#4ade80"></div><span class="en" style="color:#fff;font-size:0.9rem">Tangibles</span><span class="es" style="color:#fff;font-size:0.9rem">Tangibles</span></div>
+                    <div style="display:flex; align-items:center; gap:8px;"><div style="width:24px;border-top:2px dashed #c9a84c"></div><span class="en" style="color:#fff;font-size:0.9rem">Intangibles</span><span class="es" style="color:#fff;font-size:0.9rem">Intangibles</span></div>
                 </div>
             </div>
 
             <div class="center-text mt-4" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                 <a href="lacolla.html" class="btn btn-secondary">
+                 <a href="colla.html" class="btn btn-secondary">
                     <span class="en">Explore Systemic Consulting &rarr;</span>
                     <span class="es">Explora Consultoría Sistémica &rarr;</span>
                  </a>
@@ -230,7 +230,6 @@
         <div class="container center-text">
             <span class="badge en">Press & Media</span>
             <span class="badge es">Prensa y Medios</span>
-            
             <h2 class="en">Teamtowers in the Media</h2>
             <h2 class="es">Teamtowers en los Medios</h2>
             <p class="en">Discover what national and international media say about our transformative methodology.</p>
@@ -296,12 +295,14 @@
     </footer>
 
     <script>
+        // 1. Lógica de cambio de idioma
         function setLanguage(lang) {
             document.body.className = 'lang-' + lang;
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
             document.getElementById('btn-es').classList.toggle('active', lang === 'es');
         }
 
+        // 2. Lógica del Carrusel de imágenes
         document.addEventListener('DOMContentLoaded', function() {
             const slides = document.querySelectorAll('.slide');
             let currentSlide = 0;
@@ -312,6 +313,62 @@
                     slides[currentSlide].classList.add('active');
                 }, 3500);
             }
+        });
+
+        // 3. Lógica del Tooltip para el Mapa Casteller
+        var COLLA_DATA = {
+            baixos:{title:"Baixos - Ground Anchor",t:"Tangible: transmits all structural compression to the ground",i:"Intangible: psychological security for every level above"},
+            crosses:{title:"Crosses - Axilla Brace",t:"Tangible: prevents the Baixos from sinking under axial load",i:"Intangible: micro-adjustments through touch only"},
+            contraforts:{title:"Contraforts - Back Pressure",t:"Tangible: absorbs rear pressure to maintain vertical alignment",i:"Intangible: blind trust - cannot see the tower, only feel it"},
+            mans:{title:"Mans - Hip Stabilizers",t:"Tangible: push up and stabilize gluteus of upper floors",i:"Intangible: distributed calm - steady Mans means upper floor confidence"},
+            laterals:{title:"Laterals - Side Guard",t:"Tangible: prevent lateral oscillation of the structure",i:"Intangible: real-time risk reading - sense micro-sways before visible"},
+            segons:{title:"Segons - 2nd Floor",t:"Tangible: distribute weight geometrically; shoulder platform",i:"Intangible: biomechanical confidence - calm travels upward"},
+            tercos:{title:"Tercos - 3rd Floor",t:"Tangible: provide platform for crown; anchored by folre",i:"Intangible: cognitive focus - 100% bandwidth to pure execution"},
+            dosos:{title:"Dosos - Crown Base",t:"Tangible: final stable platform before the apex",i:"Intangible: emotional anchor - last human contact before the summit"},
+            acotxador:{title:"Acotxador - Safety Bridge",t:"Tangible: back surface for the Enxaneta final step",i:"Intangible: empathy at altitude - eye contact eliminates vertigo"},
+            enxaneta:{title:"Enxaneta - The Apex",t:"Tangible: la aleta (raised arm) validates the entire network",i:"Intangible: collective catharsis - tension release across ALL nodes simultaneously"},
+            cap:{title:"Cap de Colla - Director",t:"Tangible: operational commands, timing, abort decisions",i:"Intangible: macroscopic vision - the ONLY node that sees the whole system"},
+            musics:{title:"Musics - Network Clock",t:"Tangible: acoustic telemetry - signals exact apex phase to blind Baixos",i:"Intangible: group flow state - synchronizes breathing and motivation"},
+        };
+
+        function bindTip(mapId, tipId, titId, tId, iId) {
+            var mapEl = document.getElementById(mapId);
+            var tip = document.getElementById(tipId);
+            var tit = document.getElementById(titId);
+            var tT = document.getElementById(tId);
+            var tI = document.getElementById(iId);
+            if(!mapEl || !tip) return;
+            
+            mapEl.querySelectorAll(".colla-node").forEach(function(node) {
+                node.addEventListener("mouseenter", function() {
+                    var d = COLLA_DATA[this.dataset.id];
+                    if(!d) return;
+                    tit.textContent = d.title;
+                    tT.textContent = d.t;
+                    tI.textContent = d.i;
+                    tip.style.display = "block";
+                    var c = this.querySelector("circle");
+                    if(c) { c.setAttribute("stroke-width","3"); c.style.filter="brightness(1.5)"; }
+                });
+                node.addEventListener("mousemove", function(e) {
+                    var rect = mapEl.getBoundingClientRect();
+                    var x = e.clientX - rect.left + 14;
+                    var y = e.clientY - rect.top - 10;
+                    // Mantener tooltip dentro de la caja
+                    if(x + 240 > rect.width) x = e.clientX - rect.left - 254;
+                    tip.style.left = x + "px";
+                    tip.style.top = y + "px";
+                });
+                node.addEventListener("mouseleave", function() {
+                    tip.style.display = "none";
+                    var c = this.querySelector("circle");
+                    if(c) { c.removeAttribute("stroke-width"); c.style.filter=""; }
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            bindTip("homeMap", "homeTip", "homeTipTitle", "homeTipT", "homeTipI");
         });
     </script>
 </body>
