@@ -39,56 +39,12 @@
         .vna-legend-dark .line.solid { background: cyan; }
         .vna-legend-dark .line.dashed { border-top: 3px dashed #ff4444; }
 
-        /* Estilos para la sección de Prensa/Medios */
-        .media-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-        .media-card {
-            background: #fff;
-            padding: 25px 20px;
-            border-radius: 8px;
-            border: 1px solid #eaeaea;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 100px;
-            text-decoration: none;
-        }
-        .media-card h4 {
-            color: var(--dark);
-            font-size: 1.1rem;
-            margin: 0;
-            font-weight: 700;
-        }
-        .media-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-            border-color: var(--primary-red);
-        }
-        .media-card:hover h4 {
-            color: var(--primary-red);
-        }
+        .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 40px; }
+        .media-card { background: #fff; padding: 25px 20px; border-radius: 8px; border: 1px solid #eaeaea; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 100px; text-decoration: none; }
+        .media-card h4 { color: var(--dark); font-size: 1.1rem; margin: 0; font-weight: 700; }
+        .media-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); border-color: var(--primary-red); }
+        .media-card:hover h4 { color: var(--primary-red); }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Teamtowers",
-      "url": "https://www.teamtowers.eu",
-      "logo": "https://raw.githubusercontent.com/asolache/Teamtowers/main/images/logoteamtowers.png",
-      "sameAs": [
-        "http://www.facebook.com/teamtowers",
-        "https://twitter.com/teamtowers"
-      ]
-    }
-    </script>
 </head>
 <body class="lang-en"> 
 
@@ -144,24 +100,16 @@
             <div class="content-text">
                 <span class="badge en">Development & Values</span>
                 <span class="badge es">Desarrollo y Valores</span>
-                
                 <h2 class="en">"Fent Pinya": The Metanoia Program</h2>
                 <h2 class="es">"Fent Pinya": El Programa Metanoia</h2>
                 
                 <p class="en">This is not just a cultural activity. It is a rigorous development workshop where teams experience the <strong>10 core competencies</strong> of a Human Tower: shared leadership, absolute trust, and real-time communication.</p>
                 <p class="es">No es solo una actividad cultural. Es un taller de desarrollo donde los equipos experimentan las <strong>10 competencias clave</strong> de una Colla: liderazgo compartido, confianza absoluta y comunicación en tiempo real.</p>
                 
-                <p class="en mt-2">Through the construction of a human tower, your team will engage in a powerful metaphor for organizational success. We break down silos and flatten hierarchies, requiring every participant—regardless of physical strength or age—to contribute to the <em>Pinya</em> (the base). This tangible challenge instantly turns abstract concepts like psychological safety and collective accountability into an unforgettable, adrenaline-filled reality.</p>
-                <p class="es mt-2">A través de la construcción de un castillo humano, tu equipo vivirá una poderosa metáfora del éxito organizacional. Rompemos silos y aplanamos jerarquías, requiriendo que cada participante —sin importar su fuerza física o edad— contribuya a la <em>Pinya</em> (la base). Este desafío tangible convierte conceptos abstractos como la seguridad psicológica y la responsabilidad colectiva en una realidad inolvidable y llena de adrenalina.</p>
+                <p class="en mt-2">Through the construction of a human tower, your team will engage in a powerful metaphor for organizational success. We break down silos and flatten hierarchies. This tangible challenge instantly turns abstract concepts like psychological safety into an unforgettable reality.</p>
+                <p class="es mt-2">A través de la construcción de un castillo humano, tu equipo vivirá una poderosa metáfora del éxito organizacional. Rompemos silos y aplanamos jerarquías. Este desafío tangible convierte conceptos abstractos como la seguridad psicológica en una realidad inolvidable y llena de adrenalina.</p>
 
-                <ul class="feature-list">
-                    <li class="en"><strong>30-50% Cohesion Increase:</strong> Measurable improvement in post-event team synergy.</li>
-                    <li class="es"><strong>Aumento del 30-50% en Cohesión:</strong> Mejora medible en la sinergia del equipo post-evento.</li>
-                    <li class="en"><strong>Scalable ROI:</strong> Universal framework for 10 to 1,000 participants in only 2 hours.</li>
-                    <li class="es"><strong>ROI Escalable:</strong> Marco universal para 10 a 1.000 participantes en solo 2 horas.</li>
-                </ul>
-
-                <a href="/pinya.html" class="btn btn-secondary mt-2">
+                <a href="pinya.html" class="btn btn-secondary mt-2">
                     <span class="en">See Workshop Details &rarr;</span>
                     <span class="es">Ver detalles del taller &rarr;</span>
                 </a>
@@ -187,27 +135,20 @@
             <div class="center-text mb-4">
                 <span class="badge badge-dark en">Systemic Consulting</span>
                 <span class="badge badge-dark es">Consultoría Sistémica</span>
-                <h2 class="en">"La Colla" Program: Advanced Value Network Analysis</h2>
-                <h2 class="es">Programa "La Colla": Análisis de Red de Valor Avanzado</h2>
+                <h2 class="en">"La Colla" Program: Value Network Analysis</h2>
+                <h2 class="es">Programa "La Colla": Análisis de Red de Valor</h2>
                 
-                <div style="max-width: 900px; margin: 0 auto; text-align: left; margin-bottom: 30px;">
-                    <p class="en">A <em>Colla Castellera</em> is the ultimate example of a perfectly optimized Value Network. In our consulting program, we apply the <strong>VNA methodology</strong> to your business ecosystem. We map out roles, visualize the exchange of both tangible deliverables (contracts, code, capital) and intangible assets (trust, knowledge, reputation), and identify critical bottlenecks.</p>
-                    <p class="es">Una <em>Colla Castellera</em> es el máximo ejemplo de una Red de Valor perfectamente optimizada. En nuestro programa de consultoría, aplicamos la <strong>metodología VNA</strong> a tu ecosistema empresarial. Mapeamos roles, visualizamos el intercambio tanto de entregables tangibles (contratos, código, capital) como de activos intangibles (confianza, conocimiento, reputación) e identificamos cuellos de botella críticos.</p>
-                    
-                    <p class="en mt-2">By restructuring these interactions, we transform rigid corporate structures into agile, collaborative networks that mirror the resilience and shared purpose of a human tower.</p>
-                    <p class="es mt-2">Al reestructurar estas interacciones, transformamos estructuras corporativas rígidas en redes ágiles y colaborativas que reflejan la resiliencia y el propósito compartido de un castillo humano.</p>
+                <div style="max-width: 950px; margin: 0 auto; text-align: left; margin-bottom: 30px;">
+                    <p class="en">Every organization has two structures. The org chart shows reporting lines, but the Value Network reveals the real flows of trust, knowledge, and collaboration. <strong>After experiencing the power of a human tower in our workshop, hiring us for a Value Network Analysis (VNA) is the ultimate step to optimize your value flow and prepare for Artificial Intelligence.</strong></p>
+                    <p class="es">Toda organización tiene dos estructuras. El organigrama oficial muestra las líneas de reporte jerárquico, pero la Red de Valor revela los flujos reales de confianza, conocimiento y colaboración. <strong>Después de experimentar en primera persona el profundo valor de la colla castellera con nuestro taller, contratarnos para realizar un Value Network Analysis (VNA) de tu organización es la mejor forma de mejorar drásticamente tu flujo de valor y prepararte para el despliegue de las IAs.</strong></p>
                 </div>
             </div>
 
             <div class="vna-advanced shadow rounded-img organic-container" style="background: #121212; padding: 40px; text-align: center; overflow: hidden; position: relative;">
                 <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" class="vna-svg" style="width: 100%; height: auto;">
                     <defs>
-                        <marker id="arrow-tangible" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                            <polygon points="0 0, 10 3.5, 0 7" fill="cyan" />
-                        </marker>
-                        <marker id="arrow-intangible" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                            <polygon points="0 0, 10 3.5, 0 7" fill="#ff4444" />
-                        </marker>
+                        <marker id="arrow-tangible" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="cyan" /></marker>
+                        <marker id="arrow-intangible" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#ff4444" /></marker>
                     </defs>
 
                     <g fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1">
@@ -219,7 +160,6 @@
                         <path id="path-client-core" d="M 245 150 Q 370 180 440 255" stroke="rgba(0,255,255,0.3)" stroke-width="1.5" fill="none" marker-end="url(#arrow-tangible)"/>
                         <path id="path-core-tech" d="M 545 265 Q 630 180 755 150" stroke="rgba(0,255,255,0.3)" stroke-width="1.5" fill="none" marker-end="url(#arrow-tangible)"/>
                         <path id="path-tech-core" d="M 755 170 Q 650 240 545 290" stroke="rgba(0,255,255,0.3)" stroke-width="1.5" fill="none" marker-end="url(#arrow-tangible)"/>
-
                         <path id="path-support-client" d="M 170 410 Q 120 300 170 190" stroke="rgba(255,68,68,0.4)" stroke-width="2" stroke-dasharray="4,6" fill="none" marker-end="url(#arrow-intangible)"/>
                         <path id="path-core-client" d="M 455 290 Q 350 280 230 180" stroke="rgba(255,68,68,0.4)" stroke-width="2" stroke-dasharray="4,6" fill="none" marker-end="url(#arrow-intangible)"/>
                         <path id="path-core-sales" d="M 545 330 Q 660 400 760 440" stroke="rgba(255,68,68,0.4)" stroke-width="2" stroke-dasharray="4,6" fill="none" marker-end="url(#arrow-intangible)"/>
@@ -228,8 +168,7 @@
                     <g font-size="11" font-weight="bold" font-family="sans-serif">
                         <text x="330" y="195" fill="cyan" transform="rotate(25 330 195)" text-anchor="middle">Requirements / Payments</text>
                         <text x="650" y="195" fill="cyan" transform="rotate(-25 650 195)" text-anchor="middle">Specifications</text>
-                        <text x="650" y="245" fill="cyan" transform="rotate(25 650 245)" text-anchor="middle">Software / Code</text>
-
+                        <text x="650" y="245" fill="cyan" transform="rotate(25 650 245)" text-anchor="middle">Software / Data</text>
                         <text x="130" y="300" fill="#ff4444" transform="rotate(-90 130 300)" text-anchor="middle">Trust / Loyalty</text>
                         <text x="330" y="260" fill="#ff4444" transform="rotate(30 330 260)" text-anchor="middle">Satisfaction</text>
                         <text x="650" y="380" fill="#ff4444" transform="rotate(20 650 380)" text-anchor="middle">Expertise / Value</text>
@@ -240,7 +179,6 @@
                         <circle r="3.5"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#path-core-tech"/></animateMotion></circle>
                         <circle r="3.5"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#path-tech-core"/></animateMotion></circle>
                     </g>
-
                     <g fill="#ff4444" class="data-point intangible-data">
                         <circle r="4.5"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#path-support-client"/></animateMotion></circle>
                         <circle r="4.5"><animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#path-core-client"/></animateMotion></circle>
@@ -257,7 +195,7 @@
                     </g>
                     <g class="node-organic tech-node">
                         <circle cx="800" cy="150" r="45" fill="rgba(43,143,92,0.8)" stroke="#4dffb3" stroke-width="1"/>
-                        <text x="800" y="155" text-anchor="middle" fill="white" font-size="12">TECH DEV</text>
+                        <text x="800" y="155" text-anchor="middle" fill="white" font-size="12">TECH / AI</text>
                     </g>
                     <g class="node-organic support-node">
                         <circle cx="200" cy="450" r="40" fill="rgba(194,122,29,0.8)" stroke="#ffb347" stroke-width="1"/>
@@ -275,10 +213,14 @@
                 </div>
             </div>
 
-            <div class="center-text mt-4">
-                 <a href="/colla.html" class="btn btn-secondary">
+            <div class="center-text mt-4" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                 <a href="lacolla.html" class="btn btn-secondary">
                     <span class="en">Explore Systemic Consulting &rarr;</span>
                     <span class="es">Explora Consultoría Sistémica &rarr;</span>
+                 </a>
+                 <a href="https://teamtowershuma.com/" target="_blank" class="btn btn-primary">
+                    <span class="en">Visit TeamTowers Huma (VNA & AI) &rarr;</span>
+                    <span class="es">Visita TeamTowers Huma (VNA e IA) &rarr;</span>
                  </a>
             </div>
         </div>
@@ -295,45 +237,15 @@
             <p class="es">Descubre lo que la prensa nacional e internacional destaca de nuestra metodología transformadora.</p>
             
             <div class="media-grid">
-                <a href="https://www.wsj.com" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>The Wall Street Journal</h4>
-                </a>
-                
-                <a href="https://www.jpost.com/local-israel/in-jerusalem/article-9341" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>The Jerusalem Post</h4>
-                </a>
-                
-                <a href="https://www.shareable.net/the-castells-of-catalonia-inside-the-incredible-art-of-human-towers/" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>Shareable</h4>
-                </a>
-                
-                <a href="https://www.lavanguardia.com/internet/20130424/54371495571/el-tiempo-es-el-valor-mas-preciado-en-el-mercado-del-conocimiento.html" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>La Vanguardia</h4>
-                </a>
-                
-                <a href="https://www.rtve.es/play/videos/para-todos-la-2/para-todos-2-coloquio-aprendizaje-colaborativo/3119095/" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>TVE (Para Todos La 2)</h4>
-                </a>
-                
-                <a href="https://www.youtube.com/watch?v=sCCeygsjzZI&list=PL74B5AF79C6C0EE55&index=3" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>TV3 (Televisió de Catalunya)</h4>
-                </a>
-                
-                <a href="https://www.elperiodico.com/es/sociedad/20070121/castells-integradores-5420703" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>El Periódico</h4>
-                </a>
-                
-                <a href="https://www.20minutos.es/noticia/997348/0/" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>20 Minutos</h4>
-                </a>
-                
-                <a href="https://www.diariodeleon.es/leon/120105/1167049/trepar-horas-trabajo.html" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>Diario de León</h4>
-                </a>
-		<a href="https://www.youtube.com/watch?v=RUfZk3WeAF4" target="_blank" rel="noopener noreferrer" class="media-card">
-                    <h4>TEDx</h4>
-                </a>
-
+                <a href="https://www.wsj.com" target="_blank" rel="noopener noreferrer" class="media-card"><h4>The Wall Street Journal</h4></a>
+                <a href="https://www.jpost.com/local-israel/in-jerusalem/article-9341" target="_blank" rel="noopener noreferrer" class="media-card"><h4>The Jerusalem Post</h4></a>
+                <a href="https://www.shareable.net/the-castells-of-catalonia-inside-the-incredible-art-of-human-towers/" target="_blank" rel="noopener noreferrer" class="media-card"><h4>Shareable</h4></a>
+                <a href="https://www.lavanguardia.com/internet/20130424/54371495571/el-tiempo-es-el-valor-mas-preciado-en-el-mercado-del-conocimiento.html" target="_blank" rel="noopener noreferrer" class="media-card"><h4>La Vanguardia</h4></a>
+                <a href="https://www.rtve.es/play/videos/para-todos-la-2/para-todos-2-coloquio-aprendizaje-colaborativo/3119095/" target="_blank" rel="noopener noreferrer" class="media-card"><h4>TVE (Para Todos La 2)</h4></a>
+                <a href="https://www.youtube.com/watch?v=sCCeygsjzZI&list=PL74B5AF79C6C0EE55&index=3" target="_blank" rel="noopener noreferrer" class="media-card"><h4>TV3</h4></a>
+                <a href="https://www.elperiodico.com/es/sociedad/20070121/castells-integradores-5420703" target="_blank" rel="noopener noreferrer" class="media-card"><h4>El Periódico</h4></a>
+                <a href="https://www.20minutos.es/noticia/997348/0/" target="_blank" rel="noopener noreferrer" class="media-card"><h4>20 Minutos</h4></a>
+                <a href="https://www.diariodeleon.es/leon/120105/1167049/trepar-horas-trabajo.html" target="_blank" rel="noopener noreferrer" class="media-card"><h4>Diario de León</h4></a>
             </div>
         </div>
     </section>
@@ -384,14 +296,12 @@
     </footer>
 
     <script>
-        // Lógica de cambio de idioma
         function setLanguage(lang) {
             document.body.className = 'lang-' + lang;
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
             document.getElementById('btn-es').classList.toggle('active', lang === 'es');
         }
 
-        // Lógica del Carrusel de imágenes
         document.addEventListener('DOMContentLoaded', function() {
             const slides = document.querySelectorAll('.slide');
             let currentSlide = 0;
