@@ -521,6 +521,38 @@ strong { color: var(--ink); font-weight: 600; }
 .faq-item h4 { margin-bottom: 8px; }
 .faq-item p { color: var(--text); }
 
+/* Definición destacada (¿Qué es Fent Pinya?) */
+.intro-def { padding: 96px 0 80px; }
+.def-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 64px; align-items: start; }
+.def-grid h2 { margin-bottom: 0; }
+.def-grid p { font-size: var(--fs-lg); max-width: 62ch; }
+.fact-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 64px;
+    border-top: 1px solid var(--line);
+}
+.fact-row > div { padding: 28px 24px 0 0; }
+.fact-row > div + div { padding-left: 24px; border-left: 1px solid var(--line); }
+.fact-row dt {
+    font-family: var(--font-head);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+.fact-row dd {
+    font-family: var(--font-head);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    line-height: 1.1;
+}
+.faq-item h3 { font-size: var(--fs-h4); letter-spacing: -0.01em; margin-bottom: 8px; }
+
 /* ========================================= */
 /* 11. COMPONENTES DE PÁGINA "LACOLLA.HTML"  */
 /* ========================================= */
@@ -676,6 +708,9 @@ strong { color: var(--ink); font-weight: 600; }
 
 @media (max-width: 992px) {
     .section { padding: 88px 0; }
+    .def-grid { grid-template-columns: 1fr; gap: 24px; }
+    .fact-row { grid-template-columns: repeat(2, 1fr); }
+    .fact-row > div:nth-child(3) { padding-left: 0; border-left: 0; }
     .split-layout, .split-layout.reverse { flex-direction: column; align-items: stretch; gap: 48px; }
     .ai-banner { flex-direction: column; text-align: center; padding: 40px 28px; }
     .ai-banner svg { margin-top: 20px; }
