@@ -16,10 +16,13 @@
 
     <meta property="og:title" content="Teamtowers | Team Building Castellers & Systemic Consulting">
     <meta property="og:description" content="El teambuilding definitivo para grupos de 10 a 1.000 personas. Fomentamos la cohesión y el liderazgo mediante el modelo Casteller.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/logoteamtowers.png">
+    <meta property="og:image" content="https://www.teamtowers.eu/images/web/IMG_0924-1200.jpg">
     <meta property="og:url" content="https://www.teamtowers.eu">
     <meta property="og:type" content="website">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -41,13 +44,25 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://www.teamtowers.eu/#organization",
       "name": "Teamtowers",
+      "description": "Teamtowers creó Fent Pinya, el taller de castellers original para empresas, y ofrece consultoría sistémica con Value Network Analysis (VNA).",
       "url": "https://www.teamtowers.eu",
-      "logo": "https://raw.githubusercontent.com/asolache/Teamtowers/main/images/logoteamtowers.png",
+      "logo": "https://www.teamtowers.eu/images/logoteamtowers.png",
       "sameAs": [
         "http://www.facebook.com/teamtowers",
         "https://twitter.com/teamtowers"
-      ]
+      ],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://www.teamtowers.eu/pinya#fent-pinya",
+          "name": "Fent Pinya",
+          "alternateName": "Taller de castellers original",
+          "url": "https://www.teamtowers.eu/pinya"
+        }
+      }
     }
     </script>
 </head>
@@ -56,11 +71,11 @@
     <header class="main-header">
         <div class="container nav-container">
             <a href="#" class="logo-link">
-                <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/logoteamtowers.png" alt="Teamtowers Logo" class="logo">
+                <img src="images/web/logoteamtowers.webp" alt="Teamtowers" class="logo" width="400" height="113" fetchpriority="high">
             </a>
             <nav class="main-nav">
-                <a href="#experiencia" class="en">Fent Pinya</a>
-                <a href="#experiencia" class="es">Taller Fent Pinya</a>
+                <a href="https://www.teamtowers.eu/pinya" class="en">Fent Pinya</a>
+                <a href="https://www.teamtowers.eu/pinya" class="es">Taller Fent Pinya</a>
                 <a href="#consultoria" class="en">The "Colla" Program</a>
                 <a href="#consultoria" class="es">Programa La Colla</a>
                 <a href="#medios" class="en">Press</a>
@@ -83,8 +98,8 @@
 
     <section class="hero">
         <div class="video-background">
-            <video autoplay loop muted playsinline poster="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_0924.jpg">
-                <source src="https://raw.githubusercontent.com/asolache/Teamtowers/main/files/teamtowershome-1.mp4" type="video/mp4">
+            <video autoplay loop muted playsinline preload="metadata" poster="images/web/IMG_0924-1600.webp">
+                <source src="files/teamtowershome-web.mp4" type="video/mp4">
             </video>
             <div class="video-overlay"></div>
         </div>
@@ -105,31 +120,31 @@
             <div class="content-text">
                 <span class="badge en">Development & Values</span>
                 <span class="badge es">Desarrollo y Valores</span>
-                <h2 class="en">"Fent Pinya": The Metanoia Program</h2>
-                <h2 class="es">"Fent Pinya": El Programa Metanoia</h2>
+                <h2 class="en">Fent Pinya: The Original Human Towers Workshop</h2>
+                <h2 class="es">Fent Pinya: el taller de castellers original</h2>
                 
-                <p class="en">This is not just a cultural activity. It is a rigorous development workshop where teams experience the <strong>10 core competencies</strong> of a Human Tower: shared leadership, absolute trust, and real-time communication.</p>
-                <p class="es">No es solo una actividad cultural. Es un taller de desarrollo donde los equipos experimentan las <strong>10 competencias clave</strong> de una Colla: liderazgo compartido, confianza absoluta y comunicación en tiempo real.</p>
+                <p class="en"><strong>Fent Pinya is the original Castellers team building workshop for companies</strong>, created by Teamtowers more than 20 years ago. This is not just a cultural activity. It is a rigorous development workshop where teams experience the <strong>10 core competencies</strong> of a Human Tower: shared leadership, absolute trust, and real-time communication.</p>
+                <p class="es"><strong>Fent Pinya es el taller de castellers original para empresas</strong>, creado por Teamtowers hace más de 20 años. No es solo una actividad cultural. Es un taller de desarrollo donde los equipos experimentan las <strong>10 competencias clave</strong> de una Colla: liderazgo compartido, confianza absoluta y comunicación en tiempo real.</p>
                 
                 <p class="en mt-2">Through the construction of a human tower, your team will engage in a powerful metaphor for organizational success. We break down silos and flatten hierarchies. This tangible challenge instantly turns abstract concepts like psychological safety into an unforgettable reality.</p>
                 <p class="es mt-2">A través de la construcción de un castillo humano, tu equipo vivirá una poderosa metáfora del éxito organizacional. Rompemos silos y aplanamos jerarquías. Este desafío tangible convierte conceptos abstractos como la seguridad psicológica en una realidad inolvidable y llena de adrenalina.</p>
 
-                <a href="pinya.html" class="btn btn-secondary mt-2">
-                    <span class="en">See Workshop Details &rarr;</span>
-                    <span class="es">Ver detalles del taller &rarr;</span>
+                <a href="/pinya" class="btn btn-secondary mt-2">
+                    <span class="en">Discover Fent Pinya &rarr;</span>
+                    <span class="es">Descubre el taller Fent Pinya &rarr;</span>
                 </a>
             </div>
             
             <div class="content-media">
                 <div class="slideshow-container shadow rounded-img">
-                    <img class="slide active" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_0924.jpg" alt="Team Building">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_0931.jpg" alt="Competency Training">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1057.jpg" alt="Values Workshop">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1075.jpg" alt="Human Towers">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1314.jpg" alt="Corporate Event">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1362.jpg" alt="Team Synergy">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1374.jpg" alt="UNESCO Culture">
-                    <img class="slide" src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IMG_1415.jpg" alt="Leadership">
+                    <img class="slide active" src="images/web/IMG_0924-900.webp" alt="Taller de castellers Fent Pinya con estudiantes en ESADE" width="900" height="600" decoding="async">
+                    <img class="slide" src="images/web/IMG_0931-900.webp" alt="Equipo de empresa aprendiendo a hacer castells en el taller Fent Pinya" width="900" height="600" decoding="async" loading="lazy">
+                    <img class="slide" src="images/web/IMG_1057-900.webp" alt="Grallers tocando en directo durante el taller Fent Pinya" width="900" height="600" decoding="async" loading="lazy">
+                    <img class="slide" src="images/web/IMG_1075-900.webp" alt="Torre humana construida por un equipo corporativo" width="900" height="600" decoding="async" loading="lazy">
+                    <img class="slide" src="images/web/IMG_1314-900.webp" alt="Evento corporativo de team building con castellers" width="900" height="600" decoding="async" loading="lazy">
+                    <img class="slide" src="images/web/IMG_1362-900.webp" alt="Pinya casteller vista desde arriba en un taller de empresa" width="900" height="600" decoding="async" loading="lazy">
+                    <img class="slide" src="images/web/IMG_1374-900.webp" alt="Castell levantado por participantes del taller Fent Pinya" width="900" height="600" decoding="async" loading="lazy">
+                    <img class="slide" src="images/web/IMG_1415-900.webp" alt="Liderazgo compartido en la construcción de un castell" width="900" height="600" decoding="async" loading="lazy">
                 </div>
             </div>
         </div>
@@ -151,8 +166,8 @@
 
             <div class="shadow rounded-img" id="homeMap" style="background: #080808; padding: 40px 20px; text-align: center; position: relative; border: 1px solid #333;">
                 
-                <h3 class="en" style="color: #fff; margin-bottom: 20px; font-family: 'Segoe UI', sans-serif;">The Casteller Network: 200 Years of Wisdom</h3>
-                <h3 class="es" style="color: #fff; margin-bottom: 20px; font-family: 'Segoe UI', sans-serif;">La Red Castellera: 200 años de Sabiduría</h3>
+                <h3 class="en" style="color: #fff; margin-bottom: 20px;">The Casteller Network: 200 Years of Wisdom</h3>
+                <h3 class="es" style="color: #fff; margin-bottom: 20px;">La Red Castellera: 200 años de Sabiduría</h3>
                 <p class="en" style="color: #c8c2b8; font-size: 0.9rem; margin-bottom: 30px;">Hover over each node to see its real-time value flows.</p>
                 <p class="es" style="color: #c8c2b8; font-size: 0.9rem; margin-bottom: 30px;">Pasa el ratón por cada nodo para ver sus flujos de valor en tiempo real.</p>
 
@@ -259,17 +274,17 @@
             
             <div class="client-container mt-4">
                 <div class="logo-grid">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/LogoIKEA.png" alt="IKEA" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/-is-seen-at-the-companys-plant-in-the-northern-swiss-town-of-stein-switzerland-october-23-2017-reutersarnd-wiegmann-2CMWFHY.jpg" alt="Novartis" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/la-caixa-bank-logo-company-banking-financial-city-centre-palma-de-C9DJCC.jpg" alt="La Caixa" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/vodafone-logo-vodafone-group-is-a-british-telecommunications-company-K4HGGC.jpg" alt="Vodafone" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/geles-california-usa-jule-illustrative-editorial-letgo-com-website-homepage-letgo-logo-visible-display-screen-los-157130989.jpg" alt="Letgo" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/IESE_Logo2.png" alt="IESE" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/esade-business-school_416x416.jpg" alt="ESADE" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/eada-business-school-logo.jpg" alt="EADA" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/uab.png" alt="UAB" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/ub.jpg" alt="UB" class="client-logo">
-                    <img src="https://raw.githubusercontent.com/asolache/Teamtowers/main/images/upc.jpg" alt="UPC" class="client-logo">
+                    <img src="images/web/ikea.webp" loading="lazy" decoding="async" alt="IKEA" class="client-logo">
+                    <img src="images/web/novartis.webp" loading="lazy" decoding="async" alt="Novartis" class="client-logo">
+                    <img src="images/web/lacaixa.webp" loading="lazy" decoding="async" alt="La Caixa" class="client-logo">
+                    <img src="images/web/vodafone.webp" loading="lazy" decoding="async" alt="Vodafone" class="client-logo">
+                    <img src="images/web/letgo.webp" loading="lazy" decoding="async" alt="Letgo" class="client-logo">
+                    <img src="images/web/iese.webp" loading="lazy" decoding="async" alt="IESE" class="client-logo">
+                    <img src="images/web/esade.webp" loading="lazy" decoding="async" alt="ESADE" class="client-logo">
+                    <img src="images/web/eada.webp" loading="lazy" decoding="async" alt="EADA" class="client-logo">
+                    <img src="images/web/uab.webp" loading="lazy" decoding="async" alt="UAB" class="client-logo">
+                    <img src="images/web/ub.webp" loading="lazy" decoding="async" alt="UB" class="client-logo">
+                    <img src="images/web/upc.webp" loading="lazy" decoding="async" alt="UPC" class="client-logo">
                 </div>
             </div>
         </div>
@@ -299,12 +314,15 @@
         // 1. Lógica de cambio de idioma
         function setLanguage(lang) {
             document.body.className = 'lang-' + lang;
+            document.documentElement.lang = lang;
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
             document.getElementById('btn-es').classList.toggle('active', lang === 'es');
         }
 
         // 2. Lógica del Carrusel de imágenes
         document.addEventListener('DOMContentLoaded', function() {
+            if (new URLSearchParams(window.location.search).get('lang') === 'es') setLanguage('es');
+
             const slides = document.querySelectorAll('.slide');
             let currentSlide = 0;
             if(slides.length > 1) {

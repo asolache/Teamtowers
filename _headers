@@ -1,0 +1,9 @@
+# Caché de recursos estáticos en el CDN de Netlify y en el navegador
+/images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/files/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+/*.css
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
