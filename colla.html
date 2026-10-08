@@ -251,9 +251,10 @@
         /* FADE */
         .fu{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
         .fu.v{opacity:1;transform:translateY(0)}
+        .two-col{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
         /* RESPONSIVE */
         @media(max-width:900px){
-            .hero-grid,.team-g{grid-template-columns:1fr;gap:3rem}
+            .hero-grid,.team-g,.two-col{grid-template-columns:1fr;gap:3rem}
             .hero-map{height:300px}
             .svc-g,.zoom-g,.cases-g{grid-template-columns:1fr}
             .fly-ch{flex-direction:column}
@@ -324,14 +325,14 @@
                     <text x="15" y="72" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#c026d3" opacity=".55" letter-spacing="1">POM</text>
                     <text x="15" y="196" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#6366f1" opacity=".55" letter-spacing="1">TRONC</text>
                     <text x="15" y="420" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#0284c7" opacity=".55" letter-spacing="1">PINYA</text>
-                    <g class="colla-node" data-id="baixos" style="cursor:pointer"><circle cx="170" cy="420" r="27" fill="#ffffff" stroke="#0284c7" stroke-width="2" stroke-opacity=".65"/><text x="170" y="417" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7.5" fill="#0284c7" opacity=".9">BAIXOS</text><text x="170" y="427" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#0284c7" opacity=".45">anchor</text></g>
+                    <g class="colla-node" data-id="baixos" style="cursor:pointer"><circle cx="170" cy="420" r="27" fill="#ffffff" stroke="#0284c7" stroke-width="2" stroke-opacity=".65"/><text x="170" y="417" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7.5" fill="#0284c7" opacity=".9">BAIXOS</text><text class="en" x="170" y="427" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#0284c7" opacity=".45">anchor</text><text class="es" x="170" y="427" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#0284c7" opacity=".45">ancla</text></g>
                     <g class="colla-node" data-id="crosses" style="cursor:pointer"><circle cx="95" cy="400" r="20" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-opacity=".5"/><text x="95" y="403" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#0284c7" opacity=".8">CROSSES</text></g>
                     <g class="colla-node" data-id="contraforts" style="cursor:pointer"><circle cx="245" cy="400" r="20" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-opacity=".5"/><text x="245" y="397" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#0284c7" opacity=".8">CONTRA-</text><text x="245" y="407" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#0284c7" opacity=".8">FORTS</text></g>
                     <g class="colla-node" data-id="mans" style="cursor:pointer"><circle cx="62" cy="458" r="18" fill="#ffffff" stroke="#0284c7" stroke-width="1" stroke-opacity=".4"/><text x="62" y="461" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#0284c7" opacity=".6">MANS</text></g>
                     <g class="colla-node" data-id="laterals" style="cursor:pointer"><circle cx="278" cy="458" r="18" fill="#ffffff" stroke="#0284c7" stroke-width="1" stroke-opacity=".4"/><text x="278" y="461" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#0284c7" opacity=".6">LATERALS</text></g>
-                    <g class="colla-node" data-id="segons" style="cursor:pointer"><circle cx="170" cy="260" r="24" fill="#ffffff" stroke="#6366f1" stroke-width="2" stroke-opacity=".7"/><text x="170" y="257" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7.5" fill="#6366f1" opacity=".9">SEGONS</text><text x="170" y="267" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#6366f1" opacity=".45">2nd floor</text></g>
+                    <g class="colla-node" data-id="segons" style="cursor:pointer"><circle cx="170" cy="260" r="24" fill="#ffffff" stroke="#6366f1" stroke-width="2" stroke-opacity=".7"/><text x="170" y="257" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7.5" fill="#6366f1" opacity=".9">SEGONS</text><text class="en" x="170" y="267" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#6366f1" opacity=".45">2nd floor</text><text class="es" x="170" y="267" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#6366f1" opacity=".45">2º piso</text></g>
                     <g class="colla-node" data-id="tercos" style="cursor:pointer"><circle cx="170" cy="200" r="20" fill="#ffffff" stroke="#6366f1" stroke-width="1.5" stroke-opacity=".6"/><text x="170" y="203" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#6366f1" opacity=".85">TERCOS</text></g>
-                    <g class="colla-node" data-id="musics" style="cursor:pointer"><circle cx="292" cy="298" r="20" fill="rgba(200,16,46,0.06)" stroke="#c8102e" stroke-width="1.5" stroke-opacity=".6"/><text x="292" y="295" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#c8102e" opacity=".85">MUSICS</text><text x="292" y="305" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="5.5" fill="#c8102e" opacity=".45">clock</text></g>
+                    <g class="colla-node" data-id="musics" style="cursor:pointer"><circle cx="292" cy="298" r="20" fill="rgba(200,16,46,0.06)" stroke="#c8102e" stroke-width="1.5" stroke-opacity=".6"/><text x="292" y="295" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#c8102e" opacity=".85">MÚSICS</text><text class="en" x="292" y="305" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="5.5" fill="#c8102e" opacity=".45">clock</text><text class="es" x="292" y="305" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="5.5" fill="#c8102e" opacity=".45">reloj</text></g>
                     <g class="colla-node" data-id="cap" style="cursor:pointer"><circle cx="48" cy="290" r="22" fill="rgba(200,16,46,0.08)" stroke="#c8102e" stroke-width="2" stroke-opacity=".8"/><text x="48" y="287" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#c8102e" opacity=".9">CAP DE</text><text x="48" y="297" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#c8102e" opacity=".9">COLLA</text></g>
                     <g class="colla-node" data-id="dosos" style="cursor:pointer"><circle cx="170" cy="148" r="19" fill="#ffffff" stroke="#c026d3" stroke-width="1.5" stroke-opacity=".6"/><text x="170" y="151" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#c026d3" opacity=".85">DOSOS</text></g>
                     <g class="colla-node" data-id="acotxador" style="cursor:pointer"><circle cx="170" cy="100" r="17" fill="#ffffff" stroke="#c026d3" stroke-width="1.5" stroke-opacity=".7"/><text x="170" y="97" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#c026d3" opacity=".9">ACOTXA-</text><text x="170" y="107" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6" fill="#c026d3" opacity=".9">DOR</text></g>
@@ -356,25 +357,25 @@
             <span class="proof-i">Telefonica</span><span class="proof-i">Vodafone</span><span class="proof-i">UBS</span>
             <span class="proof-i">Novartis</span><span class="proof-i">La Caixa</span><span class="proof-i">BBVA</span>
             <span class="proof-i">FC Barcelona</span><span class="proof-i">IESE</span><span class="proof-i">ESADE</span>
-            <span class="proof-i">150+ organizations</span>
+            <span class="proof-i en">150+ organizations</span><span class="proof-i es">+150 organizaciones</span>
         </div>
     </div>
 </div>
 
 <section class="pad z1 bg-off">
     <div class="container">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start">
+        <div class="two-col">
             <div class="fu">
-                <span class="ey en">The methodology</span><span class="ey es">La metodologia</span>
+                <span class="ey en">The methodology</span><span class="ey es">La metodología</span>
                 <h2 class="sh2 en">What org charts <em>cannot show</em></h2>
                 <h2 class="sh2 es">Lo que el organigrama <em>no puede mostrar</em></h2>
                 <p class="sp en">Value Network Analysis (VNA) maps your organization as a living ecosystem. The formal deliverables are only half the picture.</p>
-                <p class="sp es">El VNA mapea tu organizacion como un ecosistema vivo. Los entregables formales son solo la mitad del cuadro.</p>
+                <p class="sp es">El VNA mapea tu organización como un ecosistema vivo. Los entregables formales son solo la mitad del cuadro.</p>
                 <p class="sp en">The other half is <strong>what no org chart captures</strong>: the trust that makes people share knowledge, the informal favors that unblock projects, the rhythmic synchronization that turns a group into a high-performance team.</p>
-                <p class="sp es">La otra mitad es <strong>lo que ningun organigrama captura</strong>: la confianza que hace que la gente comparta conocimiento, los favores informales que desbloquean proyectos, la sincronizacion que convierte un grupo en un equipo de alto rendimiento.</p>
+                <p class="sp es">La otra mitad es <strong>lo que ningún organigrama captura</strong>: la confianza que hace que la gente comparta conocimiento, los favores informales que desbloquean proyectos, la sincronización que convierte un grupo en un equipo de alto rendimiento.</p>
                 <div class="pull-q">
                     <p class="en">"Intangibles are not a nice-to-have. They are the load-bearing infrastructure of every tangible in your organization."</p>
-                    <p class="es">"Los intangibles no son un lujo. Son la infraestructura estructural de cada tangible en tu organizacion."</p>
+                    <p class="es">"Los intangibles no son un lujo. Son la infraestructura estructural de cada tangible en tu organización."</p>
                 </div>
             </div>
             <div class="fu" style="animation-delay:.15s">
@@ -383,17 +384,17 @@
                         <div class="tx-ey en">Tangibles</div><div class="tx-ey es">Tangibles</div>
                         <h4 class="en">What gets counted</h4><h4 class="es">Lo que se cuenta</h4>
                         <p class="en">Contracts, code, money, deliverables. Visible in your systems. Necessary but collapse without what is below.</p>
-                        <p class="es">Contratos, codigo, dinero. Visible en tus sistemas. Necesario pero colapsa sin lo que hay debajo.</p>
+                        <p class="es">Contratos, código, dinero. Visible en tus sistemas. Necesario pero colapsa sin lo que hay debajo.</p>
                     </div>
                     <div class="tx-c intang">
                         <div class="tx-ey en">Intangibles</div><div class="tx-ey es">Intangibles</div>
                         <h4 class="en">What moves everything</h4><h4 class="es">Lo que lo mueve todo</h4>
                         <p class="en">Trust, tacit knowledge, favors, reputation. No ERP records them but they determine whether tangibles flow or stall.</p>
-                        <p class="es">Confianza, conocimiento tacito, favores. Ningun ERP los registra pero determinan si los tangibles fluyen.</p>
+                        <p class="es">Confianza, conocimiento tácito, favores. Ningún ERP los registra pero determinan si los tangibles fluyen.</p>
                     </div>
                 </div>
                 <div style="margin-top:1rem;padding:1.25rem 1.5rem;background:var(--surf2);border:1px solid var(--brd)">
-                    <p style="font-family:var(--mono);font-size:.72rem;color:var(--mu);line-height:1.7"><span style="color:var(--gold)">-> </span><span class="en">The difference between an org that delivers and one that stalls is almost never in the formal processes. It is in the unmapped intangibles.</span><span class="es">La diferencia entre una org que entrega y una que se atasca casi nunca esta en los procesos formales. Esta en los intangibles no mapeados.</span></p>
+                    <p style="font-family:var(--mono);font-size:.72rem;color:var(--mu);line-height:1.7"><span style="color:var(--gold)">-> </span><span class="en">The difference between an org that delivers and one that stalls is almost never in the formal processes. It is in the unmapped intangibles.</span><span class="es">La diferencia entre una org que entrega y una que se atasca casi nunca está en los procesos formales. Está en los intangibles no mapeados.</span></p>
                 </div>
             </div>
         </div>
@@ -404,13 +405,13 @@
     <div class="container">
         <div class="fu" style="text-align:center;max-width:680px;margin:0 auto 4rem">
             <span class="ey en">Live case study - 200 years of human tower wisdom</span>
-            <span class="ey es">Caso de estudio vivo - 200 anos de sabiduria castellera</span>
+            <span class="ey es">Caso de estudio vivo - 200 años de sabiduría castellera</span>
             <h2 class="sh2 en">The most transparent <em>value network</em> in existence</h2>
-            <h2 class="sh2 es">La red de valor mas transparente <em>que existe</em></h2>
-            <p class="sp en">A Castellers human tower is a live VNA map. Every role, every transaction, every intangible visible in real time with immediate consequences. Hover each node to see its value flows.</p>
-            <p class="sp es">Un castillo humano es un mapa VNA vivo. Cada rol, cada transaccion, cada intangible visible en tiempo real. Pasa el cursor por cada nodo para ver sus flujos de valor.</p>
+            <h2 class="sh2 es">La red de valor más transparente <em>que existe</em></h2>
+            <p class="sp en">A Castellers human tower is a live VNA map. Every role, every transaction, every intangible visible in real time with immediate consequences. Hover or tap each node to see its value flows.</p>
+            <p class="sp es">Un castillo humano es un mapa VNA vivo. Cada rol, cada transacción, cada intangible visible en tiempo real. Pasa el cursor o toca cada nodo para ver sus flujos de valor.</p>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start">
+        <div class="two-col">
             <div class="fu" id="bigMap" style="position:relative">
                 <svg viewBox="0 0 360 520" xmlns="http://www.w3.org/2000/svg">
                     <defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
@@ -435,18 +436,18 @@
                     <path d="M286,300 Q260,360 210,410" fill="none" stroke="#c8102e" stroke-width="1" stroke-dasharray="4,4" stroke-opacity=".5" marker-end="url(#arr2)"/>
                     <path d="M286,295 Q250,250 206,252" fill="none" stroke="#c8102e" stroke-width="1" stroke-dasharray="4,4" stroke-opacity=".5" marker-end="url(#arr2)"/>
                     <path d="M166,60 Q80,120 76,288" fill="none" stroke="#c8102e" stroke-width=".8" stroke-dasharray="3,6" stroke-opacity=".3" marker-end="url(#arr2)"/>
-                    <g class="colla-node" data-id="baixos" style="cursor:pointer"><circle cx="180" cy="420" r="28" fill="#ffffff" stroke="#0284c7" stroke-width="2" stroke-opacity=".65"/><text x="180" y="417" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="8" fill="#0284c7" opacity=".9">BAIXOS</text><text x="180" y="428" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#0284c7" opacity=".45">anchor</text></g>
+                    <g class="colla-node" data-id="baixos" style="cursor:pointer"><circle cx="180" cy="420" r="28" fill="#ffffff" stroke="#0284c7" stroke-width="2" stroke-opacity=".65"/><text x="180" y="417" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="8" fill="#0284c7" opacity=".9">BAIXOS</text><text class="en" x="180" y="428" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#0284c7" opacity=".45">anchor</text><text class="es" x="180" y="428" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#0284c7" opacity=".45">ancla</text></g>
                     <g class="colla-node" data-id="crosses" style="cursor:pointer"><circle cx="100" cy="400" r="22" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-opacity=".5"/><text x="100" y="403" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7.5" fill="#0284c7" opacity=".8">CROSSES</text></g>
                     <g class="colla-node" data-id="contraforts" style="cursor:pointer"><circle cx="260" cy="400" r="22" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-opacity=".5"/><text x="260" y="397" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#0284c7" opacity=".8">CONTRA-</text><text x="260" y="407" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#0284c7" opacity=".8">FORTS</text></g>
                     <g class="colla-node" data-id="mans" style="cursor:pointer"><circle cx="70" cy="460" r="20" fill="#ffffff" stroke="#0284c7" stroke-width="1" stroke-opacity=".4"/><text x="70" y="463" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#0284c7" opacity=".6">MANS</text></g>
                     <g class="colla-node" data-id="laterals" style="cursor:pointer"><circle cx="290" cy="460" r="20" fill="#ffffff" stroke="#0284c7" stroke-width="1" stroke-opacity=".4"/><text x="290" y="463" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#0284c7" opacity=".6">LATERALS</text></g>
-                    <g class="colla-node" data-id="segons" style="cursor:pointer"><circle cx="180" cy="260" r="26" fill="#ffffff" stroke="#6366f1" stroke-width="2" stroke-opacity=".7"/><text x="180" y="257" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="8" fill="#6366f1" opacity=".9">SEGONS</text><text x="180" y="268" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#6366f1" opacity=".45">2nd floor</text></g>
-                    <g class="colla-node" data-id="tercos" style="cursor:pointer"><circle cx="180" cy="200" r="22" fill="#ffffff" stroke="#6366f1" stroke-width="1.5" stroke-opacity=".6"/><text x="180" y="197" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7.5" fill="#6366f1" opacity=".85">TERCOS</text><text x="180" y="207" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#6366f1" opacity=".45">3rd floor</text></g>
+                    <g class="colla-node" data-id="segons" style="cursor:pointer"><circle cx="180" cy="260" r="26" fill="#ffffff" stroke="#6366f1" stroke-width="2" stroke-opacity=".7"/><text x="180" y="257" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="8" fill="#6366f1" opacity=".9">SEGONS</text><text class="en" x="180" y="268" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#6366f1" opacity=".45">2nd floor</text><text class="es" x="180" y="268" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#6366f1" opacity=".45">2º piso</text></g>
+                    <g class="colla-node" data-id="tercos" style="cursor:pointer"><circle cx="180" cy="200" r="22" fill="#ffffff" stroke="#6366f1" stroke-width="1.5" stroke-opacity=".6"/><text x="180" y="197" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7.5" fill="#6366f1" opacity=".85">TERCOS</text><text class="en" x="180" y="207" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#6366f1" opacity=".45">3rd floor</text><text class="es" x="180" y="207" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#6366f1" opacity=".45">3er piso</text></g>
                     <g class="colla-node" data-id="dosos" style="cursor:pointer"><circle cx="180" cy="148" r="20" fill="#ffffff" stroke="#c026d3" stroke-width="1.5" stroke-opacity=".6"/><text x="180" y="151" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7.5" fill="#c026d3" opacity=".85">DOSOS</text></g>
                     <g class="colla-node" data-id="acotxador" style="cursor:pointer"><circle cx="180" cy="100" r="18" fill="#ffffff" stroke="#c026d3" stroke-width="1.5" stroke-opacity=".7"/><text x="180" y="97" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#c026d3" opacity=".9">ACOTXA-</text><text x="180" y="107" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#c026d3" opacity=".9">DOR</text></g>
                     <g class="colla-node" data-id="enxaneta" style="cursor:pointer"><circle cx="180" cy="56" r="16" fill="rgba(224,64,251,0.12)" stroke="#c026d3" stroke-width="2" stroke-opacity=".95"/><text x="180" y="60" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#c026d3" opacity="1">ENXANETA</text><line x1="180" y1="42" x2="196" y2="28" stroke="#c026d3" stroke-width="1.5" stroke-opacity=".7"><animate attributeName="stroke-opacity" values=".7;1;.7" dur="2s" repeatCount="indefinite"/></line><circle cx="196" cy="28" r="3" fill="#c026d3"><animate attributeName="opacity" values=".7;1;.7" dur="2s" repeatCount="indefinite"/></circle></g>
                     <g class="colla-node" data-id="cap" style="cursor:pointer"><circle cx="52" cy="300" r="24" fill="rgba(200,16,46,0.08)" stroke="#c8102e" stroke-width="2" stroke-opacity=".8"/><text x="52" y="297" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#c8102e" opacity=".9">CAP DE</text><text x="52" y="307" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#c8102e" opacity=".9">COLLA</text></g>
-                    <g class="colla-node" data-id="musics" style="cursor:pointer"><circle cx="308" cy="300" r="22" fill="rgba(200,16,46,0.06)" stroke="#c8102e" stroke-width="1.5" stroke-opacity=".6"/><text x="308" y="297" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#c8102e" opacity=".85">MUSICS</text><text x="308" y="307" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#c8102e" opacity=".45">grallers</text></g>
+                    <g class="colla-node" data-id="musics" style="cursor:pointer"><circle cx="308" cy="300" r="22" fill="rgba(200,16,46,0.06)" stroke="#c8102e" stroke-width="1.5" stroke-opacity=".6"/><text x="308" y="297" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="7" fill="#c8102e" opacity=".85">MÚSICS</text><text x="308" y="307" text-anchor="middle" font-family="Space Grotesk,Inter,sans-serif" font-size="6.5" fill="#c8102e" opacity=".45">grallers</text></g>
                     <circle r="2.5" fill="#16a34a" opacity=".8"><animateMotion dur="2.5s" repeatCount="indefinite" path="M180,392 L180,286"/></circle>
                     <circle r="2" fill="#16a34a" opacity=".7"><animateMotion dur="2s" repeatCount="indefinite" begin=".5s" path="M180,234 L180,72"/></circle>
                     <circle r="1.5" fill="#c8102e" opacity=".6"><animateMotion dur="3s" repeatCount="indefinite" path="M74,290 Q120,260 154,260"/></circle>
@@ -462,22 +463,22 @@
             </div>
             <div class="fu" style="animation-delay:.15s">
                 <span class="ey en">3 business insights for C-suite</span>
-                <span class="ey es">3 insights de negocio para la direccion</span>
+                <span class="ey es">3 insights de negocio para la dirección</span>
                 <div style="display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem">
                     <div class="ins-box">
-                        <div class="ins-label">01 - Intangibles first</div>
+                        <div class="ins-label en">01 - Intangibles first</div><div class="ins-label es">01 - Primero, los intangibles</div>
                         <p class="en">Physical strength collapses without trust and rhythmic sync. <strong>Formal processes fail without the informal trust network underneath.</strong> VNA makes that network visible before it breaks.</p>
-                        <p class="es">La fuerza fisica colapsa sin confianza. <strong>Los procesos formales fallan sin la red informal de confianza que hay debajo.</strong> El VNA hace visible esa red antes de que se rompa.</p>
+                        <p class="es">La fuerza física colapsa sin confianza. <strong>Los procesos formales fallan sin la red informal de confianza que hay debajo.</strong> El VNA hace visible esa red antes de que se rompa.</p>
                     </div>
                     <div class="ins-box">
-                        <div class="ins-label">02 - Cascade failure from one broken link</div>
+                        <div class="ins-label en">02 - Cascade failure from one broken link</div><div class="ins-label es">02 - Un vínculo roto, un colapso en cascada</div>
                         <p class="en">A crossa giving way 2mm generates full network collapse. <strong>One broken trust link propagates exactly the same way in your organization.</strong> VNA shows which links are at risk before the crisis.</p>
-                        <p class="es">Una crossa cediendo 2mm genera colapso total. <strong>Un vinculo de confianza roto se propaga exactamente igual en tu organizacion.</strong> El VNA muestra que vinculos estan en riesgo antes de la crisis.</p>
+                        <p class="es">Una crossa cediendo 2mm genera colapso total. <strong>Un vínculo de confianza roto se propaga exactamente igual en tu organización.</strong> El VNA muestra qué vínculos están en riesgo antes de la crisis.</p>
                     </div>
                     <div class="ins-box">
-                        <div class="ins-label">03 - Leadership distributes as you scale</div>
+                        <div class="ins-label en">03 - Leadership distributes as you scale</div><div class="ins-label es">03 - Al crecer, el liderazgo se distribuye</div>
                         <p class="en">In folre+manilles castles, the Cap de Colla cannot see the core. Authority distributes to organic leaders. <strong>VNA shows who your real decision nodes are and whether authority has distributed to the right ones.</strong></p>
-                        <p class="es">En castillos con folre, el Cap de Colla no puede ver el nucleo. La autoridad se distribuye. <strong>El VNA muestra quienes son tus nodos de decision reales y si la autoridad se ha distribuido correctamente.</strong></p>
+                        <p class="es">En castillos con folre, el Cap de Colla no puede ver el núcleo. La autoridad se distribuye. <strong>El VNA muestra quiénes son tus nodos de decisión reales y si la autoridad se ha distribuido correctamente.</strong></p>
                     </div>
                 </div>
             </div>
@@ -488,45 +489,45 @@
 <section class="pad z1 bg-off">
     <div class="container">
         <div class="fu" style="text-align:center;max-width:660px;margin:0 auto 4rem">
-            <span class="ey en">What we offer</span><span class="ey es">Que ofrecemos</span>
+            <span class="ey en">What we offer</span><span class="ey es">Qué ofrecemos</span>
             <h2 class="sh2 en">Three ways to <em>work with us</em></h2>
             <h2 class="sh2 es">Tres formas de <em>trabajar con nosotros</em></h2>
         </div>
         <div class="svc-g fu">
             <div class="svc-c cs">
-                <span class="svc-tag en">Consulting</span><span class="svc-tag es">Consultoria</span>
+                <span class="svc-tag en">Consulting</span><span class="svc-tag es">Consultoría</span>
                 <h3 class="en">VNA Deep Dive</h3><h3 class="es">VNA en Profundidad</h3>
                 <p class="en">Full value network mapping — tangibles and intangibles — with diagnostic report and systemic redesign recommendations.</p>
-                <p class="es">Mapeo completo de la red de valor — tangibles e intangibles — con informe de diagnostico y recomendaciones de rediseno.</p>
+                <p class="es">Mapeo completo de la red de valor — tangibles e intangibles — con informe de diagnóstico y recomendaciones de rediseño.</p>
                 <ul class="svc-dl">
                     <li class="en">Live VNA map (Macro/Meso/Micro)</li><li class="en">Intangible flow audit</li>
                     <li class="en">Bottleneck and risk report</li><li class="en">Redesign recommendations</li>
-                    <li class="es">Mapa VNA vivo (Macro/Meso/Micro)</li><li class="es">Auditoria de flujos intangibles</li>
-                    <li class="es">Informe de cuellos de botella</li><li class="es">Recomendaciones de rediseno</li>
+                    <li class="es">Mapa VNA vivo (Macro/Meso/Micro)</li><li class="es">Auditoría de flujos intangibles</li>
+                    <li class="es">Informe de cuellos de botella</li><li class="es">Recomendaciones de rediseño</li>
                 </ul>
             </div>
             <div class="svc-c ad">
-                <span class="svc-tag en">Advisory</span><span class="svc-tag es">Asesoria</span>
-                <h3 class="en">Ongoing VNA Advisory</h3><h3 class="es">Asesoria VNA Continua</h3>
+                <span class="svc-tag en">Advisory</span><span class="svc-tag es">Asesoría</span>
+                <h3 class="en">Ongoing VNA Advisory</h3><h3 class="es">Asesoría VNA Continua</h3>
                 <p class="en">We embed with your leadership team as systemic advisors. We monitor network health and flag emerging bottlenecks.</p>
                 <p class="es">Nos integramos con tu equipo directivo. Monitorizamos la salud de la red y alertamos sobre cuellos de botella emergentes.</p>
                 <ul class="svc-dl">
                     <li class="en">Monthly network health review</li><li class="en">Real-time bottleneck alerts</li>
                     <li class="en">Strategic decision support</li><li class="en">AI-readiness roadmap</li>
-                    <li class="es">Revision mensual de salud de la red</li><li class="es">Alertas en tiempo real</li>
-                    <li class="es">Apoyo en decisiones estrategicas</li><li class="es">Hoja de ruta para IA</li>
+                    <li class="es">Revisión mensual de salud de la red</li><li class="es">Alertas en tiempo real</li>
+                    <li class="es">Apoyo en decisiones estratégicas</li><li class="es">Hoja de ruta para IA</li>
                 </ul>
             </div>
             <div class="svc-c tr">
-                <span class="svc-tag en">Training</span><span class="svc-tag es">Formacion</span>
-                <h3 class="en">VNA Practitioner Training</h3><h3 class="es">Formacion de Practicantes VNA</h3>
+                <span class="svc-tag en">Training</span><span class="svc-tag es">Formación</span>
+                <h3 class="en">VNA Practitioner Training</h3><h3 class="es">Formación de Practicantes VNA</h3>
                 <p class="en">We train your internal team to map, read and act on value networks. Your organization owns the capability.</p>
-                <p class="es">Formamos a tu equipo interno para mapear, leer y actuar sobre redes de valor. Tu organizacion posee la capacidad.</p>
+                <p class="es">Formamos a tu equipo interno para mapear, leer y actuar sobre redes de valor. Tu organización posee la capacidad.</p>
                 <ul class="svc-dl">
                     <li class="en">VNA methodology certification</li><li class="en">Fent Pinya experiential workshop</li>
                     <li class="en">Live mapping practicum</li><li class="en">Internal facilitator toolkit</li>
-                    <li class="es">Certificacion en metodologia VNA</li><li class="es">Taller experiencial Fent Pinya</li>
-                    <li class="es">Practica de mapeo en vivo</li><li class="es">Kit de facilitador interno</li>
+                    <li class="es">Certificación en metodología VNA</li><li class="es">Taller experiencial Fent Pinya</li>
+                    <li class="es">Práctica de mapeo en vivo</li><li class="es">Kit de facilitador interno</li>
                 </ul>
             </div>
         </div>
@@ -536,7 +537,7 @@
 <section class="pad z1">
     <div class="container">
         <div class="fu" style="text-align:center;max-width:660px;margin:0 auto 4rem">
-            <span class="ey en">Scalable methodology</span><span class="ey es">Metodologia escalable</span>
+            <span class="ey en">Scalable methodology</span><span class="ey es">Metodología escalable</span>
             <h2 class="sh2 en">The organizational <em>Google Earth</em></h2>
             <h2 class="sh2 es">El <em>Google Earth</em> organizacional</h2>
             <p class="sp en">We zoom in and out from ecosystem to team. Each map can stand alone or integrate into the full picture.</p>
@@ -545,41 +546,41 @@
         <div class="zoom-g fu">
             <div class="zoom-c mac">
                 <span class="zoom-ey en">Macro - Zoom out</span><span class="zoom-ey es">Macro - Zoom out</span>
-                <h3 class="en">Strategic ecosystem</h3><h3 class="es">Ecosistema estrategico</h3>
+                <h3 class="en">Strategic ecosystem</h3><h3 class="es">Ecosistema estratégico</h3>
                 <p class="en">Business units, partners, regulators, clients. Capital flows, strategic alliances, brand reputation. Ideal for M&A or business model redesign.</p>
-                <p class="es">Unidades de negocio, partners, reguladores, clientes. Flujos de capital, alianzas estrategicas. Ideal para M&A o rediseno del modelo de negocio.</p>
+                <p class="es">Unidades de negocio, partners, reguladores, clientes. Flujos de capital, alianzas estratégicas. Ideal para M&A o rediseño del modelo de negocio.</p>
                 <span class="zoom-u en">M&A - Market entry - Restructuring</span>
-                <span class="zoom-u es">M&A - Entrada a mercados - Reestructuracion</span>
+                <span class="zoom-u es">M&A - Entrada a mercados - Reestructuración</span>
             </div>
             <div class="zoom-c mes">
                 <span class="zoom-ey en">Meso - Zoom medium</span><span class="zoom-ey es">Meso - Zoom medio</span>
-                <h3 class="en">Operational dynamics</h3><h3 class="es">Dinamica operativa</h3>
+                <h3 class="en">Operational dynamics</h3><h3 class="es">Dinámica operativa</h3>
                 <p class="en">Departments, cross-team pipelines, inter-unit trust. Where silos destroy value. VNA shows which interdepartmental links are broken.</p>
-                <p class="es">Departamentos, pipelines cross-team, confianza entre unidades. Donde los silos destruyen valor. El VNA muestra que vinculos estan rotos.</p>
+                <p class="es">Departamentos, pipelines cross-team, confianza entre unidades. Donde los silos destruyen valor. El VNA muestra qué vínculos están rotos.</p>
                 <span class="zoom-u en">Process optimization - Product launch</span>
-                <span class="zoom-u es">Optimizacion de procesos - Lanzamiento</span>
+                <span class="zoom-u es">Optimización de procesos - Lanzamiento</span>
             </div>
             <div class="zoom-c mic">
                 <span class="zoom-ey en">Micro - Zoom in</span><span class="zoom-ey es">Micro - Zoom in</span>
-                <h3 class="en">Team execution</h3><h3 class="es">Ejecucion del equipo</h3>
+                <h3 class="en">Team execution</h3><h3 class="es">Ejecución del equipo</h3>
                 <p class="en">Roles, tacit knowledge, hidden hubs. Exposes the people the org actually depends on before they burn out or leave.</p>
-                <p class="es">Roles, conocimiento tacito, hubs ocultos. Expone las personas de las que realmente depende la organizacion antes de que se vayan.</p>
+                <p class="es">Roles, conocimiento tácito, hubs ocultos. Expone a las personas de las que realmente depende la organización antes de que se vayan.</p>
                 <span class="zoom-u en">Talent - Burnout prevention - Onboarding</span>
-                <span class="zoom-u es">Talento - Prevencion burnout - Onboarding</span>
+                <span class="zoom-u es">Talento - Prevención del burnout - Onboarding</span>
             </div>
         </div>
         <div class="fly fu" style="margin-top:2px">
             <div class="fly-in">
                 <div class="fly-t en">The <span>butterfly effect</span> your board needs to see</div>
-                <div class="fly-t es">El <span>efecto mariposa</span> que tu directorio necesita ver</div>
+                <div class="fly-t es">El <span>efecto mariposa</span> que tu comité de dirección necesita ver</div>
                 <div class="fly-ch">
-                    <div class="b-s mic"><div class="b-lv">Micro</div><div class="b-d en">No mentoring for a Junior Dev. Tacit knowledge locked in one Senior.</div><div class="b-d es">Sin mentoring para un Dev Junior. Conocimiento tacito bloqueado en un Senior.</div></div>
+                    <div class="b-s mic"><div class="b-lv">Micro</div><div class="b-d en">No mentoring for a Junior Dev. Tacit knowledge locked in one Senior.</div><div class="b-d es">Sin mentoring para un Dev Junior. Conocimiento tácito bloqueado en un Senior.</div></div>
                     <div class="b-s mes"><div class="b-lv">Meso</div><div class="b-d en">Unoptimized code saturates DevOps. Deployment pipeline slows.</div><div class="b-d es">Codigo no optimizado satura DevOps. El pipeline de despliegue se ralentiza.</div></div>
-                    <div class="b-s mes"><div class="b-lv">Meso</div><div class="b-d en">Product roadmap stalls. Sales promises features Engineering cannot deliver.</div><div class="b-d es">El roadmap se atasca. Ventas promete funcionalidades que Ingenieria no puede entregar.</div></div>
-                    <div class="b-s mac"><div class="b-lv">Macro</div><div class="b-d en"><strong>SLA breach. Q4 contract renewal at risk. Board-level reputation damage.</strong></div><div class="b-d es"><strong>SLA incumplido. Renovacion del contrato Q4 en riesgo. Dano reputacional.</strong></div></div>
+                    <div class="b-s mes"><div class="b-lv">Meso</div><div class="b-d en">Product roadmap stalls. Sales promises features Engineering cannot deliver.</div><div class="b-d es">El roadmap se atasca. Ventas promete funcionalidades que Ingeniería no puede entregar.</div></div>
+                    <div class="b-s mac"><div class="b-lv">Macro</div><div class="b-d en"><strong>SLA breach. Q4 contract renewal at risk. Board-level reputation damage.</strong></div><div class="b-d es"><strong>SLA incumplido. Renovación del contrato Q4 en riesgo. Daño reputacional.</strong></div></div>
                 </div>
                 <div class="fly-foot en">VNA does not fix the fire. <strong>It shows you the source code of your culture so you can reprogram it from the root.</strong></div>
-                <div class="fly-foot es">El VNA no apaga el incendio. <strong>Te muestra el codigo fuente de tu cultura para que puedas reprogramarla desde la raiz.</strong></div>
+                <div class="fly-foot es">El VNA no apaga el incendio. <strong>Te muestra el código fuente de tu cultura para que puedas reprogramarla desde la raiz.</strong></div>
             </div>
         </div>
     </div>
@@ -595,25 +596,25 @@
         <div class="cases-g fu">
             <div class="case-c feat">
                 <span class="case-tag en">Multiple engagements - Retail / Operations</span>
-                <span class="case-tag es">Multiples proyectos - Retail / Operaciones</span>
+                <span class="case-tag es">Múltiples proyectos - Retail / Operaciones</span>
                 <h3>IKEA</h3>
                 <p class="en">Top-tier organizations like <strong>IKEA</strong> have trusted us on multiple occasions to analyze, unblock, and improve their value flow — breaking down operational silos to rediscover their true organizational potential.</p>
-                <p class="es">Organizaciones de primer nivel como <strong>IKEA</strong> han confiado en nosotros en multiples ocasiones para analizar, destrabar y mejorar su flujo de valor — rompiendo silos operativos para redescubrir su verdadero potencial.</p>
+                <p class="es">Organizaciones de primer nivel como <strong>IKEA</strong> han confiado en nosotros en múltiples ocasiones para analizar, destrabar y mejorar su flujo de valor — rompiendo silos operativos para redescubrir su verdadero potencial.</p>
                 <div class="case-ins">
                     <p class="en">"The org chart showed one organization. The VNA map revealed another — and that gap was where the real opportunity was hiding."</p>
-                    <p class="es">"El organigrama mostraba una organizacion. El mapa VNA revelo otra — y esa brecha era donde se escondia la oportunidad real."</p>
+                    <p class="es">"El organigrama mostraba una organización. El mapa VNA reveló otra — y esa brecha era donde se escondia la oportunidad real."</p>
                 </div>
             </div>
             <div class="case-c">
                 <span class="case-tag en">Tech sector - DevOps / Product</span>
                 <span class="case-tag es">Sector Tech - DevOps / Producto</span>
                 <h3 class="en">The technical debt that almost cost Q4</h3>
-                <h3 class="es">La deuda tecnica que casi costo el Q4</h3>
+                <h3 class="es">La deuda técnica que casi costó el Q4</h3>
                 <p class="en">A SaaS company Engineering team was losing 30% of delivery capacity to maintenance. VNA mapped the intangible chain: <strong>Junior Dev with no mentor leads to unoptimized code, overloaded DevOps, missed SLA, and contract renewal at risk.</strong></p>
-                <p class="es">El equipo de Ingenieria de una empresa SaaS perdia el 30% de su capacidad en mantenimiento. El VNA mapeo la cadena intangible: <strong>Dev Junior sin mentor lleva a codigo no optimizado, DevOps saturado, SLA incumplido y renovacion del contrato en riesgo.</strong></p>
+                <p class="es">El equipo de Ingeniería de una empresa SaaS perdía el 30% de su capacidad en mantenimiento. El VNA mapeó la cadena intangible: <strong>Dev Junior sin mentor lleva a código no optimizado, DevOps saturado, SLA incumplido y renovación del contrato en riesgo.</strong></p>
                 <div class="case-ins">
                     <p class="en">"VNA translated a technical complaint into a financial risk the board could understand and act on."</p>
-                    <p class="es">"El VNA tradujo una queja tecnica en un riesgo financiero que el consejo podia entender y sobre el que podia actuar."</p>
+                    <p class="es">"El VNA tradujo una queja técnica en un riesgo financiero que el consejo podía entender y sobre el que podía actuar."</p>
                 </div>
             </div>
         </div>
@@ -625,7 +626,7 @@
         <div class="fu" style="text-align:center;max-width:560px;margin:0 auto 4rem">
             <span class="ey en">The team</span><span class="ey es">El equipo</span>
             <h2 class="sh2 en">The practitioners <em>behind the methodology</em></h2>
-            <h2 class="sh2 es">Los practicantes <em>detras de la metodologia</em></h2>
+            <h2 class="sh2 es">Los practicantes <em>detras de la metodología</em></h2>
         </div>
         <div class="team-g fu">
             <div class="team-c">
@@ -633,23 +634,23 @@
                 <span class="team-r en">Founder - Master Architect - VNA Lead</span>
                 <span class="team-r es">Fundador - Arquitecto Principal - Responsable VNA</span>
                 <p class="team-b en">Over 20 years applying Value Network Analysis with top-tier organizations globally. Creator of the <strong>Castellers VNA framework</strong> — the most transparent live demonstration of how value flows in any human system. Pioneer of the AI-VNA integration through SOS (Swarm Operating System).</p>
-                <p class="team-b es">Mas de 20 anos aplicando VNA con organizaciones lideres a nivel global. Creador del <strong>marco VNA Castellero</strong>. Pionero de la integracion IA-VNA a traves del SOS (Swarm Operating System).</p>
+                <p class="team-b es">Más de 20 años aplicando VNA con organizaciones líderes a nivel global. Creador del <strong>marco VNA Castellero</strong>. Pionero de la integración IA-VNA a través del SOS (Swarm Operating System).</p>
                 <div class="team-co">
                     <span class="team-co-n">TeamTowers - SOS V11</span>
                     <p class="en">Live VNA tool with AI agents — the operational proof of the methodology at work.</p>
-                    <p class="es">Herramienta VNA viva con agentes IA — la prueba operativa de la metodologia en accion.</p>
+                    <p class="es">Herramienta VNA viva con agentes IA — la prueba operativa de la metodología en accion.</p>
                 </div>
             </div>
             <div class="team-c">
                 <div class="team-n">Pantheon.work</div>
                 <span class="team-r en">Partner Team - Systemic Consulting</span>
-                <span class="team-r es">Equipo Partner - Consultoria Sistemica</span>
+                <span class="team-r es">Equipo Partner - Consultoría Sistémica</span>
                 <p class="team-b en">Our extended team brings deep expertise in organizational design, change management, and systemic transformation. Together we deliver <strong>end-to-end VNA engagements</strong> from initial mapping through implementation and ongoing advisory.</p>
-                <p class="team-b es">Nuestro equipo extendido aporta experiencia en diseno organizacional y transformacion sistemica. Juntos entregamos <strong>proyectos VNA de extremo a extremo</strong>.</p>
+                <p class="team-b es">Nuestro equipo extendido aporta experiencia en diseño organizacional y transformación sistémica. Juntos entregamos <strong>proyectos VNA de extremo a extremo</strong>.</p>
                 <div class="team-co">
                     <span class="team-co-n">pantheon.work</span>
                     <p class="en">Specialists in organizational transformation and value network redesign across industries.</p>
-                    <p class="es">Especialistas en transformacion organizacional y rediseno de redes de valor en multiples sectores.</p>
+                    <p class="es">Especialistas en transformación organizacional y rediseño de redes de valor en múltiples sectores.</p>
                 </div>
             </div>
         </div>
@@ -659,13 +660,13 @@
 <section class="pad z1 bg-off">
     <div class="container">
         <div class="ai-ban fu">
-            <span class="ey en">AI readiness</span><span class="ey es">Preparacion para la IA</span>
+            <span class="ey en">AI readiness</span><span class="ey es">Preparación para la IA</span>
             <h3 class="en">You cannot automate <em>what you have not mapped.</em></h3>
             <h3 class="es">No puedes automatizar <em>lo que no has mapeado.</em></h3>
             <p class="en">Before deploying AI agents, your organization must have total clarity on its value transactions. We identify exactly which operational nodes are ready for AI Agents, <strong>preserving human capital for the critical intangible exchanges</strong>: strategy, trust, and empathy.</p>
-            <p class="es">Antes de desplegar agentes IA, tu organizacion debe tener claridad total sobre sus transacciones de valor. Identificamos que nodos estan listos para Agentes IA, <strong>preservando el capital humano para los intercambios intangibles criticos</strong>: estrategia, confianza y empatia.</p>
+            <p class="es">Antes de desplegar agentes IA, tu organización debe tener claridad total sobre sus transacciones de valor. Identificamos qué nodos están listos para Agentes IA, <strong>preservando el capital humano para los intercambios intangibles críticos</strong>: estrategia, confianza y empatía.</p>
             <p class="en">We built <strong>SOS (Swarm Operating System)</strong> to prove this is not theory. It is production-ready methodology.</p>
-            <p class="es">Construimos <strong>SOS (Swarm Operating System)</strong> para demostrar que esto no es teoria. Es metodologia lista para produccion.</p>
+            <p class="es">Construimos <strong>SOS (Swarm Operating System)</strong> para demostrar que esto no es teoría. Es metodología lista para producción.</p>
             <a href="https://sos.teamtowershuma.com" target="_blank" class="btn-p" style="margin-top:1.5rem;display:inline-block">
                 <span class="en">Explore SOS live</span><span class="es">Explorar SOS en vivo</span>
             </a>
@@ -683,7 +684,7 @@
             <a href="https://www.lavanguardia.com/internet/20130424/54371495571/el-tiempo-es-el-valor-mas-preciado-en-el-mercado-del-conocimiento.html" target="_blank" class="press-i">La Vanguardia</a>
             <a href="https://www.rtve.es/play/videos/para-todos-la-2/para-todos-2-coloquio-aprendizaje-colaborativo/3119095/" target="_blank" class="press-i">TVE</a>
             <a href="https://www.youtube.com/watch?v=sCCeygsjzZI" target="_blank" class="press-i">TV3</a>
-            <a href="https://www.elperiodico.com/es/sociedad/20070121/castells-integradores-5420703" target="_blank" class="press-i">El Periodico</a>
+            <a href="https://www.elperiodico.com/es/sociedad/20070121/castells-integradores-5420703" target="_blank" class="press-i">El Periódico</a>
             <a href="https://www.20minutos.es/noticia/997348/0/" target="_blank" class="press-i">20 Minutos</a>
         </div>
     </div>
@@ -692,22 +693,22 @@
 <section class="cta-s z1">
     <div class="container">
         <h2 class="cta-h2 fu en">Ready to map <em>the real network?</em></h2>
-        <h2 class="cta-h2 fu es">Listo para mapear <em>la red real?</em></h2>
+        <h2 class="cta-h2 fu es">¿Listo para mapear <em>la red real?</em></h2>
         <p class="cta-sub fu en" style="animation-delay:.1s">We map the real value flow of your team. We surface the intangibles no one sees. We design the network your organization needs to become.</p>
-        <p class="cta-sub fu es" style="animation-delay:.1s">Mapeamos el flujo de valor real de tu equipo. Sacamos a la luz los intangibles que nadie ve. Disenamos la red que tu organizacion necesita convertirse.</p>
+        <p class="cta-sub fu es" style="animation-delay:.1s">Mapeamos el flujo de valor real de tu equipo. Sacamos a la luz los intangibles que nadie ve. Diseñamos la red en la que tu organización necesita convertirse.</p>
         <div class="cta-opts fu" style="animation-delay:.2s">
             <div class="cta-opt">
-                <span class="cta-opt-lbl en">Book a session</span><span class="cta-opt-lbl es">Reservar sesion</span>
+                <span class="cta-opt-lbl en">Book a session</span><span class="cta-opt-lbl es">Reservar sesión</span>
                 <p class="en">Fill in the brief and we will get back to you within 24h with a scoped proposal.</p>
                 <p class="es">Rellena el formulario y te responderemos en 24h con una propuesta.</p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSclry3yYF0M5f2xq3A1Cp6kBVufZ-ewZTzZ7XcCtctLrhXc1A/viewform?usp=header" target="_blank" class="btn-p en">Book a VNA Session</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSclry3yYF0M5f2xq3A1Cp6kBVufZ-ewZTzZ7XcCtctLrhXc1A/viewform?usp=header" target="_blank" class="btn-p es">Reservar Sesion VNA</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSclry3yYF0M5f2xq3A1Cp6kBVufZ-ewZTzZ7XcCtctLrhXc1A/viewform?usp=header" target="_blank" class="btn-p es">Reservar Sesión VNA</a>
             </div>
             <div class="cta-div"></div>
             <div class="cta-opt">
-                <span class="cta-opt-lbl en">Email us directly</span><span class="cta-opt-lbl es">Escribenos directamente</span>
+                <span class="cta-opt-lbl en">Email us directly</span><span class="cta-opt-lbl es">Escríbenos directamente</span>
                 <p class="en">Prefer a direct conversation? We read every email personally.</p>
-                <p class="es">Prefieres una conversacion directa? Leemos cada email personalmente.</p>
+                <p class="es">¿Prefieres una conversación directa? Leemos cada email personalmente.</p>
                 <a href="#" onclick="window.location.href='mai'+'lto:'+ 'asolache'+'@'+ 'mac.com';return false;" class="btn-g">asolache@mac.com</a>
             </div>
         </div>
@@ -723,7 +724,7 @@
                 <li><a href="https://sos.teamtowershuma.com" target="_blank">SOS</a></li>
                 <li><a href="https://pantheon.work" target="_blank">Pantheon</a></li>
             </ul>
-            <p class="foot-copy">2026 TeamTowers - Forca - Equilibri - Valor - Seny</p>
+            <p class="foot-copy">2026 TeamTowers - Força - Equilibri - Valor - Seny</p>
         </div>
     </div>
 </footer>
@@ -760,6 +761,20 @@ var COLLA_DATA={
     cap:{title:"Cap de Colla - Director",t:"Tangible: operational commands, timing, abort decisions",i:"Intangible: macroscopic vision - the ONLY node that sees the whole system"},
     musics:{title:"Musics - Network Clock",t:"Tangible: acoustic telemetry - signals exact apex phase to blind Baixos",i:"Intangible: group flow state - synchronizes breathing and motivation"},
 };
+var COLLA_DATA_ES={
+    baixos:{title:"Baixos - Ancla en el suelo",t:"Tangible: transmiten al suelo toda la compresión de la estructura",i:"Intangible: seguridad psicológica para todos los pisos de arriba"},
+    crosses:{title:"Crosses - Sujeción de axilas",t:"Tangible: evitan que los Baixos se hundan bajo la carga",i:"Intangible: microajustes solo a través del tacto"},
+    contraforts:{title:"Contraforts - Presión trasera",t:"Tangible: absorben la presión trasera para mantener la verticalidad",i:"Intangible: confianza ciega - no ven el castillo, solo lo sienten"},
+    mans:{title:"Mans - Estabilizadores",t:"Tangible: empujan hacia arriba y estabilizan a los pisos superiores",i:"Intangible: calma distribuida - unas Mans firmes dan confianza arriba"},
+    laterals:{title:"Laterals - Guardia lateral",t:"Tangible: evitan la oscilación lateral de la estructura",i:"Intangible: lectura del riesgo en tiempo real - sienten los balanceos antes de que se vean"},
+    segons:{title:"Segons - 2º piso",t:"Tangible: reparten el peso geométricamente; plataforma de hombros",i:"Intangible: confianza biomecánica - la calma sube hacia arriba"},
+    tercos:{title:"Tercos - 3er piso",t:"Tangible: dan plataforma a la corona; sujetos por el folre",i:"Intangible: foco cognitivo - el 100% de la atención en la ejecución"},
+    dosos:{title:"Dosos - Base de la corona",t:"Tangible: última plataforma estable antes de la cima",i:"Intangible: ancla emocional - último contacto humano antes de la cumbre"},
+    acotxador:{title:"Acotxador - Puente de seguridad",t:"Tangible: espalda de apoyo para el último paso de la Enxaneta",i:"Intangible: empatía en altura - el contacto visual elimina el vértigo"},
+    enxaneta:{title:"Enxaneta - La cima",t:"Tangible: la aleta (brazo alzado) valida toda la red",i:"Intangible: catarsis colectiva - la tensión se libera en TODOS los nodos a la vez"},
+    cap:{title:"Cap de Colla - Dirección",t:"Tangible: órdenes operativas, ritmo y decisión de abortar",i:"Intangible: visión macroscópica - el ÚNICO nodo que ve el sistema completo"},
+    musics:{title:"Músics - Reloj de la red",t:"Tangible: telemetría acústica - indican a los Baixos, que no ven, la fase exacta de la cima",i:"Intangible: estado de flujo grupal - sincronizan respiración y motivación"},
+};
 function bindTip(mapId,tipId,titId,tId,iId){
     var mapEl=document.getElementById(mapId);
     var tip=document.getElementById(tipId);
@@ -769,7 +784,7 @@ function bindTip(mapId,tipId,titId,tId,iId){
     if(!mapEl||!tip)return;
     mapEl.querySelectorAll(".colla-node").forEach(function(node){
         node.addEventListener("mouseenter",function(){
-            var d=COLLA_DATA[this.dataset.id];if(!d)return;
+            var d=(document.body.classList.contains("lang-es")?COLLA_DATA_ES:COLLA_DATA)[this.dataset.id];if(!d)return;
             tit.textContent=d.title;tT.textContent=d.t;tI.textContent=d.i;
             tip.style.display="block";
             var c=this.querySelector("circle");if(c){c.setAttribute("stroke-width","3");c.style.filter="brightness(1.5)";}
@@ -780,12 +795,23 @@ function bindTip(mapId,tipId,titId,tId,iId){
             if(x+240>rect.width)x=e.clientX-rect.left-254;
             tip.style.left=x+"px";tip.style.top=y+"px";
         });
+        node.addEventListener("click",function(e){
+            e.stopPropagation();
+            this.dispatchEvent(new Event("mouseenter"));
+            var box=mapEl.closest(".hero-map,.fu").getBoundingClientRect(),r=this.getBoundingClientRect();
+            var x=r.right-box.left+6,y=r.top-box.top;
+            if(x+240>box.width)x=Math.max(0,r.left-box.left-246);
+            tip.style.left=x+"px";tip.style.top=y+"px";
+        });
+        node.addEventListener("pointerdown",function(e){mapEl._touch=e.pointerType!=="mouse";});
         node.addEventListener("mouseleave",function(){
+            if(mapEl._touch)return;
             tip.style.display="none";
             var c=this.querySelector("circle");if(c){c.removeAttribute("stroke-width");c.style.filter="";}
         });
     });
 }
+document.addEventListener("click",function(){document.querySelectorAll(".vna-tip").forEach(function(t){t.style.display="none";});});
 bindTip("heroMap","heroTip","heroTipTitle","heroTipT","heroTipI");
 bindTip("bigMap","bigTip","bigTipTitle","bigTipT","bigTipI");
 </script>
