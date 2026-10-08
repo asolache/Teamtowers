@@ -251,9 +251,10 @@
         /* FADE */
         .fu{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
         .fu.v{opacity:1;transform:translateY(0)}
+        .two-col{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
         /* RESPONSIVE */
         @media(max-width:900px){
-            .hero-grid,.team-g{grid-template-columns:1fr;gap:3rem}
+            .hero-grid,.team-g,.two-col{grid-template-columns:1fr;gap:3rem}
             .hero-map{height:300px}
             .svc-g,.zoom-g,.cases-g{grid-template-columns:1fr}
             .fly-ch{flex-direction:column}
@@ -363,7 +364,7 @@
 
 <section class="pad z1 bg-off">
     <div class="container">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start">
+        <div class="two-col">
             <div class="fu">
                 <span class="ey en">The methodology</span><span class="ey es">La metodología</span>
                 <h2 class="sh2 en">What org charts <em>cannot show</em></h2>
@@ -407,10 +408,10 @@
             <span class="ey es">Caso de estudio vivo - 200 años de sabiduría castellera</span>
             <h2 class="sh2 en">The most transparent <em>value network</em> in existence</h2>
             <h2 class="sh2 es">La red de valor más transparente <em>que existe</em></h2>
-            <p class="sp en">A Castellers human tower is a live VNA map. Every role, every transaction, every intangible visible in real time with immediate consequences. Hover each node to see its value flows.</p>
-            <p class="sp es">Un castillo humano es un mapa VNA vivo. Cada rol, cada transacción, cada intangible visible en tiempo real. Pasa el cursor por cada nodo para ver sus flujos de valor.</p>
+            <p class="sp en">A Castellers human tower is a live VNA map. Every role, every transaction, every intangible visible in real time with immediate consequences. Hover or tap each node to see its value flows.</p>
+            <p class="sp es">Un castillo humano es un mapa VNA vivo. Cada rol, cada transacción, cada intangible visible en tiempo real. Pasa el cursor o toca cada nodo para ver sus flujos de valor.</p>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start">
+        <div class="two-col">
             <div class="fu" id="bigMap" style="position:relative">
                 <svg viewBox="0 0 360 520" xmlns="http://www.w3.org/2000/svg">
                     <defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
@@ -794,12 +795,23 @@ function bindTip(mapId,tipId,titId,tId,iId){
             if(x+240>rect.width)x=e.clientX-rect.left-254;
             tip.style.left=x+"px";tip.style.top=y+"px";
         });
+        node.addEventListener("click",function(e){
+            e.stopPropagation();
+            this.dispatchEvent(new Event("mouseenter"));
+            var box=mapEl.closest(".hero-map,.fu").getBoundingClientRect(),r=this.getBoundingClientRect();
+            var x=r.right-box.left+6,y=r.top-box.top;
+            if(x+240>box.width)x=Math.max(0,r.left-box.left-246);
+            tip.style.left=x+"px";tip.style.top=y+"px";
+        });
+        node.addEventListener("pointerdown",function(e){mapEl._touch=e.pointerType!=="mouse";});
         node.addEventListener("mouseleave",function(){
+            if(mapEl._touch)return;
             tip.style.display="none";
             var c=this.querySelector("circle");if(c){c.removeAttribute("stroke-width");c.style.filter="";}
         });
     });
 }
+document.addEventListener("click",function(){document.querySelectorAll(".vna-tip").forEach(function(t){t.style.display="none";});});
 bindTip("heroMap","heroTip","heroTipTitle","heroTipT","heroTipI");
 bindTip("bigMap","bigTip","bigTipTitle","bigTipT","bigTipI");
 </script>
