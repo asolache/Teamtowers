@@ -762,3 +762,39 @@ strong { color: var(--ink); font-weight: 600; }
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+/* ---------- Reservar Fent Pinya ---------- */
+.hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+.btn-ghost { background: transparent; border-color: #fff; color: #fff !important; }
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.12); }
+
+.reservar { border-top: 1px solid var(--line); }
+.pasos {
+    list-style: none; counter-reset: paso; padding: 0; margin: 28px 0 32px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.pasos li {
+    counter-increment: paso; position: relative;
+    background: var(--light); border-radius: var(--radius); padding: 28px 22px 22px;
+}
+.pasos li::before {
+    content: counter(paso); display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px; border-radius: 50%; margin-bottom: 12px;
+    background: var(--primary-red); color: #fff; font-family: var(--font-head); font-weight: 700;
+}
+.pasos h3 { font-size: var(--fs-h4); }
+.pasos p { margin: 0; }
+.reservar-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+
+.barra-reserva { display: none; }
+
+@media (max-width: 768px) {
+    .pasos { grid-template-columns: 1fr; }
+    .barra-reserva {
+        display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 900;
+        padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+        background: rgba(255, 255, 255, 0.96); box-shadow: 0 -4px 16px rgba(15, 17, 21, 0.12);
+    }
+    .barra-reserva .btn { display: block; width: 100%; text-align: center; }
+    body:has(.barra-reserva) { padding-bottom: 72px; }
+}
