@@ -7,3 +7,13 @@
 
 /*.css
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# El cerebro y las herramientas del proyecto no son páginas de la web
+/saber/*
+  X-Robots-Tag: noindex, nofollow
+
+/guardas/*
+  X-Robots-Tag: noindex, nofollow
+
+/herramientas/*
+  X-Robots-Tag: noindex, nofollow
