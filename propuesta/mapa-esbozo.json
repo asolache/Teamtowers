@@ -1,0 +1,25 @@
+{
+  "abast": "Desde que alguien descubre la casa hasta que vuelve o la recomienda (frontera por revisar)",
+  "rols": [
+    "Quien lleva la casa",
+    "La empresa o el grupo que contrata",
+    "Quien compra",
+    "Quien lo cuenta fuera",
+    "Quien forma parte del club",
+    "Quien aprende con nosotros"
+  ],
+  "parells": [
+    "Quien lleva la casa | La empresa o el grupo que contrata | t | el curso o el taller | t | por confirmar",
+    "Quien lleva la casa | Quien compra | t | el evento | t | por confirmar",
+    "Quien lleva la casa | Quien lo cuenta fuera | t | el curso o el taller | t | por confirmar",
+    "Quien lleva la casa | Quien forma parte del club | t | el curso o el taller | t | por confirmar",
+    "Quien lleva la casa | Quien aprende con nosotros | t | el curso o el taller | t | por confirmar"
+  ],
+  "processos": [],
+  "seq": [],
+  "troballes": [
+    "No hay ningún formulario ni correo para escribiros | No hay ningún formulario ni correo para escribiros: ¿por dónde os llega hoy quien quiere algo?",
+    "No sale ningún teléfono | No sale ningún teléfono: ¿queréis que os llamen?",
+    "La web no dice qué se cobra | La web no dice qué se cobra: ¿qué paga hoy quien compra, y cómo?"
+  ]
+}

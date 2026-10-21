@@ -1,0 +1,357 @@
+{
+  "formato": "tt-permaweb-1",
+  "nom": "TeamTowers",
+  "fitxers": [
+    {
+      "ruta": "index.html",
+      "bytes": 3268,
+      "sha256": "d7e36a0d26a80f8efef72099d2e3a0028a85c9960b98c71b0c4f36bb225db19e"
+    },
+    {
+      "ruta": "la-empresa-que-contrata.html",
+      "bytes": 4031,
+      "sha256": "497f190da54928310661f5578afb3d199fb576cd634d05c36513f4efb5979d21"
+    },
+    {
+      "ruta": "la-agencia-de-eventos.html",
+      "bytes": 3927,
+      "sha256": "499175d32bbdb64573a0e29531fccc6684e3a9ca5e0279cebba02084a738dcc9"
+    },
+    {
+      "ruta": "los-monitores-castellers.html",
+      "bytes": 3829,
+      "sha256": "be9dc6bf3ad3c391d18002bea9939fd1eaa62b74072f195280b422327d91967e"
+    },
+    {
+      "ruta": "los-musicos.html",
+      "bytes": 3520,
+      "sha256": "a2797a4cf5a3fa97bf9529cbf3ac6af60601988b393ff51501019edec246f4a4"
+    },
+    {
+      "ruta": "los-participantes.html",
+      "bytes": 4249,
+      "sha256": "b15ebf4ef8a54cd15c414fa5b7662f5916dfe72e5f878ef283dc631cc640df79"
+    },
+    {
+      "ruta": "el-lugar-del-evento.html",
+      "bytes": 2172,
+      "sha256": "7ea6abacb5ad4a03cdede2d53b6df286457ef8f94f6226fbfda4a93623951cc0"
+    },
+    {
+      "ruta": "serveis.html",
+      "bytes": 4626,
+      "sha256": "98e70ef2e590fdc32bfa3b15b650f94c1e5f0e74daa43e5ed5ec3f1ab9c511ac"
+    },
+    {
+      "ruta": "equip.html",
+      "bytes": 1711,
+      "sha256": "889bf12a410706eda4f4381c9061c73f3a3a1c54d3060254ab394b2b8a0411e3"
+    },
+    {
+      "ruta": "registre.html",
+      "bytes": 5075,
+      "sha256": "1f6d16cb2dca72834c618e479fc4cceee5cb3162349784dfa570d6b60f09d2cf"
+    },
+    {
+      "ruta": "gracies.html",
+      "bytes": 1607,
+      "sha256": "7920c513c8b315b86c5d28c1a78e28094abd88a5988ac4e0ed78fa1052cfa7db"
+    },
+    {
+      "ruta": "estil.css",
+      "bytes": 2253,
+      "sha256": "b2cbebdf8177c3371e8cde80e86b3f2dad26b29fdc1187da9c69990050adc8a0"
+    },
+    {
+      "ruta": "web.json",
+      "bytes": 17405,
+      "sha256": "a9e414e7079b1ef2f7ad1ac9f80dfea97e3db0bb79f0be9afc388fc4beedded7"
+    },
+    {
+      "ruta": "404.html",
+      "bytes": 1653,
+      "sha256": "6b55d1fe8df4d05ff757a2f58db009fd62eccaafd94664280c307bd41fe14af1"
+    },
+    {
+      "ruta": "robots.txt",
+      "bytes": 70,
+      "sha256": "972328d49be992b15f3713ad4fd8b159f41db1a1363b56e3e06df22bbefb2650"
+    },
+    {
+      "ruta": "netlify.toml",
+      "bytes": 1654,
+      "sha256": "f75b36b15f524df393cf936c5558e99b1c984665573751b95bfa0177252f1bef"
+    },
+    {
+      "ruta": "cerebro/mapa-real.json",
+      "bytes": 4713,
+      "sha256": "b87fe7bc2e3ac1f14547401808c27297b32e9b1516d8a8c0fb8f64c99fe0ba87"
+    },
+    {
+      "ruta": "cerebro/roles/la-empresa-que-contrata.md",
+      "bytes": 1083,
+      "sha256": "cd8556c417ccd6956fe61c955b483ba7cdbda748333b23d82d1aed941a636690"
+    },
+    {
+      "ruta": "cerebro/roles/la-agencia-de-eventos.md",
+      "bytes": 1007,
+      "sha256": "03cdff34434ac00c0551cd8105fb0c670104a8e9e4d8c93e61839e4767bbb158"
+    },
+    {
+      "ruta": "cerebro/roles/quien-disena-y-dinamiza-el-taller.md",
+      "bytes": 1466,
+      "sha256": "5ac49310b532c57aeffaab61c83f0e6d8b22a3403cb5830bc9cd849c2fbf77e0"
+    },
+    {
+      "ruta": "cerebro/roles/los-monitores-castellers.md",
+      "bytes": 815,
+      "sha256": "ddba8bfc42c7d3e5bdfe18fb77f421513f9c1e5ccda966f1a71fbefa45a3c8de"
+    },
+    {
+      "ruta": "cerebro/roles/los-musicos.md",
+      "bytes": 776,
+      "sha256": "f8e5efa96b52486e7901ff2b33f41458ced912ef2857a73d0721bbd80a2b5e2a"
+    },
+    {
+      "ruta": "cerebro/roles/los-participantes.md",
+      "bytes": 1341,
+      "sha256": "66648a94541592a15789a6a8b20e6fe6bebc860a97c9932f2c5a0e34cb7f4dc3"
+    },
+    {
+      "ruta": "cerebro/roles/el-lugar-del-evento.md",
+      "bytes": 533,
+      "sha256": "bd02804be2ae9f055ba522ae759aa0674b251a92d724a92bb80f03ccc186757b"
+    },
+    {
+      "ruta": "cerebro/entregables/el-encargo-y-el-pago-del-evento.md",
+      "bytes": 406,
+      "sha256": "8a06be0723d182cb6a7198b64f782f156a59e069c8738d90dc83b6dde7ce9d14"
+    },
+    {
+      "ruta": "cerebro/entregables/la-confianza-de-que-el-dia-saldra-bien.md",
+      "bytes": 380,
+      "sha256": "0f07882a12624b82629f3320d06f495a9a376e13da91fc0a634c59f9611794de"
+    },
+    {
+      "ruta": "cerebro/entregables/el-cliente-la-fecha-y-el-lugar.md",
+      "bytes": 381,
+      "sha256": "e06366fabfcf7cfd313a822c8f056ff749924c4469df00d63f62c361ef24603a"
+    },
+    {
+      "ruta": "cerebro/entregables/la-propuesta-del-taller-y-su-comision.md",
+      "bytes": 431,
+      "sha256": "ed4830c211c25f5d7ca807c1e093be429f25ef8560976dd6bd79cd24bb231bc4"
+    },
+    {
+      "ruta": "cerebro/entregables/que-le-pasa-al-equipo-y-que-quiere-que-cambie.md",
+      "bytes": 396,
+      "sha256": "143a162ec173a2ad1477e54220ab0e48c9f3371a398a37c7800b43172e89917f"
+    },
+    {
+      "ruta": "cerebro/entregables/una-lectura-del-equipo-que-la-empresa-no-tenia.md",
+      "bytes": 400,
+      "sha256": "7ec1599ed93cfbf2c4cde44fbf61f490e8e6124a62bf1a94f8c675687d0e07ab"
+    },
+    {
+      "ruta": "cerebro/entregables/el-encargo-el-guion-y-el-pago.md",
+      "bytes": 419,
+      "sha256": "08d3ebc9c34edbc040c0d46a3e2a7ed62f3f2b628e51b75fc8bb506f54f044be"
+    },
+    {
+      "ruta": "cerebro/entregables/como-responde-un-grupo-que-nunca-ha-hecho-un-castell.md",
+      "bytes": 399,
+      "sha256": "e845008d6719599379ea5f7ecb57d61f3a1f62a10b6956b152147c448d78b01c"
+    },
+    {
+      "ruta": "cerebro/entregables/las-fajas-la-tecnica-y-la-seguridad-del-castell.md",
+      "bytes": 386,
+      "sha256": "206faf22a181b14c6753a78745ff625215814c2e33dbd9ea421582a044efa37c"
+    },
+    {
+      "ruta": "cerebro/entregables/la-confianza-del-grupo-para-subir-y-sostener.md",
+      "bytes": 378,
+      "sha256": "1f649d0ad6b8784e548b54c1e25273d81ba5e88e8276fd05d33315dc63061753"
+    },
+    {
+      "ruta": "cerebro/entregables/el-ritmo-que-marca-cada-momento-del-castell.md",
+      "bytes": 365,
+      "sha256": "036d3a95b29cc4e92eaab6c33ac4912e59439d9ae449cc2cd19c45f04bc9f784"
+    },
+    {
+      "ruta": "cerebro/entregables/la-emocion-del-grupo-que-la-musica-acompana.md",
+      "bytes": 369,
+      "sha256": "6a6904eae2e173422550555d99293686d8dbf2d5fc463e70d41351147472e355"
+    },
+    {
+      "ruta": "cerebro/entregables/el-encargo-el-guion-y-el-pago-2.md",
+      "bytes": 407,
+      "sha256": "c07ab6176c9b23bcc4f079b49c96a2d25be5317e568bcc3f66b99f16dab42e89"
+    },
+    {
+      "ruta": "cerebro/entregables/la-musica-en-directo.md",
+      "bytes": 363,
+      "sha256": "1cbbd92e4aa2d97e4287583ff3f9f1b11436ff26a83eae7eead8ae2f8a617cce"
+    },
+    {
+      "ruta": "cerebro/entregables/la-vivencia-de-los-valores-de-equipo-con-humor.md",
+      "bytes": 391,
+      "sha256": "6e2aa7903b2d16165196f693dfead3bbddf91043ec41831136922f5636978f14"
+    },
+    {
+      "ruta": "cerebro/entregables/lo-que-el-grupo-descubre-de-si-mismo-dicho-en-voz-alta.md",
+      "bytes": 400,
+      "sha256": "d0530d9f98421957719cde37019717592e03714c52b9f5f96d4e8dccb538da7e"
+    },
+    {
+      "ruta": "cerebro/entregables/un-equipo-que-ha-vivido-la-confianza-y-el-liderazgo-comparti.md",
+      "bytes": 398,
+      "sha256": "498fb408499694038b85dca2b3fa093b619f2bc4f21c2a378b5116dcf8cca9d3"
+    },
+    {
+      "ruta": "cerebro/entregables/el-reconocimiento-de-haber-parado-para-el-equipo.md",
+      "bytes": 384,
+      "sha256": "d518868ebab6dcf0dd878b23aa9a3b392ae1730d0bb19ffec925f32df5330b8d"
+    },
+    {
+      "ruta": "cerebro/entregables/el-espacio-y-la-logistica-del-dia.md",
+      "bytes": 371,
+      "sha256": "75cb32f68c6eaa7c0833635575e19f317fc058511a914afee62495d4d3e03acd"
+    },
+    {
+      "ruta": "cerebro/entregables/la-reserva-y-el-pago.md",
+      "bytes": 391,
+      "sha256": "48c8d9b7792225a4b914c8e5520cc9d603eaadf5a3816b768a2d3fed981c2819"
+    },
+    {
+      "ruta": "cerebro/procesos/venta.md",
+      "bytes": 839,
+      "sha256": "c8460a1eb020e6f4f1f2a4fe21b2b653002912482d5ec34d26ecb7baa812aa4f"
+    },
+    {
+      "ruta": "cerebro/procesos/taller.md",
+      "bytes": 934,
+      "sha256": "206c642c3388a3382fa529d3e2fe139934c9dc5d17264ea85468b3010657d517"
+    },
+    {
+      "ruta": "cerebro/procesos/despues.md",
+      "bytes": 592,
+      "sha256": "78b1647b0407aef01b6c9fcce2c14b632d08a708364acb3ca3c9d4eb36dba132"
+    },
+    {
+      "ruta": "cerebro/tasques-ia.md",
+      "bytes": 3650,
+      "sha256": "48b6bf742bfe9d86de9a6c4d2c447a2d2b0d348771463a896f01dc89a98355e3"
+    },
+    {
+      "ruta": "cerebro/tasques-ia.json",
+      "bytes": 8191,
+      "sha256": "ce7b133aac509f9d0fdb126bcf839ff3c542b53545217b8ff992839514c43d58"
+    },
+    {
+      "ruta": "cerebro/decisiones.md",
+      "bytes": 212,
+      "sha256": "d16b31888fe8a002ccb33177bef25ffd15f1dacd7c9bba7623a5967c4e97a6b5"
+    },
+    {
+      "ruta": "cerebro/marca.json",
+      "bytes": 1564,
+      "sha256": "a4eda4b670af30bdeb9a0440df4e70008e302f6c583c45fe1413d38e716cfbe8"
+    },
+    {
+      "ruta": "cerebro/configuracio.json",
+      "bytes": 103,
+      "sha256": "32708d9b67416fe2c7d912ec24c8ce96732d46ba281f97026147186ee30862c8"
+    },
+    {
+      "ruta": "CLAUDE.md",
+      "bytes": 4083,
+      "sha256": "74cd28f5716bd5a968e4d7559e722bfb60ce83800943ee035d2334c697aab34c"
+    },
+    {
+      "ruta": "TRABAJAR-CON-CLAUDE.md",
+      "bytes": 4486,
+      "sha256": "74e7090b497349f12aa3636614f6b46af968e53b74b6891b8ba13f0b934a3ea5"
+    },
+    {
+      "ruta": ".claude/skills/importa/SKILL.md",
+      "bytes": 3413,
+      "sha256": "9b27477db9c86904ed7c9ceecebead20fe6c161481415d31bb2ad628f8ba7ddd"
+    },
+    {
+      "ruta": ".claude/skills/continguts/SKILL.md",
+      "bytes": 2451,
+      "sha256": "94a241c5d9229107568d3563d7124bd0313a8889db278b271ec24664c1e8f70d"
+    },
+    {
+      "ruta": ".claude/skills/tasca/SKILL.md",
+      "bytes": 2016,
+      "sha256": "8d5d9edc8c13e2130bb54f24acb9e799c342e96834a0c9b86d7c9c2dbd9b1ed9"
+    },
+    {
+      "ruta": "LEEME.md",
+      "bytes": 641,
+      "sha256": "45dfc69e111aa51c29c3420678af9162fcef1f82a73ebab053340c98fcbe7599"
+    },
+    {
+      "ruta": "eines/nucli.mjs",
+      "bytes": 46205,
+      "sha256": "a1d9100906334c725a00fdaea810af7d51b427682f6e10eafd4d050ee5fd9836"
+    },
+    {
+      "ruta": "eines/importa.mjs",
+      "bytes": 4968,
+      "sha256": "3e3e42a02cc5d0b8824ea0308b5b36937ed8c02290f9e3013b282c0113be4598"
+    },
+    {
+      "ruta": "eines/registre.mjs",
+      "bytes": 1612,
+      "sha256": "678f46f6fd1cdbdac97938d33a37a8c0137ac248a58b8b4b1775e6c33957ec11"
+    },
+    {
+      "ruta": "eines/mcp.mjs",
+      "bytes": 4467,
+      "sha256": "9df0ccce3140579d330776c7bd28fa0fec097efd71ecbe1d77b4e2cf9fa2dc55"
+    },
+    {
+      "ruta": "netlify/functions/submission-created.mjs",
+      "bytes": 2437,
+      "sha256": "9e077044fc41134e9bf1e821f32ee68583d229308f37e60d15ffeaa30287ec22"
+    },
+    {
+      "ruta": "netlify/functions/deploy-succeeded.mjs",
+      "bytes": 813,
+      "sha256": "ebb56406148a10dce31eb0d38f9d1e5365a2db8f1599965028dab9fc2640456f"
+    },
+    {
+      "ruta": "eines/motor.mjs",
+      "bytes": 343892,
+      "sha256": "d1dd017906784abd0d505aa9ae14c4975c61b2252c6abf55dc8da8209b22d408"
+    },
+    {
+      "ruta": "eines/genera.mjs",
+      "bytes": 3999,
+      "sha256": "3bc3b8f1b47c2affd703dff2bba7c9075f047e3f37058efc67f5f5971f702283"
+    },
+    {
+      "ruta": ".mcp.json",
+      "bytes": 145,
+      "sha256": "25ec473a1a9d34e1e589a9e560e51d5a3a92284c59e2efa68730987faabca91b"
+    },
+    {
+      "ruta": "API.md",
+      "bytes": 2685,
+      "sha256": "eab67df7eef0d7fabebae6f8e2ba4bb01b30dba36b57a33539deb91016831dcf"
+    },
+    {
+      "ruta": "cerebro/indice.json",
+      "bytes": 11208,
+      "sha256": "08264a5efc709547596f9df676c9adcafa150f28648ac3926d1595db2736302d"
+    },
+    {
+      "ruta": "CEREBRO.md",
+      "bytes": 5964,
+      "sha256": "b65ba0b860af62326f90fe70fe8b7e07cab6d216c7fd03e8509f15993fc93808"
+    }
+  ],
+  "nota": "Empremta SHA-256 de cada fitxer. El que es publica a IPFS, Arweave o qualsevol altre lloc es pot comprovar amb aquesta llista."
+}

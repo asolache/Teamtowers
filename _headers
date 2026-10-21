@@ -17,3 +17,10 @@
 
 /herramientas/*
   X-Robots-Tag: noindex, nofollow
+
+# La propuesta inicial es un borrador de trabajo, no una página de la web
+/propuesta/*
+  X-Robots-Tag: noindex, nofollow
+
+/EMPIEZA-AQUI.html
+  X-Robots-Tag: noindex, nofollow

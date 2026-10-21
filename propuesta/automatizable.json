@@ -1,0 +1,246 @@
+{
+  "estimacio": false,
+  "total": 20,
+  "maquina": 1,
+  "persona": 15,
+  "visita": 4,
+  "pct": 5,
+  "rols": [
+    {
+      "rol": "La empresa que contrata",
+      "total": 3,
+      "maquina": 0,
+      "persona": 3,
+      "visita": 0
+    },
+    {
+      "rol": "La agencia de eventos",
+      "total": 3,
+      "maquina": 0,
+      "persona": 2,
+      "visita": 1
+    },
+    {
+      "rol": "Quien diseña y dinamiza el taller",
+      "total": 5,
+      "maquina": 1,
+      "persona": 4,
+      "visita": 0
+    },
+    {
+      "rol": "Los monitores castellers",
+      "total": 2,
+      "maquina": 0,
+      "persona": 1,
+      "visita": 1
+    },
+    {
+      "rol": "Los participantes",
+      "total": 4,
+      "maquina": 0,
+      "persona": 4,
+      "visita": 0
+    },
+    {
+      "rol": "Los músicos",
+      "total": 2,
+      "maquina": 0,
+      "persona": 1,
+      "visita": 1
+    },
+    {
+      "rol": "El lugar del evento",
+      "total": 1,
+      "maquina": 0,
+      "persona": 0,
+      "visita": 1
+    }
+  ],
+  "productes": [
+    "Del formulario a la propuesta"
+  ],
+  "lliuraments": [
+    {
+      "de": "La empresa que contrata",
+      "a": "La agencia de eventos",
+      "mena": "tangible",
+      "que": "el encargo y el pago del evento",
+      "qui": "persona",
+      "tipus": "cobrament",
+      "motiu": "el tipus no surt d'una màquina"
+    },
+    {
+      "de": "La agencia de eventos",
+      "a": "La empresa que contrata",
+      "mena": "intangible",
+      "que": "la confianza de que el día saldrá bien",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "La agencia de eventos",
+      "a": "Quien diseña y dinamiza el taller",
+      "mena": "tangible",
+      "que": "el cliente, la fecha y el lugar",
+      "qui": "visita",
+      "tipus": null,
+      "motiu": "sense entregable declarat"
+    },
+    {
+      "de": "Quien diseña y dinamiza el taller",
+      "a": "La agencia de eventos",
+      "mena": "tangible",
+      "que": "la propuesta del taller y su comisión",
+      "qui": "maquina",
+      "tipus": "proposta",
+      "motiu": "",
+      "producte": "Del formulario a la propuesta",
+      "origen": "Events Penedès"
+    },
+    {
+      "de": "La empresa que contrata",
+      "a": "Quien diseña y dinamiza el taller",
+      "mena": "intangible",
+      "que": "qué le pasa al equipo y qué quiere que cambie",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "Quien diseña y dinamiza el taller",
+      "a": "La empresa que contrata",
+      "mena": "intangible",
+      "que": "una lectura del equipo que la empresa no tenía",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "Quien diseña y dinamiza el taller",
+      "a": "Los monitores castellers",
+      "mena": "tangible",
+      "que": "el encargo, el guion y el pago",
+      "qui": "persona",
+      "tipus": "cobrament",
+      "motiu": "el tipus no surt d'una màquina"
+    },
+    {
+      "de": "Los monitores castellers",
+      "a": "Quien diseña y dinamiza el taller",
+      "mena": "intangible",
+      "que": "cómo responde un grupo que nunca ha hecho un castell",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "Los monitores castellers",
+      "a": "Los participantes",
+      "mena": "tangible",
+      "que": "las fajas, la técnica y la seguridad del castell",
+      "qui": "visita",
+      "tipus": null,
+      "motiu": "sense entregable declarat"
+    },
+    {
+      "de": "Los participantes",
+      "a": "Los monitores castellers",
+      "mena": "intangible",
+      "que": "la confianza del grupo para subir y sostener",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "Los músicos",
+      "a": "Los participantes",
+      "mena": "intangible",
+      "que": "el ritmo que marca cada momento del castell",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "Los participantes",
+      "a": "Los músicos",
+      "mena": "intangible",
+      "que": "la emoción del grupo, que la música acompaña",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "Quien diseña y dinamiza el taller",
+      "a": "Los músicos",
+      "mena": "tangible",
+      "que": "el encargo, el guion y el pago",
+      "qui": "persona",
+      "tipus": "cobrament",
+      "motiu": "el tipus no surt d'una màquina"
+    },
+    {
+      "de": "Los músicos",
+      "a": "Quien diseña y dinamiza el taller",
+      "mena": "tangible",
+      "que": "la música en directo",
+      "qui": "visita",
+      "tipus": null,
+      "motiu": "sense entregable declarat"
+    },
+    {
+      "de": "Quien diseña y dinamiza el taller",
+      "a": "Los participantes",
+      "mena": "intangible",
+      "que": "la vivencia de los valores de equipo, con humor",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "Los participantes",
+      "a": "Quien diseña y dinamiza el taller",
+      "mena": "intangible",
+      "que": "lo que el grupo descubre de sí mismo, dicho en voz alta",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "Los participantes",
+      "a": "La empresa que contrata",
+      "mena": "intangible",
+      "que": "un equipo que ha vivido la confianza y el liderazgo compartido",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "La empresa que contrata",
+      "a": "Los participantes",
+      "mena": "intangible",
+      "que": "el reconocimiento de haber parado para el equipo",
+      "qui": "persona",
+      "tipus": null,
+      "motiu": "intangible"
+    },
+    {
+      "de": "El lugar del evento",
+      "a": "La agencia de eventos",
+      "mena": "tangible",
+      "que": "el espacio y la logística del día",
+      "qui": "visita",
+      "tipus": null,
+      "motiu": "sense entregable declarat"
+    },
+    {
+      "de": "La agencia de eventos",
+      "a": "El lugar del evento",
+      "mena": "tangible",
+      "que": "la reserva y el pago",
+      "qui": "persona",
+      "tipus": "cobrament",
+      "motiu": "el tipus no surt d'una màquina"
+    }
+  ]
+}

@@ -13,6 +13,19 @@ la propuesta inicial: un flujo, su mapa revisado, las preguntas que la web no
 contesta y la web que sale del mapa (skill `propuesta-inicial`).
 **Cómo se cierra:** un `mapa.json` que pasa `revisa-mapa.js` sin reglas duras
 abiertas, y Álvaro ha elegido el flujo.
+**Estado (21/10/2026):** borrador hecho con Fent Pinya, el flujo recomendado,
+en `propuesta/` (mapa, preguntas, marca y web). Falta que Álvaro confirme el
+flujo y conteste las preguntas 1 a 4. Siguiente flujo: de Fent Pinya a La Colla.
+
+### Para TeamTowers Humà: lo que `analitza-contingut.js` no ve (visto 2026-10-21)
+
+**Visto en:** la propuesta inicial de este proyecto. **Qué:** el análisis dice
+que no hay formulario ni correo, y la web pide presupuesto por un formulario de
+Google; propone `lletra: serif` y un color que no es el de la marca, porque no
+lee las variables CSS ni las fuentes de Google; y saca la presentación en
+inglés, porque la página tiene `lang="en"` y carga el castellano con JS.
+**Cómo se cierra:** se propone a TeamTowers Humà y vuelve con `--actualitza`.
+No se arregla aquí: las herramientas son heredadas.
 
 ### Botón principal de La Colla (pedido 2026-10-10)
 

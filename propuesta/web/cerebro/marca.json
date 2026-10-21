@@ -1,0 +1,32 @@
+{
+  "color": "#c8102e",
+  "lletra": "sans",
+  "lema": "Fent Pinya: el taller de castellers original",
+  "presentacio": "El taller de castellers original para empresas, creado por TeamTowers. Convierte a grupos de 10 a 1.000 personas en una colla castellera en menos de dos horas, para que el equipo viva el liderazgo compartido, la confianza y la comunicación en tiempo real.",
+  "portes": {
+    "La empresa que contrata": {
+      "nom": "Empresas",
+      "intro": "Tu equipo vive en primera persona el liderazgo compartido, la confianza y la comunicación. Cuéntanos la fecha, cuántas personas sois y dónde, y te enviamos una propuesta a medida."
+    },
+    "La agencia de eventos": {
+      "nom": "Agencias",
+      "intro": "Ofrece a tus clientes algo que nadie más tiene, con toda la logística resuelta: dinamizador, monitores, músicos, fajas y seguro."
+    },
+    "Los monitores castellers": {
+      "nom": "Monitores",
+      "intro": "Los monitores castellers se dedican por entero a la seguridad del castell y enseñan la técnica al grupo."
+    },
+    "Los músicos": {
+      "nom": "Músicos",
+      "intro": "Los grallers en directo marcan cada momento del castell, como en una diada de verdad."
+    },
+    "Los participantes": {
+      "nom": "Participantes",
+      "intro": "No hace falta experiencia: os enfajáis, aprendéis la técnica y levantáis juntos vuestro castell."
+    },
+    "El lugar del evento": {
+      "nom": "Espacios",
+      "intro": "Vamos donde estéis. Solo hace falta un espacio diáfano de unos 10×10 metros."
+    }
+  }
+}

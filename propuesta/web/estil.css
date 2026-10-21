@@ -1,0 +1,29 @@
+:root{color-scheme:light dark;--bg:#fbfaf7;--fg:#1d1b18;--mut:#5d584f;--lin:#d9d4ca;--acc:#c8102e}
+@media (prefers-color-scheme:dark){:root{--bg:#161512;--fg:#f1eee8;--mut:#b4ada1;--lin:#3a362f;--acc:#d9586d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.salta{position:absolute;left:-999px}.salta:focus{left:1rem;top:1rem;background:var(--bg);padding:.5rem}
+header,main,footer{max-width:46rem;margin:0 auto;padding:1rem}
+header{border-bottom:1px solid var(--lin)}
+.marca{margin:0 0 .5rem;font-weight:700}.marca a{color:inherit;text-decoration:none}
+nav ul{display:flex;flex-wrap:wrap;gap:.35rem;list-style:none;margin:0;padding:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;min-width:44px;padding:0 .8rem;border:1px solid var(--lin);border-radius:999px;text-decoration:none;color:var(--fg)}
+nav a[aria-current=page]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+h1{font-size:1.7rem;line-height:1.2;margin:.5rem 0 1rem}h2{font-size:1.15rem;margin:1.6rem 0 .5rem}
+li{margin:.25rem 0}small{color:var(--mut)}
+form{display:grid;gap:.75rem;margin-top:.5rem}
+label{display:grid;gap:.25rem;font-weight:600}
+fieldset{display:flex;flex-wrap:wrap;gap:.25rem 1rem;border:1px solid var(--lin);border-radius:8px;margin:0;padding:.4rem .8rem .6rem}
+legend{font-weight:600;padding:0 .3rem}
+fieldset label{display:inline-flex;align-items:center;gap:.4rem;font-weight:400;min-height:44px}
+fieldset input{min-height:auto}
+input,select,textarea,button{font:inherit;min-height:44px;padding:.5rem .7rem;border:1px solid var(--lin);border-radius:8px;background:var(--bg);color:var(--fg)}
+button{background:var(--fg);color:var(--bg);border-color:var(--fg);font-weight:600;cursor:pointer;justify-self:start}
+.ocult{display:none}
+footer{border-top:1px solid var(--lin);color:var(--mut);font-size:.9rem}
+header{border-bottom:3px solid var(--acc)}
+nav a[aria-current=page],button{background:var(--acc);border-color:var(--acc);color:var(--bg)}
+.marca img{height:2.5rem;width:auto;vertical-align:middle;margin-right:.5rem}
+.lema{margin:-.25rem 0 .75rem;color:var(--mut)}
