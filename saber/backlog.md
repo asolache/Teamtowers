@@ -27,6 +27,20 @@ inglés, porque la página tiene `lang="en"` y carga el castellano con JS.
 **Cómo se cierra:** se propone a TeamTowers Humà y vuelve con `--actualitza`.
 No se arregla aquí: las herramientas son heredadas.
 
+### El espacio de las agencias (pedido 2026-10-21)
+
+**Pedido por:** Álvaro: «que nuestros partners, que son en general las
+agencias, tengan su propio espacio y podamos gestionar ahí también las
+propuestas y los acuerdos». Eligió entrar por **enlace privado**.
+**Qué:** `agencias/` en esta web; el servicio (`espai-partner`) vive en
+TeamTowers Humà, donde están las claves de Zoho (veda 171 de Humà). La agencia
+ve su acuerdo y sus propuestas, pide una nueva y acepta una (nota en Zoho, sin
+cambiar la fase). Cada agencia ve solo lo suyo; los datos no salen de Zoho.
+**Falta:** los campos en Zoho (cuenta: `Clave_espacio`, `Comision`,
+`Condiciones_agencia`; trato: `Enlace_propuesta`), que el token de Zoho de
+Humà pueda leer cuentas y tratos y crear tratos y notas, y la primera clave.
+**Cómo se cierra:** una agencia de verdad entra con su enlace y ve lo suyo.
+
 ### Botón principal de La Colla (pedido 2026-10-10)
 
 **Pedido por:** Álvaro, sin decidir todavía. **Qué:** si el primer botón de La

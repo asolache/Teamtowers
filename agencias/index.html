@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Espacio de agencias | TeamTowers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#c8102e;--ink:#15130f;--mut:#5e594d;--bg:#ffffff;--off:#f7f6f3;--lin:#e2ded4;--ok:#15803d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif}
+header{border-bottom:3px solid var(--red);padding:14px 16px}
+header img{height:40px;width:auto;display:block}
+main{max-width:880px;margin:0 auto;padding:24px 16px 64px}
+h1,h2{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.2}
+h1{font-size:1.9rem;margin:.4rem 0 1rem}
+h2{font-size:1.25rem;margin:2.2rem 0 .8rem}
+p{margin:.5rem 0}
+.mut{color:var(--mut)}
+.card{background:var(--off);border:1px solid var(--lin);border-radius:10px;padding:16px 18px}
+.taula{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--lin);padding:.55rem .5rem;text-align:left;vertical-align:top}
+th{font-weight:600;color:var(--mut)}
+button,.btn{font:inherit;font-weight:600;border:1px solid var(--red);border-radius:8px;padding:.5rem .9rem;cursor:pointer;background:var(--red);color:#fff;text-decoration:none;display:inline-block}
+button.sec{background:#fff;color:var(--red)}
+button:disabled{opacity:.6;cursor:default}
+form{display:grid;gap:12px;max-width:560px}
+label{display:grid;gap:4px;font-weight:500}
+input,textarea{font:inherit;padding:.5rem .6rem;border:1px solid var(--lin);border-radius:8px;width:100%}
+.avis{margin-top:12px;font-weight:500}
+.avis.ok{color:var(--ok)}
+.avis.err{color:var(--red)}
+[hidden]{display:none!important}
+@media (max-width:640px){
+  thead{display:none}
+  table,tbody,tr,td{display:block}
+  tr{border:1px solid var(--lin);border-radius:10px;padding:10px 12px;margin-bottom:12px}
+  td{border:0;padding:.2rem 0}
+  td[data-label]:not(:empty)::before{content:attr(data-label) ": ";color:var(--mut);font-weight:500}
+}
+</style>
+</head>
+<body>
+<header><a href="/"><img src="/images/web/logoteamtowers.webp" alt="TeamTowers" width="400" height="113"></a></header>
+<main>
+  <p class="mut">Espacio de agencias</p>
+
+  <section id="sin-clave">
+    <h1>El espacio de las agencias de TeamTowers</h1>
+    <p>Aquí cada agencia ve sus propuestas, su acuerdo con TeamTowers y puede pedir una propuesta nueva para un cliente.</p>
+    <p>Se entra con el enlace privado que te hemos enviado. Si eres una agencia y aún no lo tienes, <a href="/pinya?lang=es">pide una propuesta de Fent Pinya</a> y te lo mandamos.</p>
+  </section>
+
+  <p id="cargando" class="mut" hidden>Cargando tu espacio…</p>
+  <p id="error" class="avis err" hidden></p>
+
+  <section id="espacio" hidden>
+    <h1 id="nombre"></h1>
+
+    <h2>Tu acuerdo con TeamTowers</h2>
+    <div class="card">
+      <p id="comision"></p>
+      <p id="condiciones" class="mut" style="white-space:pre-line"></p>
+    </div>
+
+    <h2>Tus propuestas</h2>
+    <p id="sin-propuestas" class="mut" hidden>Todavía no hay propuestas.</p>
+    <div class="taula">
+      <table id="propuestas" hidden>
+        <thead><tr><th>Fecha</th><th>Propuesta</th><th>Estado</th><th>Importe</th><th></th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p id="aviso-acepta" class="avis" hidden></p>
+
+    <h2>Pedir una propuesta para un cliente</h2>
+    <form id="pedir">
+      <label>Cliente (empresa)<input name="client" required maxlength="120"></label>
+      <label>Fecha del taller<input name="data" type="date" required></label>
+      <label>Personas<input name="persones" type="number" min="1" max="5000"></label>
+      <label>Lugar (ciudad o espacio)<input name="lloc" maxlength="200"></label>
+      <label>Notas<textarea name="notes" rows="3" maxlength="2000"></textarea></label>
+      <p class="mut">No hace falta poner datos de personas: con la empresa, la fecha y el lugar basta.</p>
+      <div><button type="submit">Pedir propuesta</button></div>
+    </form>
+    <p id="aviso-pide" class="avis" hidden></p>
+  </section>
+</main>
+<script>
+(function () {
+  /* La clave va en el fragmento (#…): el navegador no la envía a ningún servidor
+     al cargar la página, ni en el Referer. Solo viaja en el cuerpo del POST. */
+  var clave = decodeURIComponent((location.hash || '').slice(1));
+  /* El servicio vive en TeamTowers Humà. En las previews de Humà se puede probar
+     con ?api=deploy-preview-N--teamtowershuma.netlify.app, y con nada más. */
+  var api = 'https://teamtowershuma.com';
+  var q = new URLSearchParams(location.search).get('api');
+  if (q && /^deploy-preview-\d+--teamtowershuma\.netlify\.app$/.test(q)) api = 'https://' + q;
+  var URL_API = api + '/.netlify/functions/espai-partner';
+  var $ = function (id) { return document.getElementById(id); };
+  var ver = function (id, si) { $(id).hidden = !si; };
+
+  if (!/^[A-Za-z0-9_-]{24,64}$/.test(clave)) return;
+  ver('sin-clave', false);
+
+  function llama(cuerpo) {
+    cuerpo.clau = clave;
+    return fetch(URL_API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(cuerpo), referrerPolicy: 'no-referrer' })
+      .then(function (r) { return r.json().catch(function () { return { estat: 'error' }; }); })
+      .catch(function () { return { estat: 'error' }; });
+  }
+  function aviso(id, ok, texto) { var e = $(id); e.textContent = texto; e.className = 'avis ' + (ok ? 'ok' : 'err'); e.hidden = false; }
+  var euros = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  var fecha = function (d) { return d ? d.split('-').reverse().join('/') : ''; };
+
+  function pinta(d) {
+    $('nombre').textContent = 'Espacio de ' + d.nom;
+    $('comision').textContent = d.acord.comissio == null ? 'Comisión: pendiente de acordar.' : 'Comisión: ' + d.acord.comissio + ' %';
+    $('condiciones').textContent = d.acord.condicions || '';
+    var tb = $('propuestas').querySelector('tbody');
+    tb.textContent = '';
+    d.propostes.forEach(function (p) {
+      var tr = document.createElement('tr');
+      [['Fecha', fecha(p.data)], ['Propuesta', p.nom], ['Estado', p.fase], ['Importe', p.import == null ? '' : euros.format(p.import)]].forEach(function (c) {
+        var td = document.createElement('td'); td.setAttribute('data-label', c[0]); td.textContent = c[1]; tr.appendChild(td);
+      });
+      var acc = document.createElement('td');
+      if (p.proposta) {
+        var a = document.createElement('a'); a.href = p.proposta; a.textContent = 'Ver'; a.rel = 'noopener noreferrer'; a.target = '_blank';
+        acc.appendChild(a); acc.appendChild(document.createTextNode(' '));
+      }
+      if (!/^Cerrad/i.test(p.fase)) {
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'sec'; b.textContent = 'Aceptar';
+        b.addEventListener('click', function () {
+          if (!confirm('¿Aceptas la propuesta «' + p.nom + '»? Le avisamos a TeamTowers.')) return;
+          b.disabled = true;
+          llama({ accio: 'accepta', id: p.id }).then(function (r) {
+            if (r.estat === 'acceptat' || r.estat === 'prova') { aviso('aviso-acepta', true, 'Hecho: TeamTowers ya sabe que aceptas «' + p.nom + '».'); b.textContent = 'Aceptada'; }
+            else { b.disabled = false; aviso('aviso-acepta', false, 'No se ha podido enviar. Prueba otra vez o escríbenos.'); }
+          });
+        });
+        acc.appendChild(b);
+      }
+      tr.appendChild(acc);
+      tb.appendChild(tr);
+    });
+    ver('propuestas', d.propostes.length > 0);
+    ver('sin-propuestas', d.propostes.length === 0);
+    ver('espacio', true);
+  }
+
+  ver('cargando', true);
+  llama({ accio: 'llegeix' }).then(function (r) {
+    ver('cargando', false);
+    if (r.dades) return pinta(r.dades);
+    var e = $('error'); e.hidden = false;
+    e.textContent = r.estat === 'tancat'
+      ? 'Este enlace no abre ningún espacio. Puede que haya caducado: pide uno nuevo a TeamTowers.'
+      : 'Ahora mismo no podemos cargar tu espacio. Prueba en un rato.';
+  });
+
+  $('pedir').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var f = ev.target, btn = f.querySelector('button');
+    var dades = {};
+    ['client', 'data', 'persones', 'lloc', 'notes'].forEach(function (k) { dades[k] = f.elements[k].value; });
+    btn.disabled = true;
+    llama({ accio: 'demana', dades: dades }).then(function (r) {
+      btn.disabled = false;
+      if (r.estat === 'creat' || r.estat === 'prova') {
+        aviso('aviso-pide', true, 'Recibido. Te enviamos la propuesta para ' + dades.client + ' y aparecerá aquí.');
+        f.reset();
+        llama({ accio: 'llegeix' }).then(function (x) { if (x.dades) pinta(x.dades); });
+      } else aviso('aviso-pide', false, 'No se ha podido enviar. Revisa la empresa y la fecha, o escríbenos.');
+    });
+  });
+})();
+</script>
+</body>
+</html>

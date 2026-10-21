@@ -24,3 +24,9 @@
 
 /EMPIEZA-AQUI.html
   X-Robots-Tag: noindex, nofollow
+
+# El espacio de cada agencia: privado, se entra con su enlace
+/agencias/*
+  X-Robots-Tag: noindex, nofollow
+  Referrer-Policy: no-referrer
+  Cache-Control: no-store

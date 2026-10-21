@@ -29,3 +29,4 @@ lista y nada más. Crear una carpeta sin declararla rompe el CI.
 - `blog` · arxiu · El blog de la web anterior. No se enlaza desde las páginas actuales
 - `v2` · arxiu · Una versión anterior de la portada. No se enlaza desde las páginas actuales
 - `propuesta` · obra · La propuesta inicial: fuentes, mapa, preguntas y web
+- `agencias` · obra · El espacio privado de cada agencia: se entra con su enlace y lee de Zoho a través de TeamTowers Humà

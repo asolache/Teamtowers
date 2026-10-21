@@ -13,6 +13,7 @@ La cosa misma: lo que usa la gente. Una sola fuente de verdad por cosa.
 
 | carpeta | qué entra | ficheros |
 |---|---|---|
+| `agencias/` | El espacio privado de cada agencia: se entra con su enlace y lee de Zoho a través de TeamTowers Humà | 1 · 9 KB |
 | `files/` | Los vídeos de la web (la portada) | 2 · 11072 KB |
 | `herramientas/` | Lo que el proyecto hereda para trabajar: el editor del mapa, revisarlo y sacar la web. No se edita aquí | 7 · 754 KB |
 | `images/` | Las imágenes de la web. Las nuevas, en `images/web/` y en WebP | 69 · 31532 KB |
@@ -33,7 +34,7 @@ Lo que sabemos y aún no es obra. Se cita, no se copia.
 
 | carpeta | qué entra | ficheros |
 |---|---|---|
-| `saber/` | El cerebro: mapa, codex, contrato de la IA, taxonomía y backlog | 10 · 158 KB |
+| `saber/` | El cerebro: mapa, codex, contrato de la IA, taxonomía y backlog | 10 · 159 KB |
 
 ## arxiu
 
@@ -46,4 +47,4 @@ Lo que fue. Se conserva; **no se lee como presente**.
 
 ---
 
-*9 carpetas declaradas · generado desde el árbol, no escrito.*
+*10 carpetas declaradas · generado desde el árbol, no escrito.*
