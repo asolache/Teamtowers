@@ -1,0 +1,640 @@
+{
+  "formato": "tt-web-1",
+  "titol": "Lo que pasa desde que una empresa quiere un taller para su equipo hasta que el equipo vuelve al trabajo después de hacer un castell",
+  "casa": [
+    "Quien diseña y dinamiza el taller"
+  ],
+  "menu": [
+    {
+      "id": "inici",
+      "t": "Inici"
+    },
+    {
+      "id": "la-empresa-que-contrata",
+      "t": "La empresa que contrata",
+      "rol": "La empresa que contrata"
+    },
+    {
+      "id": "la-agencia-de-eventos",
+      "t": "La agencia de eventos",
+      "rol": "La agencia de eventos"
+    },
+    {
+      "id": "los-monitores-castellers",
+      "t": "Los monitores castellers",
+      "rol": "Los monitores castellers"
+    },
+    {
+      "id": "los-musicos",
+      "t": "Los músicos",
+      "rol": "Los músicos"
+    },
+    {
+      "id": "los-participantes",
+      "t": "Los participantes",
+      "rol": "Los participantes"
+    },
+    {
+      "id": "el-lugar-del-evento",
+      "t": "El lugar del evento",
+      "rol": "El lugar del evento"
+    },
+    {
+      "id": "serveis",
+      "t": "Serveis"
+    },
+    {
+      "id": "equip",
+      "t": "Per a l'equip"
+    }
+  ],
+  "portes": [
+    {
+      "id": "la-empresa-que-contrata",
+      "rol": "La empresa que contrata",
+      "rep": [
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "La empresa que contrata",
+          "mena": "intangible",
+          "q": "una lectura del equipo que la empresa no tenía"
+        }
+      ],
+      "dona": [
+        {
+          "de": "La empresa que contrata",
+          "a": "Quien diseña y dinamiza el taller",
+          "mena": "intangible",
+          "q": "qué le pasa al equipo y qué quiere que cambie"
+        }
+      ],
+      "xarxa": [
+        {
+          "de": "La empresa que contrata",
+          "a": "La agencia de eventos",
+          "mena": "tangible",
+          "q": "el encargo y el pago del evento"
+        },
+        {
+          "de": "Los participantes",
+          "a": "La empresa que contrata",
+          "mena": "intangible",
+          "q": "un equipo que ha vivido la confianza y el liderazgo compartido"
+        },
+        {
+          "de": "La empresa que contrata",
+          "a": "Los participantes",
+          "mena": "intangible",
+          "q": "el reconocimiento de haber parado para el equipo"
+        },
+        {
+          "de": "La agencia de eventos",
+          "a": "La empresa que contrata",
+          "mena": "intangible",
+          "q": "la confianza de que el día saldrá bien"
+        }
+      ],
+      "compte": true,
+      "connexions": [],
+      "benvinguda": [
+        {
+          "pas": "coneix",
+          "t": "Coneix-nos",
+          "d": "La porta «La empresa que contrata»: què et donem i què et demanem."
+        },
+        {
+          "pas": "compte",
+          "t": "Crea el teu compte",
+          "d": "Hi ha anada i tornada: amb un compte veus el que és teu i en dius la teva."
+        },
+        {
+          "pas": "primer",
+          "t": "El primer que rebràs",
+          "d": "una lectura del equipo que la empresa no tenía"
+        },
+        {
+          "pas": "demanem",
+          "t": "El primer que et demanarem",
+          "d": "qué le pasa al equipo y qué quiere que cambie"
+        }
+      ],
+      "buida": false
+    },
+    {
+      "id": "la-agencia-de-eventos",
+      "rol": "La agencia de eventos",
+      "rep": [
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "La agencia de eventos",
+          "mena": "tangible",
+          "q": "la propuesta del taller y su comisión"
+        }
+      ],
+      "dona": [
+        {
+          "de": "La agencia de eventos",
+          "a": "Quien diseña y dinamiza el taller",
+          "mena": "tangible",
+          "q": "el cliente, la fecha y el lugar"
+        }
+      ],
+      "xarxa": [
+        {
+          "de": "La empresa que contrata",
+          "a": "La agencia de eventos",
+          "mena": "tangible",
+          "q": "el encargo y el pago del evento"
+        },
+        {
+          "de": "La agencia de eventos",
+          "a": "El lugar del evento",
+          "mena": "tangible",
+          "q": "la reserva y el pago"
+        },
+        {
+          "de": "El lugar del evento",
+          "a": "La agencia de eventos",
+          "mena": "tangible",
+          "q": "el espacio y la logística del día"
+        },
+        {
+          "de": "La agencia de eventos",
+          "a": "La empresa que contrata",
+          "mena": "intangible",
+          "q": "la confianza de que el día saldrá bien"
+        }
+      ],
+      "compte": true,
+      "connexions": [
+        {
+          "cat": "crm",
+          "nom": "CRM",
+          "per": "client"
+        }
+      ],
+      "benvinguda": [
+        {
+          "pas": "coneix",
+          "t": "Coneix-nos",
+          "d": "La porta «La agencia de eventos»: què et donem i què et demanem."
+        },
+        {
+          "pas": "compte",
+          "t": "Crea el teu compte",
+          "d": "Hi ha anada i tornada: amb un compte veus el que és teu i en dius la teva."
+        },
+        {
+          "pas": "connecta",
+          "t": "Connecta el que ja fas servir",
+          "d": "CRM."
+        },
+        {
+          "pas": "primer",
+          "t": "El primer que rebràs",
+          "d": "la propuesta del taller y su comisión"
+        },
+        {
+          "pas": "demanem",
+          "t": "El primer que et demanarem",
+          "d": "el cliente, la fecha y el lugar"
+        }
+      ],
+      "buida": false
+    },
+    {
+      "id": "los-monitores-castellers",
+      "rol": "Los monitores castellers",
+      "rep": [
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "Los monitores castellers",
+          "mena": "tangible",
+          "q": "el encargo, el guion y el pago"
+        }
+      ],
+      "dona": [
+        {
+          "de": "Los monitores castellers",
+          "a": "Quien diseña y dinamiza el taller",
+          "mena": "intangible",
+          "q": "cómo responde un grupo que nunca ha hecho un castell"
+        }
+      ],
+      "xarxa": [
+        {
+          "de": "Los monitores castellers",
+          "a": "Los participantes",
+          "mena": "tangible",
+          "q": "las fajas, la técnica y la seguridad del castell"
+        },
+        {
+          "de": "Los participantes",
+          "a": "Los monitores castellers",
+          "mena": "intangible",
+          "q": "la confianza del grupo para subir y sostener"
+        }
+      ],
+      "compte": true,
+      "connexions": [
+        {
+          "cat": "cobros",
+          "nom": "Cobraments",
+          "per": "pag"
+        },
+        {
+          "cat": "oficina",
+          "nom": "Agenda",
+          "per": "grup"
+        }
+      ],
+      "benvinguda": [
+        {
+          "pas": "coneix",
+          "t": "Coneix-nos",
+          "d": "La porta «Los monitores castellers»: què et donem i què et demanem."
+        },
+        {
+          "pas": "compte",
+          "t": "Crea el teu compte",
+          "d": "Hi ha anada i tornada: amb un compte veus el que és teu i en dius la teva."
+        },
+        {
+          "pas": "connecta",
+          "t": "Connecta el que ja fas servir",
+          "d": "Cobraments, Agenda."
+        },
+        {
+          "pas": "primer",
+          "t": "El primer que rebràs",
+          "d": "el encargo, el guion y el pago"
+        },
+        {
+          "pas": "demanem",
+          "t": "El primer que et demanarem",
+          "d": "cómo responde un grupo que nunca ha hecho un castell"
+        }
+      ],
+      "buida": false
+    },
+    {
+      "id": "los-musicos",
+      "rol": "Los músicos",
+      "rep": [
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "Los músicos",
+          "mena": "tangible",
+          "q": "el encargo, el guion y el pago"
+        }
+      ],
+      "dona": [
+        {
+          "de": "Los músicos",
+          "a": "Quien diseña y dinamiza el taller",
+          "mena": "tangible",
+          "q": "la música en directo"
+        }
+      ],
+      "xarxa": [
+        {
+          "de": "Los músicos",
+          "a": "Los participantes",
+          "mena": "intangible",
+          "q": "el ritmo que marca cada momento del castell"
+        },
+        {
+          "de": "Los participantes",
+          "a": "Los músicos",
+          "mena": "intangible",
+          "q": "la emoción del grupo, que la música acompaña"
+        }
+      ],
+      "compte": true,
+      "connexions": [
+        {
+          "cat": "cobros",
+          "nom": "Cobraments",
+          "per": "pag"
+        }
+      ],
+      "benvinguda": [
+        {
+          "pas": "coneix",
+          "t": "Coneix-nos",
+          "d": "La porta «Los músicos»: què et donem i què et demanem."
+        },
+        {
+          "pas": "compte",
+          "t": "Crea el teu compte",
+          "d": "Hi ha anada i tornada: amb un compte veus el que és teu i en dius la teva."
+        },
+        {
+          "pas": "connecta",
+          "t": "Connecta el que ja fas servir",
+          "d": "Cobraments."
+        },
+        {
+          "pas": "primer",
+          "t": "El primer que rebràs",
+          "d": "el encargo, el guion y el pago"
+        },
+        {
+          "pas": "demanem",
+          "t": "El primer que et demanarem",
+          "d": "la música en directo"
+        }
+      ],
+      "buida": false
+    },
+    {
+      "id": "los-participantes",
+      "rol": "Los participantes",
+      "rep": [
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "Los participantes",
+          "mena": "intangible",
+          "q": "la vivencia de los valores de equipo, con humor"
+        }
+      ],
+      "dona": [
+        {
+          "de": "Los participantes",
+          "a": "Quien diseña y dinamiza el taller",
+          "mena": "intangible",
+          "q": "lo que el grupo descubre de sí mismo, dicho en voz alta"
+        }
+      ],
+      "xarxa": [
+        {
+          "de": "Los monitores castellers",
+          "a": "Los participantes",
+          "mena": "tangible",
+          "q": "las fajas, la técnica y la seguridad del castell"
+        },
+        {
+          "de": "Los músicos",
+          "a": "Los participantes",
+          "mena": "intangible",
+          "q": "el ritmo que marca cada momento del castell"
+        },
+        {
+          "de": "Los participantes",
+          "a": "Los monitores castellers",
+          "mena": "intangible",
+          "q": "la confianza del grupo para subir y sostener"
+        },
+        {
+          "de": "Los participantes",
+          "a": "Los músicos",
+          "mena": "intangible",
+          "q": "la emoción del grupo, que la música acompaña"
+        },
+        {
+          "de": "Los participantes",
+          "a": "La empresa que contrata",
+          "mena": "intangible",
+          "q": "un equipo que ha vivido la confianza y el liderazgo compartido"
+        },
+        {
+          "de": "La empresa que contrata",
+          "a": "Los participantes",
+          "mena": "intangible",
+          "q": "el reconocimiento de haber parado para el equipo"
+        }
+      ],
+      "compte": true,
+      "connexions": [
+        {
+          "cat": "oficina",
+          "nom": "Agenda",
+          "per": "grup"
+        }
+      ],
+      "benvinguda": [
+        {
+          "pas": "coneix",
+          "t": "Coneix-nos",
+          "d": "La porta «Los participantes»: què et donem i què et demanem."
+        },
+        {
+          "pas": "compte",
+          "t": "Crea el teu compte",
+          "d": "Hi ha anada i tornada: amb un compte veus el que és teu i en dius la teva."
+        },
+        {
+          "pas": "connecta",
+          "t": "Connecta el que ja fas servir",
+          "d": "Agenda."
+        },
+        {
+          "pas": "primer",
+          "t": "El primer que rebràs",
+          "d": "la vivencia de los valores de equipo, con humor"
+        },
+        {
+          "pas": "demanem",
+          "t": "El primer que et demanarem",
+          "d": "lo que el grupo descubre de sí mismo, dicho en voz alta"
+        }
+      ],
+      "buida": false
+    },
+    {
+      "id": "el-lugar-del-evento",
+      "rol": "El lugar del evento",
+      "rep": [],
+      "dona": [],
+      "xarxa": [
+        {
+          "de": "La agencia de eventos",
+          "a": "El lugar del evento",
+          "mena": "tangible",
+          "q": "la reserva y el pago"
+        },
+        {
+          "de": "El lugar del evento",
+          "a": "La agencia de eventos",
+          "mena": "tangible",
+          "q": "el espacio y la logística del día"
+        }
+      ],
+      "compte": false,
+      "connexions": [],
+      "benvinguda": [
+        {
+          "pas": "coneix",
+          "t": "Coneix-nos",
+          "d": "La porta «El lugar del evento»: què et donem i què et demanem."
+        },
+        {
+          "pas": "sense-compte",
+          "t": "Sense compte",
+          "d": "La relació va en un sol sentit: llegir i escriure'ns n'hi ha prou."
+        }
+      ],
+      "buida": true
+    }
+  ],
+  "serveis": [
+    {
+      "id": "la-venta",
+      "proc": "venta",
+      "nom": "La venta",
+      "d": "Del encargo a la fecha cerrada",
+      "passos": [
+        {
+          "de": "La empresa que contrata",
+          "a": "La agencia de eventos",
+          "q": "el encargo y el pago del evento",
+          "n": 1
+        },
+        {
+          "de": "La agencia de eventos",
+          "a": "Quien diseña y dinamiza el taller",
+          "q": "el cliente, la fecha y el lugar",
+          "n": 2
+        },
+        {
+          "de": "La empresa que contrata",
+          "a": "Quien diseña y dinamiza el taller",
+          "q": "qué le pasa al equipo y qué quiere que cambie",
+          "n": 3
+        },
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "La agencia de eventos",
+          "q": "la propuesta del taller y su comisión",
+          "n": 4
+        },
+        {
+          "de": "La agencia de eventos",
+          "a": "El lugar del evento",
+          "q": "la reserva y el pago",
+          "n": 5
+        },
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "Los monitores castellers",
+          "q": "el encargo, el guion y el pago",
+          "n": 6
+        },
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "Los músicos",
+          "q": "el encargo, el guion y el pago",
+          "n": 7
+        }
+      ]
+    },
+    {
+      "id": "el-taller",
+      "proc": "taller",
+      "nom": "El taller",
+      "d": "El día del castell",
+      "passos": [
+        {
+          "de": "El lugar del evento",
+          "a": "La agencia de eventos",
+          "q": "el espacio y la logística del día",
+          "n": 1
+        },
+        {
+          "de": "Los monitores castellers",
+          "a": "Los participantes",
+          "q": "las fajas, la técnica y la seguridad del castell",
+          "n": 2
+        },
+        {
+          "de": "Los músicos",
+          "a": "Los participantes",
+          "q": "el ritmo que marca cada momento del castell",
+          "n": 3
+        },
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "Los participantes",
+          "q": "la vivencia de los valores de equipo, con humor",
+          "n": 4
+        },
+        {
+          "de": "Los participantes",
+          "a": "Los monitores castellers",
+          "q": "la confianza del grupo para subir y sostener",
+          "n": 5
+        },
+        {
+          "de": "Los participantes",
+          "a": "Los músicos",
+          "q": "la emoción del grupo, que la música acompaña",
+          "n": 6
+        },
+        {
+          "de": "Los participantes",
+          "a": "Quien diseña y dinamiza el taller",
+          "q": "lo que el grupo descubre de sí mismo, dicho en voz alta",
+          "n": 7
+        },
+        {
+          "de": "Los músicos",
+          "a": "Quien diseña y dinamiza el taller",
+          "q": "la música en directo",
+          "n": 8
+        }
+      ]
+    },
+    {
+      "id": "lo-que-queda",
+      "proc": "despues",
+      "nom": "Lo que queda",
+      "d": "Después del taller, en la empresa",
+      "passos": [
+        {
+          "de": "Los participantes",
+          "a": "La empresa que contrata",
+          "q": "un equipo que ha vivido la confianza y el liderazgo compartido",
+          "n": 1
+        },
+        {
+          "de": "La empresa que contrata",
+          "a": "Los participantes",
+          "q": "el reconocimiento de haber parado para el equipo",
+          "n": 2
+        },
+        {
+          "de": "Quien diseña y dinamiza el taller",
+          "a": "La empresa que contrata",
+          "q": "una lectura del equipo que la empresa no tenía",
+          "n": 3
+        },
+        {
+          "de": "La agencia de eventos",
+          "a": "La empresa que contrata",
+          "q": "la confianza de que el día saldrá bien",
+          "n": 4
+        }
+      ]
+    }
+  ],
+  "sempre": [
+    {
+      "de": "Los monitores castellers",
+      "a": "Quien diseña y dinamiza el taller",
+      "q": "cómo responde un grupo que nunca ha hecho un castell"
+    }
+  ],
+  "equip": {
+    "rols": [
+      "Quien diseña y dinamiza el taller"
+    ],
+    "intern": []
+  },
+  "alta": [
+    "La empresa que contrata",
+    "La agencia de eventos",
+    "Los monitores castellers",
+    "Los músicos",
+    "Los participantes"
+  ]
+}

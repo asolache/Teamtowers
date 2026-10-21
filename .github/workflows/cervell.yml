@@ -1,0 +1,17 @@
+name: Cerebro
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  cervell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: El mapa y el contrato dicen lo que hay
+        run: node guardas/cervell.js --check

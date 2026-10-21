@@ -1,0 +1,449 @@
+{
+  "proyecto": "TeamTowers",
+  "temas": [
+    {
+      "id": "web",
+      "nombre": "La web"
+    },
+    {
+      "id": "mapa",
+      "nombre": "El mapa"
+    },
+    {
+      "id": "rols",
+      "nombre": "Roles"
+    },
+    {
+      "id": "lliuraments",
+      "nombre": "Entregables"
+    },
+    {
+      "id": "processos",
+      "nombre": "Procesos"
+    },
+    {
+      "id": "decisions",
+      "nombre": "Decisiones"
+    },
+    {
+      "id": "tasques",
+      "nombre": "Tareas para la IA"
+    },
+    {
+      "id": "continguts",
+      "nombre": "Contenidos"
+    },
+    {
+      "id": "fonts",
+      "nombre": "Lo que ya había"
+    },
+    {
+      "id": "regles",
+      "nombre": "Reglas"
+    },
+    {
+      "id": "eines",
+      "nombre": "Herramientas y API"
+    }
+  ],
+  "capas": [
+    {
+      "id": "publica",
+      "nombre": "pública"
+    },
+    {
+      "id": "enllac",
+      "nombre": "por enlace"
+    },
+    {
+      "id": "equip",
+      "nombre": "equipo"
+    }
+  ],
+  "entradas": [
+    {
+      "ruta": "index.html",
+      "titol": "TeamTowers",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "la-empresa-que-contrata.html",
+      "titol": "Empresas",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "la-agencia-de-eventos.html",
+      "titol": "Agencias",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "los-monitores-castellers.html",
+      "titol": "Monitores",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "los-musicos.html",
+      "titol": "Músicos",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "los-participantes.html",
+      "titol": "Participantes",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "el-lugar-del-evento.html",
+      "titol": "Espacios",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "serveis.html",
+      "titol": "Servicios",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "equip.html",
+      "titol": "Para el equipo",
+      "tema": "web",
+      "capa": "enllac"
+    },
+    {
+      "ruta": "registre.html",
+      "titol": "Registra un entregable",
+      "tema": "web",
+      "capa": "enllac"
+    },
+    {
+      "ruta": "gracies.html",
+      "titol": "Gracias",
+      "tema": "web",
+      "capa": "enllac"
+    },
+    {
+      "ruta": "web.json",
+      "titol": "Los datos de la web",
+      "tema": "web",
+      "capa": "publica"
+    },
+    {
+      "ruta": "cerebro/mapa-real.json",
+      "titol": "Mapa de valor real",
+      "tema": "mapa",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/roles/la-empresa-que-contrata.md",
+      "titol": "La empresa que contrata",
+      "tema": "rols",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/roles/la-agencia-de-eventos.md",
+      "titol": "La agencia de eventos",
+      "tema": "rols",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/roles/quien-disena-y-dinamiza-el-taller.md",
+      "titol": "Quien diseña y dinamiza el taller",
+      "tema": "rols",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/roles/los-monitores-castellers.md",
+      "titol": "Los monitores castellers",
+      "tema": "rols",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/roles/los-musicos.md",
+      "titol": "Los músicos",
+      "tema": "rols",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/roles/los-participantes.md",
+      "titol": "Los participantes",
+      "tema": "rols",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/roles/el-lugar-del-evento.md",
+      "titol": "El lugar del evento",
+      "tema": "rols",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/el-encargo-y-el-pago-del-evento.md",
+      "titol": "el encargo y el pago del evento",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/la-confianza-de-que-el-dia-saldra-bien.md",
+      "titol": "la confianza de que el día saldrá bien",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/el-cliente-la-fecha-y-el-lugar.md",
+      "titol": "el cliente, la fecha y el lugar",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/la-propuesta-del-taller-y-su-comision.md",
+      "titol": "la propuesta del taller y su comisión",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/que-le-pasa-al-equipo-y-que-quiere-que-cambie.md",
+      "titol": "qué le pasa al equipo y qué quiere que cambie",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/una-lectura-del-equipo-que-la-empresa-no-tenia.md",
+      "titol": "una lectura del equipo que la empresa no tenía",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/el-encargo-el-guion-y-el-pago.md",
+      "titol": "el encargo, el guion y el pago",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/como-responde-un-grupo-que-nunca-ha-hecho-un-castell.md",
+      "titol": "cómo responde un grupo que nunca ha hecho un castell",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/las-fajas-la-tecnica-y-la-seguridad-del-castell.md",
+      "titol": "las fajas, la técnica y la seguridad del castell",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/la-confianza-del-grupo-para-subir-y-sostener.md",
+      "titol": "la confianza del grupo para subir y sostener",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/el-ritmo-que-marca-cada-momento-del-castell.md",
+      "titol": "el ritmo que marca cada momento del castell",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/la-emocion-del-grupo-que-la-musica-acompana.md",
+      "titol": "la emoción del grupo, que la música acompaña",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/el-encargo-el-guion-y-el-pago-2.md",
+      "titol": "el encargo, el guion y el pago",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/la-musica-en-directo.md",
+      "titol": "la música en directo",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/la-vivencia-de-los-valores-de-equipo-con-humor.md",
+      "titol": "la vivencia de los valores de equipo, con humor",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/lo-que-el-grupo-descubre-de-si-mismo-dicho-en-voz-alta.md",
+      "titol": "lo que el grupo descubre de sí mismo, dicho en voz alta",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/un-equipo-que-ha-vivido-la-confianza-y-el-liderazgo-comparti.md",
+      "titol": "un equipo que ha vivido la confianza y el liderazgo compartido",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/el-reconocimiento-de-haber-parado-para-el-equipo.md",
+      "titol": "el reconocimiento de haber parado para el equipo",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/el-espacio-y-la-logistica-del-dia.md",
+      "titol": "el espacio y la logística del día",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/entregables/la-reserva-y-el-pago.md",
+      "titol": "la reserva y el pago",
+      "tema": "lliuraments",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/procesos/venta.md",
+      "titol": "La venta",
+      "tema": "processos",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/procesos/taller.md",
+      "titol": "El taller",
+      "tema": "processos",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/procesos/despues.md",
+      "titol": "Lo que queda",
+      "tema": "processos",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/tasques-ia.md",
+      "titol": "Tareas para la IA · TeamTowers",
+      "tema": "tasques",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/tasques-ia.json",
+      "titol": "cerebro/tasques-ia.json",
+      "tema": "tasques",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/decisiones.md",
+      "titol": "Decisiones",
+      "tema": "decisions",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/marca.json",
+      "titol": "La marca: el diseño y los textos propios",
+      "tema": "web",
+      "capa": "equip"
+    },
+    {
+      "ruta": "cerebro/configuracio.json",
+      "titol": "Lo que se eligió en el editor: nombre, idioma, roles de casa, correo y dirección",
+      "tema": "web",
+      "capa": "equip"
+    },
+    {
+      "ruta": "CLAUDE.md",
+      "titol": "TeamTowers · reglas para quien trabaja en ella, persona o IA",
+      "tema": "regles",
+      "capa": "equip"
+    },
+    {
+      "ruta": "TRABAJAR-CON-CLAUDE.md",
+      "titol": "Trabajar con Claude en la web de TeamTowers",
+      "tema": "regles",
+      "capa": "equip"
+    },
+    {
+      "ruta": ".claude/skills/importa/SKILL.md",
+      "titol": "Importar lo que ya hay",
+      "tema": "regles",
+      "capa": "equip"
+    },
+    {
+      "ruta": ".claude/skills/continguts/SKILL.md",
+      "titol": "Escribir el texto de la web",
+      "tema": "regles",
+      "capa": "equip"
+    },
+    {
+      "ruta": ".claude/skills/tasca/SKILL.md",
+      "titol": "Preparar el borrador de una tarea",
+      "tema": "regles",
+      "capa": "equip"
+    },
+    {
+      "ruta": "LEEME.md",
+      "titol": "TeamTowers",
+      "tema": "regles",
+      "capa": "equip"
+    },
+    {
+      "ruta": "eines/nucli.mjs",
+      "titol": "eines/nucli.mjs",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": "eines/importa.mjs",
+      "titol": "eines/importa.mjs",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": "eines/registre.mjs",
+      "titol": "eines/registre.mjs",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": "eines/mcp.mjs",
+      "titol": "eines/mcp.mjs",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": "netlify/functions/submission-created.mjs",
+      "titol": "netlify/functions/submission-created.mjs",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": "netlify/functions/deploy-succeeded.mjs",
+      "titol": "netlify/functions/deploy-succeeded.mjs",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": "eines/motor.mjs",
+      "titol": "' + e(titol) + '",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": "eines/genera.mjs",
+      "titol": "eines/genera.mjs",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": ".mcp.json",
+      "titol": ".mcp.json",
+      "tema": "eines",
+      "capa": "equip"
+    },
+    {
+      "ruta": "API.md",
+      "titol": "TeamTowers · la API y los avisos",
+      "tema": "eines",
+      "capa": "equip"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "cervell": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "eines/mcp.mjs"
+      ]
+    }
+  }
+}

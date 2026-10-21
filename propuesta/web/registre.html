@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registra un entregable · TeamTowers</title>
+<meta name="description" content="El taller de castellers original para empresas, creado por TeamTowers. Convierte a grupos de 10 a 1.000 personas en una colla castellera en menos de dos horas, ">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="estil.css">
+<link rel="alternate" type="application/json" href="web.json" title="Los datos de esta web">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Registra un entregable"}</script>
+</head>
+<body>
+<a class="salta" href="#contingut">Saltar al contenido</a>
+<header>
+<p class="marca"><a href="index.html">TeamTowers</a></p>
+<p class="lema">Fent Pinya: el taller de castellers original</p>
+<nav aria-label="Menú"><ul><li><a href="index.html">Inicio</a></li><li><a href="la-empresa-que-contrata.html">Empresas</a></li><li><a href="la-agencia-de-eventos.html">Agencias</a></li><li><a href="los-monitores-castellers.html">Monitores</a></li><li><a href="los-musicos.html">Músicos</a></li><li><a href="los-participantes.html">Participantes</a></li><li><a href="el-lugar-del-evento.html">Espacios</a></li><li><a href="serveis.html">Servicios</a></li></ul></nav>
+</header>
+<main id="contingut">
+<h1>Registra un entregable</h1>
+<p>Cada entregable que se anota hace que el mapa real salga del uso y no de la memoria.</p>
+<form name="registre" method="post" action="gracies.html" data-netlify="true" data-netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="registre">
+<p class="ocult"><label>No omplis això <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<label for="reg-de">De quién sale</label><select id="reg-de" name="de" required><option value=""></option><option>Quien diseña y dinamiza el taller</option><option>La empresa que contrata</option><option>La agencia de eventos</option><option>Los monitores castellers</option><option>Los músicos</option><option>Los participantes</option><option>El lugar del evento</option></select>
+<label for="reg-a">Quién lo recibe</label><select id="reg-a" name="a" required><option value=""></option><option>Quien diseña y dinamiza el taller</option><option>La empresa que contrata</option><option>La agencia de eventos</option><option>Los monitores castellers</option><option>Los músicos</option><option>Los participantes</option><option>El lugar del evento</option></select>
+<label for="reg-q">Qué se ha entregado</label><input id="reg-q" name="entregable" type="text" list="reg-qs" required>
+<datalist id="reg-qs"><option value="una lectura del equipo que la empresa no tenía"></option><option value="qué le pasa al equipo y qué quiere que cambie"></option><option value="el encargo y el pago del evento"></option><option value="un equipo que ha vivido la confianza y el liderazgo compartido"></option><option value="el reconocimiento de haber parado para el equipo"></option><option value="la confianza de que el día saldrá bien"></option><option value="la propuesta del taller y su comisión"></option><option value="el cliente, la fecha y el lugar"></option><option value="la reserva y el pago"></option><option value="el espacio y la logística del día"></option><option value="el encargo, el guion y el pago"></option><option value="cómo responde un grupo que nunca ha hecho un castell"></option><option value="las fajas, la técnica y la seguridad del castell"></option><option value="la confianza del grupo para subir y sostener"></option><option value="la música en directo"></option><option value="el ritmo que marca cada momento del castell"></option><option value="la emoción del grupo, que la música acompaña"></option><option value="la vivencia de los valores de equipo, con humor"></option><option value="lo que el grupo descubre de sí mismo, dicho en voz alta"></option></datalist>
+<fieldset><legend>Tipo</legend><label><input type="radio" name="mena" value="tangible" checked> Tangible</label><label><input type="radio" name="mena" value="intangible"> Intangible</label></fieldset>
+<fieldset><legend>Cuánto valor ve quien lo recibe (1 a 5)</legend><label><input type="radio" name="valor" value="1"> 1</label><label><input type="radio" name="valor" value="2"> 2</label><label><input type="radio" name="valor" value="3"> 3</label><label><input type="radio" name="valor" value="4"> 4</label><label><input type="radio" name="valor" value="5"> 5</label></fieldset>
+<label for="reg-data">Cuándo</label><input id="reg-data" name="data" type="date">
+<label for="reg-ev">Evidencia (un enlace, si lo hay)</label><input id="reg-ev" name="evidencia" type="url" placeholder="https://">
+<p><small>Solo roles y entregables: ningún nombre de persona ni dato personal.</small></p>
+<button type="submit">Regístralo</button>
+</form>
+</main>
+<footer>
+<p>Hecha a partir del mapa de valor. <a href="web.json">Los datos de esta web</a></p>
+</footer>
+</body>
+</html>

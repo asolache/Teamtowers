@@ -1,0 +1,191 @@
+{
+  "abast": "Lo que pasa desde que una empresa quiere un taller para su equipo hasta que el equipo vuelve al trabajo después de hacer un castell",
+  "roles": [
+    "La empresa que contrata",
+    "La agencia de eventos",
+    "Quien diseña y dinamiza el taller",
+    "Los monitores castellers",
+    "Los músicos",
+    "Los participantes",
+    "El lugar del evento"
+  ],
+  "pairs": [
+    [
+      "La empresa que contrata",
+      "La agencia de eventos",
+      "tangible",
+      "el encargo y el pago del evento",
+      "intangible",
+      "la confianza de que el día saldrá bien"
+    ],
+    [
+      "La agencia de eventos",
+      "Quien diseña y dinamiza el taller",
+      "tangible",
+      "el cliente, la fecha y el lugar",
+      "tangible",
+      "la propuesta del taller y su comisión"
+    ],
+    [
+      "La empresa que contrata",
+      "Quien diseña y dinamiza el taller",
+      "intangible",
+      "qué le pasa al equipo y qué quiere que cambie",
+      "intangible",
+      "una lectura del equipo que la empresa no tenía"
+    ],
+    [
+      "Quien diseña y dinamiza el taller",
+      "Los monitores castellers",
+      "tangible",
+      "el encargo, el guion y el pago",
+      "intangible",
+      "cómo responde un grupo que nunca ha hecho un castell"
+    ],
+    [
+      "Los monitores castellers",
+      "Los participantes",
+      "tangible",
+      "las fajas, la técnica y la seguridad del castell",
+      "intangible",
+      "la confianza del grupo para subir y sostener"
+    ],
+    [
+      "Los músicos",
+      "Los participantes",
+      "intangible",
+      "el ritmo que marca cada momento del castell",
+      "intangible",
+      "la emoción del grupo, que la música acompaña"
+    ],
+    [
+      "Quien diseña y dinamiza el taller",
+      "Los músicos",
+      "tangible",
+      "el encargo, el guion y el pago",
+      "tangible",
+      "la música en directo"
+    ],
+    [
+      "Quien diseña y dinamiza el taller",
+      "Los participantes",
+      "intangible",
+      "la vivencia de los valores de equipo, con humor",
+      "intangible",
+      "lo que el grupo descubre de sí mismo, dicho en voz alta"
+    ],
+    [
+      "Los participantes",
+      "La empresa que contrata",
+      "intangible",
+      "un equipo que ha vivido la confianza y el liderazgo compartido",
+      "intangible",
+      "el reconocimiento de haber parado para el equipo"
+    ],
+    [
+      "El lugar del evento",
+      "La agencia de eventos",
+      "tangible",
+      "el espacio y la logística del día",
+      "tangible",
+      "la reserva y el pago"
+    ]
+  ],
+  "processos": [
+    {
+      "id": "venta",
+      "nom": "La venta",
+      "d": "Del encargo a la fecha cerrada"
+    },
+    {
+      "id": "taller",
+      "nom": "El taller",
+      "d": "El día del castell"
+    },
+    {
+      "id": "despues",
+      "nom": "Lo que queda",
+      "d": "Después del taller, en la empresa"
+    }
+  ],
+  "seq": {
+    "La empresa que contrata→La agencia de eventos": [
+      "venta",
+      1
+    ],
+    "La agencia de eventos→Quien diseña y dinamiza el taller": [
+      "venta",
+      2
+    ],
+    "La empresa que contrata→Quien diseña y dinamiza el taller": [
+      "venta",
+      3
+    ],
+    "Quien diseña y dinamiza el taller→La agencia de eventos": [
+      "venta",
+      4
+    ],
+    "La agencia de eventos→El lugar del evento": [
+      "venta",
+      5
+    ],
+    "Quien diseña y dinamiza el taller→Los monitores castellers": [
+      "venta",
+      6
+    ],
+    "Quien diseña y dinamiza el taller→Los músicos": [
+      "venta",
+      7
+    ],
+    "El lugar del evento→La agencia de eventos": [
+      "taller",
+      1
+    ],
+    "Los monitores castellers→Los participantes": [
+      "taller",
+      2
+    ],
+    "Los músicos→Los participantes": [
+      "taller",
+      3
+    ],
+    "Quien diseña y dinamiza el taller→Los participantes": [
+      "taller",
+      4
+    ],
+    "Los participantes→Los monitores castellers": [
+      "taller",
+      5
+    ],
+    "Los participantes→Los músicos": [
+      "taller",
+      6
+    ],
+    "Los participantes→Quien diseña y dinamiza el taller": [
+      "taller",
+      7
+    ],
+    "Los músicos→Quien diseña y dinamiza el taller": [
+      "taller",
+      8
+    ],
+    "Los monitores castellers→Quien diseña y dinamiza el taller": "sempre",
+    "Los participantes→La empresa que contrata": [
+      "despues",
+      1
+    ],
+    "La empresa que contrata→Los participantes": [
+      "despues",
+      2
+    ],
+    "Quien diseña y dinamiza el taller→La empresa que contrata": [
+      "despues",
+      3
+    ],
+    "La agencia de eventos→La empresa que contrata": [
+      "despues",
+      4
+    ]
+  },
+  "troballes": []
+}

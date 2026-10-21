@@ -1,0 +1,199 @@
+{
+  "formato": "tt-analisis-1",
+  "nom": "TeamTowers",
+  "llengua": "es",
+  "fonts": [
+    {
+      "nom": "colla.html",
+      "tipus": "html",
+      "titol": "The Colla Programme · Value Network Analysis | TeamTowers",
+      "descripcio": "The Colla Programme: after Fent Pinya, we map the real value flows of your organization with the value map (VNA). Trusted by IKEA, Porsche, FC Barcelona and 150+ organizations.",
+      "encapcalaments": [
+        "Your organization has two structures. We map the real one.",
+        "Tu organización tiene dos estructuras. Mapeamos la real.",
+        "What org charts cannot show",
+        "Lo que el organigrama no puede mostrar",
+        "The most transparent value network in existence",
+        "La red de valor más transparente que existe",
+        "Beyond the two hours",
+        "Más allá de las dos horas"
+      ],
+      "llengua": "en"
+    },
+    {
+      "nom": "index.html",
+      "tipus": "html",
+      "titol": "Teamtowers | Team Building Castellers & Systemic Consulting",
+      "descripcio": "High-performance team development based on the Casteller model. Human Towers workshops for up to 1,000 pax and Systemic Consulting. / Desarrollo de equipos y teambuilding.",
+      "encapcalaments": [
+        "High-Performance Team Development through UNESCO Heritage",
+        "Desarrollo de Equipos de Alto Rendimiento a través del Patrimonio UNESCO",
+        "Fent Pinya: The Original Human Towers Workshop",
+        "Fent Pinya: el taller de castellers original",
+        "\"La Colla\" Program: Value Network Analysis",
+        "Programa \"La Colla\": Análisis de Red de Valor",
+        "The Casteller Network: 200 Years of Wisdom",
+        "La Red Castellera: 200 años de Sabiduría"
+      ],
+      "llengua": "en"
+    },
+    {
+      "nom": "pinya.html",
+      "tipus": "html",
+      "titol": "Fent Pinya: el taller de castellers original | Teamtowers",
+      "descripcio": "Fent Pinya es el taller de castellers original para empresas, creado por Teamtowers: más de 20 años de team building con torres humanas para grupos de 10 a 1.000 personas. The original Human Towers workshop.",
+      "encapcalaments": [
+        "Fent Pinya: The Original Human Towers Workshop",
+        "Fent Pinya: el taller de castellers original",
+        "The original Castellers workshop for companies",
+        "El taller de castellers original para empresas",
+        "Your proposal in three steps",
+        "Tu propuesta en tres pasos",
+        "Tell us the basics",
+        "Cuéntanos lo básico"
+      ],
+      "llengua": "en"
+    }
+  ],
+  "rols": [
+    {
+      "id": "empresas",
+      "nom": "La empresa o el grupo que contrata",
+      "vegades": 22,
+      "evidencia": [
+        "La otra mitad es lo que ningún organigrama captura : la confianza que hace que la gente comparta conocimiento, los favores informales que desbloquean proyectos, la sincronización q",
+        "Más de 20 años aplicando la \"Metanoia\" de los Castells para transformar la cultura corporativa y las competencias de equipo."
+      ]
+    },
+    {
+      "id": "equipo",
+      "nom": "Quien trabaja en casa",
+      "vegades": 19,
+      "evidencia": [
+        "La otra mitad es lo que ningún organigrama captura : la confianza que hace que la gente comparta conocimiento, los favores informales que desbloquean proyectos, la sincronización q",
+        "El equipo construye un castell y vive la confianza, la comunicación y el liderazgo compartido."
+      ]
+    },
+    {
+      "id": "clientes",
+      "nom": "Quien compra",
+      "vegades": 10,
+      "evidencia": [
+        "Business units, partners, regulators, clients.",
+        "Unidades de negocio, partners, reguladores, clientes."
+      ]
+    },
+    {
+      "id": "prensa",
+      "nom": "Quien lo cuenta fuera",
+      "vegades": 3,
+      "evidencia": [
+        "Press and media Prensa y medios The Wall Street Journal The Jerusalem Post Shareable La Vanguardia TVE TV3 El Periódico 20 Minutos",
+        "Press & Media Prensa y Medios Teamtowers in the Media."
+      ]
+    },
+    {
+      "id": "comunidad",
+      "nom": "Quien forma parte del club",
+      "vegades": 1,
+      "evidencia": [
+        "IKEA Porsche Mercedes Seat Telefónica Vodafone UBS Novartis La Caixa BBVA Akzo Nobel Carglass Infojobs Softonic Letgo JVC Premios Laureus Futbol Club Barcelona Diputación de Barcel"
+      ]
+    },
+    {
+      "id": "formacion",
+      "nom": "Quien aprende con nosotros",
+      "vegades": 1,
+      "evidencia": [
+        "Trayectoria: Más de 20 años haciendo el taller con empresas, escuelas de negocio e instituciones."
+      ]
+    }
+  ],
+  "coses": [
+    {
+      "id": "formacion",
+      "nom": "el curso o el taller",
+      "vegades": 19,
+      "evidencia": [
+        "Es el taller de castellers original.",
+        "Formación de facilitadores internos."
+      ]
+    },
+    {
+      "id": "evento",
+      "nom": "el evento",
+      "vegades": 11,
+      "evidencia": [
+        "El mismo mapa de valor, y también consultoría, formación, mentoría, desarrollo web y eventos, están en TeamTowers Humà.",
+        "Design Your Event Diseñemos tu Evento"
+      ]
+    },
+    {
+      "id": "reserva",
+      "nom": "la reserva",
+      "vegades": 5,
+      "evidencia": [
+        "Book a VNA Session Reservar Sesión VNA How it works Cómo funciona",
+        "Book a session Reservar sesión Fill in the brief and we will get back to you within 24h with a scoped proposal."
+      ]
+    },
+    {
+      "id": "visita",
+      "nom": "la visita",
+      "vegades": 4,
+      "evidencia": [
+        "Hoja de ruta para la IA.",
+        "Explore Systemic Consulting Explora Consultoría Sistémica Visit TeamTowers Huma (VNA & AI) Visita TeamTowers Huma (VNA e IA)"
+      ]
+    },
+    {
+      "id": "suscripcion",
+      "nom": "la cuota",
+      "vegades": 1,
+      "evidencia": [
+        "Request a quote Pedir presupuesto Prefer email?"
+      ]
+    }
+  ],
+  "preus": 0,
+  "preguntes": [
+    "No hay ningún formulario ni correo para escribiros: ¿por dónde os llega hoy quien quiere algo?",
+    "No sale ningún teléfono: ¿queréis que os llamen?",
+    "La web no dice qué se cobra: ¿qué paga hoy quien compra, y cómo?",
+    "¿Qué recibe «La empresa o el grupo que contrata» de vosotros, y qué os devuelve, además de pagar?",
+    "¿Qué recibe «Quien compra» de vosotros, y qué os devuelve, además de pagar?",
+    "¿Qué recibe «Quien lo cuenta fuera» de vosotros, y qué os devuelve, además de pagar?",
+    "¿Qué recibe «Quien forma parte del club» de vosotros, y qué os devuelve, además de pagar?",
+    "¿Qué recibe «Quien aprende con nosotros» de vosotros, y qué os devuelve, además de pagar?"
+  ],
+  "marca": {
+    "color": "#c026d3",
+    "lletra": "serif",
+    "presentacio": "The Colla Programme: after Fent Pinya, we map the real value flows of your organization with the value map (VNA). Trusted by IKEA, Porsche, FC Barcelona and 150+ organizations."
+  },
+  "esborrany": {
+    "abast": "Desde que alguien descubre la casa hasta que vuelve o la recomienda (frontera por revisar)",
+    "rols": [
+      "Quien lleva la casa",
+      "La empresa o el grupo que contrata",
+      "Quien compra",
+      "Quien lo cuenta fuera",
+      "Quien forma parte del club",
+      "Quien aprende con nosotros"
+    ],
+    "parells": [
+      "Quien lleva la casa | La empresa o el grupo que contrata | t | el curso o el taller | t | por confirmar",
+      "Quien lleva la casa | Quien compra | t | el evento | t | por confirmar",
+      "Quien lleva la casa | Quien lo cuenta fuera | t | el curso o el taller | t | por confirmar",
+      "Quien lleva la casa | Quien forma parte del club | t | el curso o el taller | t | por confirmar",
+      "Quien lleva la casa | Quien aprende con nosotros | t | el curso o el taller | t | por confirmar"
+    ],
+    "processos": [],
+    "seq": [],
+    "troballes": [
+      "No hay ningún formulario ni correo para escribiros | No hay ningún formulario ni correo para escribiros: ¿por dónde os llega hoy quien quiere algo?",
+      "No sale ningún teléfono | No sale ningún teléfono: ¿queréis que os llamen?",
+      "La web no dice qué se cobra | La web no dice qué se cobra: ¿qué paga hoy quien compra, y cómo?"
+    ]
+  }
+}
