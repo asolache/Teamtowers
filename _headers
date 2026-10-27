@@ -7,3 +7,10 @@
 
 /*.css
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# Recomendaciones: páginas privadas, fuera de buscadores
+/recomendacion
+  X-Robots-Tag: noindex, nofollow
+
+/recomendacion-gracias
+  X-Robots-Tag: noindex, nofollow
