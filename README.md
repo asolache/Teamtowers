@@ -70,3 +70,11 @@ Bug fixes
     AccountERC7579: Prevent revert in isModuleInstalled for fallback modules when additionalContext has fewer than 4 bytes. The function now returns false instead of reverting, ensuring ERC-…
 
 Read more
+
+Idiomas de la web
+
+    index.html, pinya.html y colla.html son bilingües: cada texto va en un elemento con class="en" o class="es" (pinya.html también class="ca").
+    Al desplegar, Netlify ejecuta `node herramientas/idiomas.js .` (ver netlify.toml) y publica una URL por idioma:
+    castellano en / , /pinya y /colla.html; inglés en /en/...; catalán en /ca/pinya.
+    Título, descripción y URLs de cada idioma están en herramientas/idiomas.js.
+    Para probarlo en local: `node herramientas/idiomas.js /tmp/salida` (nunca "." fuera de Netlify: sobrescribe las fuentes).
