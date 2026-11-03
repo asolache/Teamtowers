@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu recomendación | Teamtowers</title>
+    <meta name="description" content="Cuéntanos cómo fue tu taller con Teamtowers y decide si podemos publicarlo.">
+    <!-- Página privada: se llega por el enlace que enviamos después de cada taller -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Tres idiomas: cada texto lleva data-t y solo se ve el del idioma elegido */
+        body[data-l="es"] [data-t]:not([data-t="es"]),
+        body[data-l="ca"] [data-t]:not([data-t="ca"]),
+        body[data-l="en"] [data-t]:not([data-t="en"]) { display: none !important; }
+
+        .rec { padding: calc(var(--header-h) + 48px) 0 80px; background: var(--light); min-height: 100vh; }
+        .rec-card { max-width: 680px; margin: 0 auto; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 40px; }
+        .rec h1 { font-family: var(--font-head); font-size: clamp(1.7rem, 4vw, 2.3rem); color: var(--ink); line-height: 1.15; margin: 0 0 14px; }
+        .rec .lead { color: var(--text); margin: 0 0 28px; }
+        .rec fieldset { border: 0; padding: 0; margin: 0 0 26px; }
+        .rec legend, .rec label.f { display: block; font-family: var(--font-head); font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+        .rec .hint { display: block; font-size: var(--fs-sm); color: var(--muted); font-weight: 400; font-family: var(--font-body); margin-top: 2px; }
+        .rec input[type=text], .rec input[type=email], .rec textarea { width: 100%; box-sizing: border-box; font: inherit; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; background: var(--white); }
+        .rec input:focus, .rec textarea:focus { outline: 2px solid var(--primary-red); outline-offset: 1px; border-color: transparent; }
+        .rec textarea { min-height: 160px; resize: vertical; }
+        .rec .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 18px; }
+        .rec .row > div, .rec .one { margin-bottom: 18px; }
+        .rec .row > div { margin-bottom: 0; }
+        .rec .opt { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); margin-bottom: 8px; cursor: pointer; color: var(--text); }
+        .rec .opt:has(input:checked) { border-color: var(--primary-red); background: var(--red-tint); }
+        .rec .opt input { margin-top: 4px; accent-color: var(--primary-red); flex-shrink: 0; }
+        .rec .legal { font-size: var(--fs-sm); color: var(--muted); background: var(--light); border-radius: var(--radius-sm); padding: 16px 18px; margin: 0 0 18px; }
+        .rec .legal p { margin: 0 0 8px; }
+        .rec .legal p:last-child { margin: 0; }
+        .rec .legal a { color: var(--muted); }
+        .rec .count { font-size: var(--fs-xs); color: var(--muted); text-align: right; margin-top: 4px; }
+        .rec .hidden { display: none; }
+        .rec button[type=submit] { width: 100%; margin-top: 8px; border: 0; cursor: pointer; }
+        @media (max-width: 640px) {
+            .rec-card { padding: 24px 18px; border-radius: var(--radius); }
+            .rec .row { grid-template-columns: 1fr; gap: 0; }
+            .rec .row > div { margin-bottom: 18px; }
+        }
+    </style>
+</head>
+<body data-l="es">
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/web/logoteamtowers.webp" alt="Teamtowers" class="logo" width="400" height="113">
+            </a>
+            <nav class="main-nav">
+                <div class="lang-switcher">
+                    <button type="button" data-set="es" class="active">ES</button>
+                    <button type="button" data-set="ca">CA</button>
+                    <button type="button" data-set="en">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="rec">
+        <div class="container">
+            <div class="rec-card">
+                <h1>
+                    <span data-t="es">¿Cómo fue el taller?</span>
+                    <span data-t="ca">Com va anar el taller?</span>
+                    <span data-t="en">How was the workshop?</span>
+                </h1>
+                <p class="lead">
+                    <span data-t="es">Gracias por hacer pinya con nosotros. Si te apetece, cuéntanos en unas líneas qué te llevas del taller. Tú decides si lo publicamos y cómo apareces.</span>
+                    <span data-t="ca">Gràcies per fer pinya amb nosaltres. Si et ve de gust, explica'ns en unes línies què t'emportes del taller. Tu decideixes si ho publiquem i com hi surts.</span>
+                    <span data-t="en">Thank you for making pinya with us. If you like, tell us in a few lines what you take away from the workshop. You decide whether we publish it and how you appear.</span>
+                </p>
+
+                <form name="recomendacion" method="POST" action="/recomendacion-gracias" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="subject" value="Nueva recomendación en teamtowers.eu (%{submissionId})">
+                    <input type="hidden" name="evento" value="">
+                    <input type="hidden" name="idioma" value="es">
+                    <p class="hidden"><label>No rellenar: <input name="bot-field"></label></p>
+
+                    <div class="row">
+                        <div>
+                            <label class="f" for="nombre">
+                                <span data-t="es">Nombre y apellidos</span>
+                                <span data-t="ca">Nom i cognoms</span>
+                                <span data-t="en">Full name</span>
+                            </label>
+                            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label class="f" for="cargo">
+                                <span data-t="es">Cargo</span>
+                                <span data-t="ca">Càrrec</span>
+                                <span data-t="en">Role</span>
+                            </label>
+                            <input type="text" id="cargo" name="cargo" autocomplete="organization-title">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label class="f" for="empresa">
+                                <span data-t="es">Empresa</span>
+                                <span data-t="ca">Empresa</span>
+                                <span data-t="en">Company</span>
+                            </label>
+                            <input type="text" id="empresa" name="empresa" autocomplete="organization" required>
+                        </div>
+                        <div>
+                            <label class="f" for="email">
+                                Email
+                                <span class="hint" data-t="es">No se publica nunca</span>
+                                <span class="hint" data-t="ca">No es publica mai</span>
+                                <span class="hint" data-t="en">Never published</span>
+                            </label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="one">
+                        <label class="f" for="recomendacion">
+                            <span data-t="es">Tu recomendación</span>
+                            <span data-t="ca">La teva recomanació</span>
+                            <span data-t="en">Your recommendation</span>
+                            <span class="hint" data-t="es">Qué esperabas, qué pasó en el equipo, a quién se lo recomendarías.</span>
+                            <span class="hint" data-t="ca">Què esperaves, què va passar a l'equip, a qui ho recomanaries.</span>
+                            <span class="hint" data-t="en">What you expected, what happened in the team, who you would recommend it to.</span>
+                        </label>
+                        <textarea id="recomendacion" name="recomendacion" maxlength="1200" required></textarea>
+                        <div class="count"><span id="n">0</span>/1200</div>
+                    </div>
+
+                    <fieldset>
+                        <legend>
+                            <span data-t="es">¿Podemos publicarla?</span>
+                            <span data-t="ca">La podem publicar?</span>
+                            <span data-t="en">May we publish it?</span>
+                            <span class="hint" data-t="es">En teamtowers.eu, teamtowershuma.com, nuestras redes y las propuestas que enviamos a otros clientes.</span>
+                            <span class="hint" data-t="ca">A teamtowers.eu, teamtowershuma.com, les nostres xarxes i les propostes que enviem a altres clients.</span>
+                            <span class="hint" data-t="en">On teamtowers.eu, teamtowershuma.com, our social media and the proposals we send to other clients.</span>
+                        </legend>
+                        <label class="opt"><input type="radio" name="publicar" value="si" required>
+                            <span><span data-t="es">Sí, podéis publicarla</span><span data-t="ca">Sí, la podeu publicar</span><span data-t="en">Yes, you may publish it</span></span>
+                        </label>
+                        <label class="opt"><input type="radio" name="publicar" value="no">
+                            <span><span data-t="es">No, es solo para vosotros</span><span data-t="ca">No, és només per a vosaltres</span><span data-t="en">No, it is just for you</span></span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset id="como">
+                        <legend>
+                            <span data-t="es">¿Cómo quieres aparecer?</span>
+                            <span data-t="ca">Com vols sortir-hi?</span>
+                            <span data-t="en">How do you want to appear?</span>
+                        </legend>
+                        <label class="opt"><input type="radio" name="firma" value="nombre, cargo y empresa">
+                            <span><span data-t="es">Nombre, cargo y empresa</span><span data-t="ca">Nom, càrrec i empresa</span><span data-t="en">Name, role and company</span></span>
+                        </label>
+                        <label class="opt"><input type="radio" name="firma" value="nombre y empresa">
+                            <span><span data-t="es">Solo nombre y empresa</span><span data-t="ca">Només nom i empresa</span><span data-t="en">Name and company only</span></span>
+                        </label>
+                        <label class="opt"><input type="radio" name="firma" value="cargo y empresa, sin nombre">
+                            <span><span data-t="es">Cargo y empresa, sin mi nombre</span><span data-t="ca">Càrrec i empresa, sense el meu nom</span><span data-t="en">Role and company, without my name</span></span>
+                        </label>
+                        <label class="opt"><input type="radio" name="firma" value="anonima">
+                            <span><span data-t="es">Anónima (por ejemplo, «Directora de RR. HH., sector alimentación»)</span><span data-t="ca">Anònima (per exemple, «Directora de RH, sector alimentació»)</span><span data-t="en">Anonymous (for example, "HR Director, food industry")</span></span>
+                        </label>
+                        <label class="opt" style="margin-top:14px"><input type="checkbox" name="logo" value="si">
+                            <span><span data-t="es">Podéis mostrar el logo de mi empresa junto a la recomendación</span><span data-t="ca">Podeu mostrar el logo de la meva empresa al costat de la recomanació</span><span data-t="en">You may show my company's logo next to the recommendation</span></span>
+                        </label>
+                    </fieldset>
+
+                    <div class="legal">
+                        <p data-t="es">Solo corregiremos erratas. Si queremos acortar tu texto, te lo enseñamos antes. Puedes retirar tu permiso cuando quieras escribiendo a <a href="#" data-mail>asolache@mac.com</a>, y quitamos la recomendación.</p>
+                        <p data-t="ca">Només corregirem errades. Si volem escurçar el teu text, te l'ensenyem abans. Pots retirar el teu permís quan vulguis escrivint a <a href="#" data-mail>asolache@mac.com</a>, i traiem la recomanació.</p>
+                        <p data-t="en">We will only fix typos. If we want to shorten your text, we will show you first. You can withdraw your permission at any time by writing to <a href="#" data-mail>asolache@mac.com</a>, and we will take the recommendation down.</p>
+                        <p data-t="es"><strong>Protección de datos.</strong> Responsable: Álvaro Solache (Teamtowers). Finalidad: guardar tu recomendación, publicarla si lo autorizas y escribirte sobre ella. Base: tu consentimiento. Tus datos se guardan en el formulario de la web (Netlify) y en nuestra gestión de clientes (Zoho); no se ceden a nadie más. Los conservamos mientras la recomendación esté publicada o hasta que nos pidas borrarlos. Puedes pedir acceso, corrección o borrado en el mismo email, y reclamar ante la Agencia Española de Protección de Datos.</p>
+                        <p data-t="ca"><strong>Protecció de dades.</strong> Responsable: Álvaro Solache (Teamtowers). Finalitat: guardar la teva recomanació, publicar-la si ho autoritzes i escriure't sobre ella. Base: el teu consentiment. Les teves dades es guarden al formulari del web (Netlify) i a la nostra gestió de clients (Zoho); no se cedeixen a ningú més. Les conservem mentre la recomanació estigui publicada o fins que ens demanis esborrar-les. Pots demanar accés, correcció o esborrat al mateix email, i reclamar davant l'Agencia Española de Protección de Datos.</p>
+                        <p data-t="en"><strong>Data protection.</strong> Controller: Álvaro Solache (Teamtowers). Purpose: to keep your recommendation, publish it if you authorise it and write to you about it. Legal basis: your consent. Your data is stored in the website form (Netlify) and in our client management system (Zoho); it is not shared with anyone else. We keep it while the recommendation is published or until you ask us to delete it. You can request access, correction or deletion at the same email, and complain to the Spanish Data Protection Agency (AEPD).</p>
+                    </div>
+
+                    <label class="opt"><input type="checkbox" name="privacidad" value="aceptada" required>
+                        <span><span data-t="es">He leído la información de protección de datos</span><span data-t="ca">He llegit la informació de protecció de dades</span><span data-t="en">I have read the data protection information</span></span>
+                    </label>
+
+                    <button type="submit" class="btn btn-large btn-red">
+                        <span data-t="es">Enviar</span><span data-t="ca">Enviar</span><span data-t="en">Send</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            var form = document.forms.recomendacion;
+            var params = new URLSearchParams(location.search);
+
+            // El enlace que enviamos lleva el taller (?e=2026-10-23-vilarriba) y el idioma (?lang=ca)
+            var e = params.get('e');
+            if (e) form.evento.value = e.slice(0, 80);
+
+            function setLang(l) {
+                document.body.setAttribute('data-l', l);
+                document.documentElement.lang = l;
+                form.idioma.value = l;
+                try { sessionStorage.setItem('rec-lang', l); } catch (err) {}
+                document.querySelectorAll('[data-set]').forEach(function (b) {
+                    b.classList.toggle('active', b.getAttribute('data-set') === l);
+                });
+            }
+            document.querySelectorAll('[data-set]').forEach(function (b) {
+                b.addEventListener('click', function () { setLang(b.getAttribute('data-set')); });
+            });
+            var l = params.get('lang');
+            if (!/^(es|ca|en)$/.test(l || '')) {
+                var nav = (navigator.language || '').toLowerCase();
+                l = /^ca\b/.test(nav) ? 'ca' : /^es\b/.test(nav) ? 'es' : /^en\b/.test(nav) ? 'en' : 'es';
+            }
+            setLang(l);
+
+            // «Cómo apareces» solo tiene sentido si autoriza publicar
+            var como = document.getElementById('como');
+            function sync() {
+                var si = form.publicar.value === 'si';
+                como.style.display = si ? '' : 'none';
+                form.querySelectorAll('[name=firma]').forEach(function (r) {
+                    r.required = si;
+                    if (!si) r.checked = false;
+                });
+                if (!si) form.logo.checked = false;
+            }
+            form.querySelectorAll('[name=publicar]').forEach(function (r) { r.addEventListener('change', sync); });
+            sync();
+
+            var n = document.getElementById('n');
+            form.recomendacion.addEventListener('input', function () { n.textContent = this.value.length; });
+
+            document.querySelectorAll('[data-mail]').forEach(function (a) {
+                a.href = 'mai' + 'lto:' + 'asolache' + '@' + 'mac.com?subject=' + encodeURIComponent('Mi recomendación en Teamtowers');
+            });
+        })();
+    </script>
+</body>
+</html>

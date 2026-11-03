@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias | Teamtowers</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body[data-l="es"] [data-t]:not([data-t="es"]),
+        body[data-l="ca"] [data-t]:not([data-t="ca"]),
+        body[data-l="en"] [data-t]:not([data-t="en"]) { display: none !important; }
+        .rec { padding: calc(var(--header-h) + 64px) 0 80px; background: var(--light); min-height: 100vh; }
+        .rec-card { max-width: 560px; margin: 0 auto; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 40px; text-align: center; }
+        .rec h1 { font-family: var(--font-head); font-size: clamp(1.7rem, 4vw, 2.3rem); color: var(--ink); margin: 0 0 14px; }
+        .rec p { color: var(--text); margin: 0 0 28px; }
+        @media (max-width: 640px) { .rec-card { padding: 28px 18px; } }
+    </style>
+</head>
+<body data-l="es">
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/web/logoteamtowers.webp" alt="Teamtowers" class="logo" width="400" height="113">
+            </a>
+        </div>
+    </header>
+
+    <main class="rec">
+        <div class="container">
+            <div class="rec-card">
+                <h1>
+                    <span data-t="es">¡Gracias!</span>
+                    <span data-t="ca">Gràcies!</span>
+                    <span data-t="en">Thank you!</span>
+                </h1>
+                <p>
+                    <span data-t="es">Hemos recibido tu recomendación. Si la publicamos, lo haremos tal como nos has dicho.</span>
+                    <span data-t="ca">Hem rebut la teva recomanació. Si la publiquem, ho farem tal com ens has dit.</span>
+                    <span data-t="en">We have received your recommendation. If we publish it, it will be exactly as you told us.</span>
+                </p>
+                <a href="pinya" class="btn btn-red">Fent Pinya</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Mismo idioma que el formulario
+        var nav = (navigator.language || '').toLowerCase();
+        var l = /^ca\b/.test(nav) ? 'ca' : /^en\b/.test(nav) ? 'en' : 'es';
+        try { l = sessionStorage.getItem('rec-lang') || l; } catch (e) {}
+        document.body.setAttribute('data-l', l);
+        document.documentElement.lang = l;
+    </script>
+</body>
+</html>
