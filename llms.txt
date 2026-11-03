@@ -12,12 +12,15 @@
 - Idiomas: castellano, inglés, catalán, alemán y francés.
 - Nombre: «fer pinya» es una expresión catalana; la pinya es la base humana que sostiene el castell y significa unir fuerzas hacia un objetivo común.
 - En inglés: Fent Pinya, the original Human Towers (Castellers) team building workshop.
+- En catalán: Fent Pinya, el taller de castells original per a empreses.
 
 ## Páginas
 
 - [Fent Pinya, el taller de castellers original](https://www.teamtowers.eu/pinya): detalles del taller, guion paso a paso, servicios adicionales (demos castelleras, merchandising) y preguntas frecuentes.
-- [Inicio](https://www.teamtowers.eu/): presentación de Teamtowers, prensa (The Wall Street Journal, La Vanguardia, TV3, TVE…) y clientes.
-- [Programa La Colla](https://www.teamtowers.eu/colla.html): el paso después de Fent Pinya. Con el mapa de valor (Value Network Analysis, VNA), la dirección dibuja el flujo de valor real e ideal y lo mantiene vivo con un registro de entregas y avisos.
+  - En inglés: [Fent Pinya, the original castellers team building workshop](https://www.teamtowers.eu/en/pinya)
+  - En catalán: [Fent Pinya, el taller de castells original](https://www.teamtowers.eu/ca/pinya)
+- [Inicio](https://www.teamtowers.eu/) (en inglés: https://www.teamtowers.eu/en/; en catalán: https://www.teamtowers.eu/ca/): presentación de Teamtowers, prensa (The Wall Street Journal, La Vanguardia, TV3, TVE…) y clientes.
+- [Programa La Colla](https://www.teamtowers.eu/colla.html) (en inglés: https://www.teamtowers.eu/en/colla.html; en catalán: https://www.teamtowers.eu/ca/colla.html): el paso después de Fent Pinya. Con el mapa de valor (Value Network Analysis, VNA), la dirección dibuja el flujo de valor real e ideal y lo mantiene vivo con un registro de entregas y avisos.
 - [TeamTowers Humà](https://teamtowershuma.com/): el resto de servicios de Álvaro Solache (consultoría, formación, mentoría, desarrollo web, eventos y el mapa de valor para pymes y proyectos), con diagnóstico gratis.
 
 ## Contacto
