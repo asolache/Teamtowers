@@ -6,7 +6,8 @@
 // En el despliegue, Netlify ejecuta este script y publica:
 //   /            /pinya            /colla.html        en castellano (lang="es")
 //   /en/         /en/pinya         /en/colla.html     en inglés
-//                /ca/pinya                            en catalán
+//   /ca/         /ca/pinya         /ca/colla.html     en catalán
+// Para añadir el catalán a textos nuevos: herramientas/traducir.js.
 // Cada página lleva solo su idioma, un H1, su título y descripción, canonical
 // propio y hreflang cruzado. Así Google tiene una URL por idioma.
 //
@@ -26,8 +27,8 @@ const LOCALE = { es: 'es_ES', en: 'en_GB', ca: 'ca_ES' };
 const PAGES = [
   {
     src: 'index.html',
-    url: { es: '/', en: '/en/' },
-    file: { es: 'index.html', en: 'en/index.html' },
+    url: { es: '/', en: '/en/', ca: '/ca/' },
+    file: { es: 'index.html', en: 'en/index.html', ca: 'ca/index.html' },
     meta: {
       es: {
         title: 'Team building con castellers: Fent Pinya, el taller original | Teamtowers',
@@ -36,6 +37,10 @@ const PAGES = [
       en: {
         title: 'Castellers Team Building: Fent Pinya, the original Human Towers workshop | Teamtowers',
         description: 'Teamtowers created Fent Pinya, the original castellers (human towers) team building workshop for companies. 20+ years, groups of 10 to 1,000 people, plus systemic consulting with value network maps.',
+      },
+      ca: {
+        title: 'Team building amb castells: Fent Pinya, el taller original | Teamtowers',
+        description: 'Teamtowers va crear Fent Pinya, el taller de castells original per a empreses. Més de 20 anys de team building amb castells per a grups de 10 a 1.000 persones, i consultoria sistèmica amb mapes de valor.',
       },
     },
   },
@@ -60,8 +65,8 @@ const PAGES = [
   },
   {
     src: 'colla.html',
-    url: { es: '/colla.html', en: '/en/colla.html' },
-    file: { es: 'colla.html', en: 'en/colla.html' },
+    url: { es: '/colla.html', en: '/en/colla.html', ca: '/ca/colla.html' },
+    file: { es: 'colla.html', en: 'en/colla.html', ca: 'ca/colla.html' },
     meta: {
       es: {
         title: 'Programa La Colla: mapa de valor de tu organización (VNA) | TeamTowers',
@@ -71,6 +76,10 @@ const PAGES = [
         title: 'The Colla Programme · Value Network Analysis | TeamTowers',
         description: 'The Colla Programme: after Fent Pinya, we map the real value flows of your organization with the value map (VNA). Trusted by IKEA, Porsche, FC Barcelona and 150+ organizations.',
       },
+      ca: {
+        title: 'Programa La Colla: mapa de valor de la teva organització (VNA) | TeamTowers',
+        description: 'Programa La Colla: després de Fent Pinya, mapem els fluxos de valor reals de la teva organització amb el mapa de valor (VNA). Més de 150 organitzacions, entre elles IKEA, Porsche i FC Barcelona.',
+      },
     },
   },
 ];
@@ -79,11 +88,13 @@ const VOID = new Set(['area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input'
 const RAW = new Set(['script', 'style']);
 const TAG = /<(\/?)([a-zA-Z][\w-]*)((?:\s+[^\s=>\/]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+))?)*)\s*(\/?)>|<!--[\s\S]*?-->/g;
 
-function langOf(attrs) {
+// Idiomas de un elemento según su class. Un elemento puede servir a varios
+// (class="es en", útil para el JSON-LD que comparten dos versiones).
+function langsOf(attrs) {
   const m = /\sclass\s*=\s*(?:"([^"]*)"|'([^']*)')/.exec(attrs || '');
-  if (!m) return null;
+  if (!m) return [];
   const tokens = (m[1] || m[2] || '').split(/\s+/);
-  return LANGS.find((l) => tokens.includes(l)) || null;
+  return LANGS.filter((l) => tokens.includes(l));
 }
 
 // Quita los elementos marcados con un idioma distinto de `keep`.
@@ -98,9 +109,9 @@ function keepLanguage(html, keep) {
     const [whole, close, rawName, attrs, selfClose] = m;
     const name = rawName.toLowerCase();
     if (!close) {
-      const lang = langOf(attrs);
+      const langs = langsOf(attrs);
       const dropping = stack.some((s) => s.drop);
-      const drop = !dropping && lang !== null && lang !== keep;
+      const drop = !dropping && langs.length > 0 && !langs.includes(keep);
       if (RAW.has(name)) {
         const end = html.toLowerCase().indexOf('</' + name, TAG.lastIndex);
         if (end < 0) throw new Error(`<${name}> sin cerrar en ${m.index}`);
@@ -130,6 +141,45 @@ function keepLanguage(html, keep) {
   if (stack.some((s) => s.drop)) throw new Error('Elemento de idioma sin cerrar: ' + stack.map((s) => s.name).join('>'));
   out.push(html.slice(last));
   return out.join('');
+}
+
+// Elementos de primer nivel marcados con idioma: [{tag, langs, start, end}].
+// "start" y "end" delimitan el elemento completo (de "<" a ">" del cierre).
+function langElements(html) {
+  const found = [];
+  const stack = [];
+  TAG.lastIndex = 0;
+  let m;
+  while ((m = TAG.exec(html))) {
+    if (m[0].startsWith('<!--')) continue;
+    const [whole, close, rawName, attrs, selfClose] = m;
+    const name = rawName.toLowerCase();
+    if (!close) {
+      const langs = langsOf(attrs);
+      const inside = stack.some((s) => s.langs.length);
+      const mark = !inside && langs.length > 0;
+      if (RAW.has(name)) {
+        const end = html.toLowerCase().indexOf('</' + name, TAG.lastIndex);
+        const endTag = html.indexOf('>', end) + 1;
+        if (mark) found.push({ tag: name, langs, start: m.index, end: endTag });
+        TAG.lastIndex = endTag;
+        continue;
+      }
+      if (VOID.has(name) || selfClose) {
+        if (mark) found.push({ tag: name, langs, start: m.index, end: m.index + whole.length });
+        continue;
+      }
+      stack.push({ name, langs: mark ? langs : [], start: m.index });
+    } else {
+      let i = stack.length - 1;
+      while (i >= 0 && stack[i].name !== name) i--;
+      if (i < 0) continue;
+      const el = stack[i];
+      stack.length = i;
+      if (el.langs.length) found.push({ tag: el.name, langs: el.langs, start: el.start, end: m.index + whole.length });
+    }
+  }
+  return found.sort((a, b) => a.start - b.start);
 }
 
 // Si el elemento empieza una línea, quita también la sangría para no dejar huecos.
@@ -243,11 +293,8 @@ function build(srcHtml, page, lang) {
   // Comprobaciones mínimas
   const h1 = (html.match(/<h1\b/gi) || []).length;
   if (h1 !== 1) throw new Error(`${page.file[lang]}: ${h1} H1 (se esperaba 1)`);
-  for (const other of LANGS) {
-    if (other === lang) continue;
-    const re = new RegExp(`<(?!script)[a-z][\\w-]*\\s[^>]*class="(?:[^"]*\\s)?${other}(?:\\s[^"]*)?"`, 'i');
-    if (re.test(html)) throw new Error(`${page.file[lang]}: quedan elementos en "${other}"`);
-  }
+  const left = langElements(html).filter((e) => !e.langs.includes(lang) && e.tag !== 'script');
+  if (left.length) throw new Error(`${page.file[lang]}: quedan elementos en "${left[0].langs.join(' ')}"`);
   return html;
 }
 
@@ -282,4 +329,4 @@ function main() {
 }
 
 if (require.main === module) main();
-module.exports = { keepLanguage, build, PAGES };
+module.exports = { keepLanguage, langElements, build, PAGES, LANGS };

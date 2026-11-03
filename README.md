@@ -73,8 +73,11 @@ Read more
 
 Idiomas de la web
 
-    index.html, pinya.html y colla.html son bilingües: cada texto va en un elemento con class="en" o class="es" (pinya.html también class="ca").
+    index.html, pinya.html y colla.html son bilingües: cada texto va en un elemento con class="en", class="es" o class="ca" (el JSON-LD que comparten dos idiomas lleva class="es en").
     Al desplegar, Netlify ejecuta `node herramientas/idiomas.js .` (ver netlify.toml) y publica una URL por idioma:
-    castellano en / , /pinya y /colla.html; inglés en /en/...; catalán en /ca/pinya.
+    castellano en / , /pinya y /colla.html; inglés en /en/...; catalán en /ca/...
     Título, descripción y URLs de cada idioma están en herramientas/idiomas.js.
     Para probarlo en local: `node herramientas/idiomas.js /tmp/salida` (nunca "." fuera de Netlify: sobrescribe las fuentes).
+    Catalán de textos nuevos: `node herramientas/traducir.js extraer pagina.html` lista los textos en castellano sin gemelo en catalán
+    y `aplicar pagina.html traducciones.json` los inserta. `api pagina.html` lo hace con la API de Claude
+    (necesita ANTHROPIC_API_KEY y `npm i --no-save @anthropic-ai/sdk`). Revisa el resultado con git diff.
