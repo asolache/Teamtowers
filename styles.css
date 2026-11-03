@@ -798,3 +798,22 @@ strong { color: var(--ink); font-weight: 600; }
     .barra-reserva .btn { display: block; width: 100%; text-align: center; }
     body:has(.barra-reserva) { padding-bottom: 72px; }
 }
+
+/* Tercer idioma (catalán) y selector de idioma con enlaces */
+.lang-en .ca, .lang-es .ca { display: none !important; }
+.lang-ca .en, .lang-ca .es { display: none !important; }
+.lang-switcher a,
+.main-nav .lang-switcher a:not(.btn) {
+    padding: 5px 12px;
+    border-radius: 999px;
+    color: var(--muted);
+    font-family: var(--font-head);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition: all 0.2s var(--ease);
+}
+.main-nav .lang-switcher a:not(.btn)::after { display: none; }
+.lang-switcher a:hover, .main-nav .lang-switcher a:not(.btn):hover { color: var(--ink); }
+.lang-switcher a.active, .main-nav .lang-switcher a.active:not(.btn) { background: var(--dark); color: #fff; }

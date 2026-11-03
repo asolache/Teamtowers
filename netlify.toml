@@ -1,0 +1,4 @@
+# Cada página bilingüe se publica en una URL por idioma (ver herramientas/idiomas.js).
+[build]
+  publish = "."
+  command = "node herramientas/idiomas.js ."

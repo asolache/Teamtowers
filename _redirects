@@ -1,0 +1,18 @@
+# Las versiones en inglés tienen ahora su propia URL
+/            lang=en  /en/            301!
+/pinya       lang=en  /en/pinya       301!
+/colla.html  lang=en  /en/colla.html  301!
+/pinya.html     /pinya     301!
+/en/pinya.html  /en/pinya  301!
+/ca/pinya.html  /ca/pinya  301!
+
+# Páginas antiguas: La Colla duplicada y la web anterior (Nicepage)
+/lacolla.html                                 /colla.html  301!
+/Inicio.html                                  /            301!
+/Teamtowers.html                              /            301!
+/Teamtowers-.html                             /            301!
+/Build-Up-Towers.html                         /pinya       301!
+/Contact.html                                 /pinya       301!
+/Formacion-y-consultoria.html                 /colla.html  301!
+/Formaci%C3%B3n-y-consultor%C3%ADa.html       /colla.html  301!
+/Formacio%CC%81n-y-consultori%CC%81a.html     /colla.html  301!
