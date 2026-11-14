@@ -1,0 +1,9 @@
+{
+  "name": "teamtowers-eu",
+  "private": true,
+  "description": "Web estática de teamtowers.eu. La única dependencia es para el contador de clics (netlify/functions/clic.mjs).",
+  "type": "commonjs",
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0"
+  }
+}

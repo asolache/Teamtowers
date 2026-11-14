@@ -817,3 +817,10 @@ strong { color: var(--ink); font-weight: 600; }
 .main-nav .lang-switcher a:not(.btn)::after { display: none; }
 .lang-switcher a:hover, .main-nav .lang-switcher a:not(.btn):hover { color: var(--ink); }
 .lang-switcher a.active, .main-nav .lang-switcher a.active:not(.btn) { background: var(--dark); color: #fff; }
+
+/* Enlace a TeamTowers Humà al pie del taller y en el contacto */
+.enlace-huma { margin-top: 24px; font-size: 1rem; }
+.enlace-huma a { color: var(--dark); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.enlace-huma a:hover { color: var(--primary-red); }
+.main-footer .enlace-huma a { color: #fff; }
+.main-footer .enlace-huma a:hover { color: #fff; opacity: 0.8; }
