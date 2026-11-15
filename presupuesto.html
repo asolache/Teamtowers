@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pide tu propuesta de Fent Pinya | Teamtowers</title>
+    <meta name="description" content="Cuéntanos fecha, personas y lugar y te enviamos la propuesta del taller de castellers Fent Pinya en 24 horas.">
+    <link rel="canonical" href="https://www.teamtowers.eu/presupuesto">
+    <!-- La petición entra sola en el CRM: Netlify la avisa a la función de leads de
+         eventspenedes.com (form «pinya»), que monta la oportunidad y el borrador.
+         Ver eventspenedes/netlify/pinya/pinya.mjs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Tres idiomas: cada texto lleva data-t y solo se ve el del idioma elegido (igual que recomendacion.html) */
+        body[data-l="es"] [data-t]:not([data-t="es"]),
+        body[data-l="ca"] [data-t]:not([data-t="ca"]),
+        body[data-l="en"] [data-t]:not([data-t="en"]) { display: none !important; }
+
+        .rec { padding: calc(var(--header-h) + 48px) 0 80px; background: var(--light); min-height: 100vh; }
+        .rec-card { max-width: 680px; margin: 0 auto; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 40px; }
+        .rec h1 { font-family: var(--font-head); font-size: clamp(1.7rem, 4vw, 2.3rem); color: var(--ink); line-height: 1.15; margin: 0 0 14px; }
+        .rec .lead { color: var(--text); margin: 0 0 28px; }
+        .rec fieldset { border: 0; padding: 0; margin: 0 0 26px; }
+        .rec legend, .rec label.f { display: block; font-family: var(--font-head); font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+        .rec .hint { display: block; font-size: var(--fs-sm); color: var(--muted); font-weight: 400; font-family: var(--font-body); margin-top: 2px; }
+        .rec input[type=text], .rec input[type=email], .rec input[type=tel], .rec input[type=number], .rec input[type=date], .rec select, .rec textarea { width: 100%; box-sizing: border-box; font: inherit; color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; background: var(--white); }
+        .rec input:focus, .rec select:focus, .rec textarea:focus { outline: 2px solid var(--primary-red); outline-offset: 1px; border-color: transparent; }
+        .rec textarea { min-height: 110px; resize: vertical; }
+        .rec .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 18px; }
+        .rec .row > div, .rec .one { margin-bottom: 18px; }
+        .rec .row > div { margin-bottom: 0; }
+        .rec .opt { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); margin-bottom: 8px; cursor: pointer; color: var(--text); }
+        .rec .opt:has(input:checked) { border-color: var(--primary-red); background: var(--red-tint); }
+        .rec .opt input { margin-top: 4px; accent-color: var(--primary-red); flex-shrink: 0; }
+        .rec .legal { font-size: var(--fs-sm); color: var(--muted); background: var(--light); border-radius: var(--radius-sm); padding: 16px 18px; margin: 0 0 18px; }
+        .rec .legal p { margin: 0 0 8px; }
+        .rec .legal p:last-child { margin: 0; }
+        .rec .legal a { color: var(--muted); }
+        .rec .count { font-size: var(--fs-xs); color: var(--muted); text-align: right; margin-top: 4px; }
+        .rec .hidden { display: none; }
+        .rec button[type=submit] { width: 100%; margin-top: 8px; border: 0; cursor: pointer; }
+        @media (max-width: 640px) {
+            .rec-card { padding: 24px 18px; border-radius: var(--radius); }
+            .rec .row { grid-template-columns: 1fr; gap: 0; }
+            .rec .row > div { margin-bottom: 18px; }
+        }
+    </style>
+</head>
+<body data-l="es">
+
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="/pinya" class="logo-link">
+                <img src="images/web/logoteamtowers.webp" alt="Teamtowers" class="logo" width="400" height="113">
+            </a>
+            <nav class="main-nav">
+                <div class="lang-switcher">
+                    <button type="button" data-set="es" class="active">ES</button>
+                    <button type="button" data-set="ca">CA</button>
+                    <button type="button" data-set="en">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="rec">
+        <div class="container">
+            <div class="rec-card">
+                <h1><span data-t="es">Pide tu propuesta de Fent Pinya</span><span data-t="ca">Demana la teva proposta de Fent Pinya</span><span data-t="en">Get your Fent Pinya proposal</span></h1>
+                <p class="lead"><span data-t="es">Cuéntanos cuándo, cuántos y dónde. Te enviamos la propuesta con el precio en 24 horas laborables.</span><span data-t="ca">Explica'ns quan, quants i on. T'enviem la proposta amb el preu en 24 hores laborables.</span><span data-t="en">Tell us when, how many and where. We will send you the proposal with the price within 24 working hours.</span></p>
+
+                <form name="pinya" method="POST" action="/presupuesto-gracias" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="subject" value="Petición de Fent Pinya en teamtowers.eu (%{submissionId})">
+                    <input type="hidden" name="idioma" value="es">
+                    <input type="hidden" name="origen_web" value="">
+                    <input type="hidden" name="utm_source" value="">
+                    <input type="hidden" name="utm_medium" value="">
+                    <input type="hidden" name="utm_campaign" value="">
+                    <input type="hidden" name="ref" value="">
+                    <p class="hidden"><label>No rellenar: <input name="bot-field"></label></p>
+
+                    <div class="row">
+                        <div>
+                            <label class="f" for="personas"><span data-t="es">Personas</span><span data-t="ca">Persones</span><span data-t="en">People</span></label>
+                            <input type="number" id="personas" name="personas" min="1" max="5000" inputmode="numeric" required>
+                        </div>
+                        <div>
+                            <label class="f" for="fecha"><span data-t="es">Fecha</span><span data-t="ca">Data</span><span data-t="en">Date</span><span class="hint" data-t="es">Si aún no la sabéis, déjala en blanco</span><span class="hint" data-t="ca">Si encara no la sabeu, deixeu-la en blanc</span><span class="hint" data-t="en">Leave it blank if you don't know yet</span></label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label class="f" for="lugar"><span data-t="es">Lugar (ciudad o espacio)</span><span data-t="ca">Lloc (ciutat o espai)</span><span data-t="en">Place (city or venue)</span></label>
+                            <input type="text" id="lugar" name="lugar" maxlength="120">
+                        </div>
+                        <div>
+                            <label class="f" for="idioma_taller"><span data-t="es">Idioma del taller</span><span data-t="ca">Idioma del taller</span><span data-t="en">Workshop language</span></label>
+                            <select id="idioma_taller" name="idioma_taller">
+                                <option value="es">Español</option>
+                                <option value="ca">Català</option>
+                                <option value="en">English</option>
+                                <option value="fr">Français</option>
+                                <option value="otro">Otro · Altre · Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <fieldset>
+                        <legend><span data-t="es">¿Para quién es?</span><span data-t="ca">Per a qui és?</span><span data-t="en">Who is it for?</span></legend>
+                        <label class="opt"><input type="radio" name="a_traves_de" value="empresa" required> <span><span data-t="es">Para mi empresa u organización</span><span data-t="ca">Per a la meva empresa o organització</span><span data-t="en">For my company or organisation</span></span></label>
+                        <label class="opt"><input type="radio" name="a_traves_de" value="agencia"> <span><span data-t="es">Soy una agencia y es para un cliente</span><span data-t="ca">Soc una agència i és per a un client</span><span data-t="en">I am an agency and it is for a client</span></span></label>
+                    </fieldset>
+
+                    <div class="row">
+                        <div>
+                            <label class="f" for="nombre"><span data-t="es">Nombre y apellidos</span><span data-t="ca">Nom i cognoms</span><span data-t="en">Full name</span></label>
+                            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label class="f" for="empresa"><span data-t="es">Empresa o agencia</span><span data-t="ca">Empresa o agència</span><span data-t="en">Company or agency</span></label>
+                            <input type="text" id="empresa" name="empresa" autocomplete="organization" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label class="f" for="correo"><span data-t="es">Email</span><span data-t="ca">Email</span><span data-t="en">Email</span></label>
+                            <input type="email" id="correo" name="correo" autocomplete="email" required>
+                        </div>
+                        <div>
+                            <label class="f" for="telefono"><span data-t="es">Teléfono</span><span data-t="ca">Telèfon</span><span data-t="en">Phone</span><span class="hint" data-t="es">Opcional</span><span class="hint" data-t="ca">Opcional</span><span class="hint" data-t="en">Optional</span></label>
+                            <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+                        </div>
+                    </div>
+                    <div class="one" id="cliente-final" style="display:none">
+                        <label class="f" for="cliente_final"><span data-t="es">Cliente final (si lo puedes decir)</span><span data-t="ca">Client final (si ho pots dir)</span><span data-t="en">End client (if you can say)</span></label>
+                        <input type="text" id="cliente_final" name="cliente_final" maxlength="120">
+                    </div>
+                    <div class="one">
+                        <label class="f" for="mensaje"><span data-t="es">¿Algo más?</span><span data-t="ca">Alguna cosa més?</span><span data-t="en">Anything else?</span><span class="hint" data-t="es">Qué queréis que pase en el equipo, horario, si es dentro de una convención…</span><span class="hint" data-t="ca">Què voleu que passi a l'equip, horari, si és dins d'una convenció…</span><span class="hint" data-t="en">What you want to happen in the team, timing, whether it is part of a convention…</span></label>
+                        <textarea id="mensaje" name="mensaje" maxlength="2000"></textarea>
+                    </div>
+
+                    <div class="legal">
+                        <p data-t="es"><strong>Protección de datos.</strong> Responsable: Álvaro Solache (Teamtowers). Finalidad: prepararte la propuesta y escribirte sobre ella. Base: tu petición. Tus datos se guardan en el formulario de la web (Netlify) y en nuestra gestión de clientes (Zoho); no se ceden a nadie más. Puedes pedir acceso, corrección o borrado en <a href="#" data-mail>asolache@gmail.com</a> y reclamar ante la Agencia Española de Protección de Datos.</p>
+                        <p data-t="ca"><strong>Protecció de dades.</strong> Responsable: Álvaro Solache (Teamtowers). Finalitat: preparar-te la proposta i escriure't sobre ella. Base: la teva petició. Les teves dades es guarden al formulari del web (Netlify) i a la nostra gestió de clients (Zoho); no se cedeixen a ningú més. Pots demanar accés, correcció o esborrat a <a href="#" data-mail>asolache@gmail.com</a> i reclamar davant l'Agencia Española de Protección de Datos.</p>
+                        <p data-t="en"><strong>Data protection.</strong> Controller: Álvaro Solache (Teamtowers). Purpose: to prepare your proposal and write to you about it. Legal basis: your request. Your data is stored in the website form (Netlify) and in our client management system (Zoho); it is not shared with anyone else. You can request access, correction or deletion at <a href="#" data-mail>asolache@gmail.com</a> and complain to the Spanish Data Protection Agency (AEPD).</p>
+                    </div>
+                    <label class="opt"><input type="checkbox" name="privacidad" value="aceptada" required>
+                        <span><span data-t="es">He leído la información de protección de datos</span><span data-t="ca">He llegit la informació de protecció de dades</span><span data-t="en">I have read the data protection information</span></span>
+                    </label>
+
+                    <button type="submit" class="btn btn-large btn-red"><span data-t="es">Pedir la propuesta</span><span data-t="ca">Demanar la proposta</span><span data-t="en">Request the proposal</span></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/origen.js"></script>
+    <script>
+        (function () {
+            var form = document.forms.pinya;
+            var params = new URLSearchParams(location.search);
+
+            function setLang(l) {
+                document.body.setAttribute('data-l', l);
+                document.documentElement.lang = l;
+                form.idioma.value = l;
+                try { sessionStorage.setItem('rec-lang', l); } catch (err) {}
+                document.querySelectorAll('[data-set]').forEach(function (b) {
+                    b.classList.toggle('active', b.getAttribute('data-set') === l);
+                });
+            }
+            document.querySelectorAll('[data-set]').forEach(function (b) {
+                b.addEventListener('click', function () { setLang(b.getAttribute('data-set')); });
+            });
+            var l = params.get('lang');
+            if (!/^(es|ca|en)$/.test(l || '')) {
+                var nav = (navigator.language || '').toLowerCase();
+                l = /^ca\b/.test(nav) ? 'ca' : /^es\b/.test(nav) ? 'es' : /^en\b/.test(nav) ? 'en' : 'es';
+            }
+            setLang(l);
+            form.idioma_taller.value = l;
+
+            // De dónde llega: lo guardó origen.js al entrar en la web
+            var o = window.ttOrigen ? window.ttOrigen() : {};
+            ['origen_web', 'utm_source', 'utm_medium', 'utm_campaign', 'ref'].forEach(function (k) {
+                if (o[k]) form[k].value = String(o[k]).slice(0, 200);
+            });
+
+            // El cliente final solo si es una agencia
+            var cf = document.getElementById('cliente-final');
+            form.querySelectorAll('[name=a_traves_de]').forEach(function (r) {
+                r.addEventListener('change', function () { cf.style.display = form.a_traves_de.value === 'agencia' ? '' : 'none'; });
+            });
+
+            document.querySelectorAll('[data-mail]').forEach(function (a) {
+                a.href = 'mai' + 'lto:' + 'asolache' + '@' + 'gmail.com?subject=' + encodeURIComponent('Mis datos en Teamtowers');
+            });
+        })();
+    </script>
+</body>
+</html>
